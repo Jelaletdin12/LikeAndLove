@@ -3,7 +3,7 @@ import vector from "../assets/vector.png";
 
 const MiningDevice = () => {
   return (
-    <div className="bg-[#161C31] w-full min-h-screen flex items-center justify-between">
+    <div className=" w-full min-h-screen flex items-center justify-between">
       {/* Left side content */}
       <div className="flex flex-col gap-4">
         <div className="flex  ">

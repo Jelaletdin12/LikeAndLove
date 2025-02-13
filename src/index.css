@@ -1,9 +1,13 @@
 @import "tailwindcss";
-
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter.ttf") format("truetype");
+}
 :root {
 }
 
 * {
+  font-family: Inter;
   box-sizing: border-box;
 }
 
@@ -12,6 +16,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #161C31;
 }
 
 @keyframes scroll {
