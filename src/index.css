@@ -27,3 +27,16 @@ body {
     transform: translateX(-50%);
   }
 }
+.gradient-border{
+  background: radial-gradient(circle at 100% 100%, #161c31 0, #161c31 23px, transparent 23px) 0% 0%/28px 28px no-repeat,
+  radial-gradient(circle at 0 100%, #161c31 0, #161c31 23px, transparent 23px) 100% 0%/28px 28px no-repeat,
+  radial-gradient(circle at 100% 0, #161c31 0, #161c31 23px, transparent 23px) 0% 100%/28px 28px no-repeat,
+  radial-gradient(circle at 0 0, #161c31 0, #161c31 23px, transparent 23px) 100% 100%/28px 28px no-repeat,
+  linear-gradient(#161c31, #161c31) 50% 50%/calc(100% - 10px) calc(100% - 56px) no-repeat,
+  linear-gradient(#161c31, #161c31) 50% 50%/calc(100% - 56px) calc(100% - 10px) no-repeat,
+  linear-gradient(209deg, #f30eff 0%, #48abe0 50%);
+border-radius: 28px;
+padding: 9px;
+box-sizing: border-box;
+}
+

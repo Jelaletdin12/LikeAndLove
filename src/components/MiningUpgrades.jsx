@@ -38,7 +38,7 @@ const MiningUpgrades = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-navy-900 p-8">
+    <div className="min-h-screen bg-navy-900 pr-14 pl-14">
       {/* Header Section */}
       <div className=" w-full grid grid-cols-[1fr_1fr] gap-[10px]">
         <div>
@@ -63,11 +63,11 @@ const MiningUpgrades = () => {
       </div>
 
       {/* Upgrades Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {upgrades.map((upgrade, index) => (
           <div
             key={index}
-            className="relative p-[1px] rounded-xl bg-gradient-to-r from-[#007AFF] to-[#F30EFF]"
+            className="relative p-[1px] rounded-xl gradient-border shadow-[0_0px_35px_rgba(0,122,255,1)]"
           >
             <div className="relative rounded-xl bg-[#161C31] p-6 h-full">
               <img

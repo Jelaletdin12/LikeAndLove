@@ -24,7 +24,7 @@ const NFTCard = ({
     isExpanded &&
     {
       silver: (
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2 p-2.5">
           <div className="flex flex-col gap-4">
             <div className="flex items-center space-x-2">
               <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
@@ -122,7 +122,7 @@ const NFTCard = ({
         </div>
       ),
       gold: (
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2 p-2.5">
           <div className="flex flex-col gap-4">
             <div className="flex items-center space-x-2">
               <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
@@ -220,7 +220,7 @@ const NFTCard = ({
         </div>
       ),
       platinum: (
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2 p-2.5">
           <div className="flex flex-col gap-4">
             <div className="flex items-center space-x-2">
               <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
@@ -321,15 +321,15 @@ const NFTCard = ({
 
   return (
     <div
-      className={`rounded-lg transition-all duration-300 p-6 relative cursor-pointer
+      className={`rounded-lg  relative cursor-pointer h-max
         ${isExpanded ? "bg-[#171D31] border-4 border-transparent" : ""}
         ${isHovered && !isExpanded ? "border-4 border-transparent" : ""}
       `}
       style={{
         background: isExpanded
-          ? `linear-gradient(#171D31, #171D31) padding-box, linear-gradient(to right, #007AFF, #F30EFF) border-box`
+          ? `gradient-border border-box`
           : isHovered
-          ? `linear-gradient(#171D31, #171D31) padding-box, linear-gradient(to right, #007AFF, #F30EFF) border-box`
+          ? `linear-gradient(#171D31, #171D31) padding-box, linear-gradient(30deg, #007AFF, #F30EFF) border-box`
           : "none",
         border: isHovered || isExpanded ? "4px solid transparent" : "none",
       }}
@@ -337,17 +337,17 @@ const NFTCard = ({
       onMouseLeave={onMouseLeave}
       onClick={onClick}
     >
-      <div className="flex justify-center">
-        <img src={image} alt={type} className="w-32 h-32" />
-      </div>
-      {isExpanded && details}
       {(isHovered || isExpanded) && (
-        <div className="absolute top-4 left-4 bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white px-3 py-1 rounded-full text-sm">
+        <div className="  flex justify-center text-white px-3 py-1  text-md ">
           {type === "silver" && "Silver Card"}
           {type === "gold" && "Gold Card"}
           {type === "platinum" && "Platinum Card"}
         </div>
       )}
+      <div className="flex justify-center m-2.5 mr-5 ml-5 ]">
+        <img src={image} alt={type} className="" />
+      </div>
+      {isExpanded && details}
     </div>
   );
 };
@@ -370,7 +370,7 @@ const NFTPrivilegeCards = () => {
       <h1 className="text-4xl font-bold text-blue-600 mb-12">
         NFT privilege card
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className=" flex justify-evenly w-full">
         {cardTypes.map((type) => (
           <NFTCard
             key={type}

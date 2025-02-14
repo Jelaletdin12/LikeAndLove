@@ -2,12 +2,12 @@ import Logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="bg-[#161C31] py-4 px-6 flex items-center justify-between p-32 border-b">
+    <header className="bg-[#161C31] relative z-10  flex items-center justify-between m-auto pr-32 pl-32 pt-4 pb-4 border-b">
       {/* Logo and Brand */}
       <div className="flex items-center space-x-2">
         <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-          <span >
-            <img  src={Logo} />
+          <span>
+            <img src={Logo} />
           </span>
         </div>
         <div className="text-xl font-bold">
@@ -24,11 +24,11 @@ const Header = () => {
           HOW DOES IT WORK?
         </button>
 
-        <button className="text-white hover:text-gray-300 transition-colors text-[18px] font-bold text-[18px] ">
+        <button className="text-white hover:text-gray-300 transition-colors  font-bold text-[18px] ">
           WHITE PAPER
         </button>
 
-        <button className="text-white hover:text-gray-300 transition-colors text-[18px] font-bold text-[18px]">
+        <button className="text-white hover:text-gray-300 transition-colors  font-bold text-[18px]">
           SUPPORT
         </button>
 
@@ -37,7 +37,7 @@ const Header = () => {
           <button className="bg-[#007BFF] text-white px-3 py-1 rounded-lg  text-[18px] font-large">
             EN
           </button>
-          <button className="text-white px-3 py-1 rounded-lg  text-[18px] font-large hover:bg-gray-700 transition-colors">
+          <button className="text-white px-3 py-1 rounded-lg  text-[18px] font-large hover:bg-white transition-colors">
             RU
           </button>
         </div>
