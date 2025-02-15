@@ -40,3 +40,24 @@ padding: 9px;
 box-sizing: border-box;
 }
 
+.border-gradient {
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  /* background: #161C31; İç içe beyaz iç alan için */
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* Border kalınlığı */
+  border-radius: inherit;
+  background: linear-gradient(to right, rgb(0, 122, 255), rgb(243, 14, 255));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+

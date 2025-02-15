@@ -2,16 +2,16 @@ import Phone from "../assets/phone.png";
 
 const MiningGuide = () => {
   return (
-    <div className="flex  bg-[#161C31] p-6 ">
+    <div className="flex max-w-6xl m-auto  bg-[#161C31] p-6 ">
       <div>
         <img src={Phone} alt="" />
       </div>
       <div>
-        <h2 className="text-[80px] text-[white] font-black mb-4 leading-none">
+        <h2 className="text-2xl text-[white] font-black mb-4 leading-none">
           How it works Mining?
         </h2>
 
-        <p className="text-[24px] text-white mb-10">
+        <p className="text-l text-white mb-10">
           It's as simple as that! Start earning LIKE Tokens with our NFTs:
         </p>
         <ul className="mb-10">

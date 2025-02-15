@@ -27,48 +27,73 @@ const RoadmapCarousel = () => {
   };
 
   return (
-    <div className="mx-auto pl-14 pr-14">
-      <h2 className="text-[90px] text-center text-[#007BFF] font-black">
-        Road Map <span className="text-white">of the Project</span>
-      </h2>
-      <p className="text-center text-2xl text-white mt-2">
-        Our project roadmap clearly reflects strategic development plans,
-        including key milestones and goals. We strive for full transparency by
-        providing users with access to information about upcoming steps and
-        initiatives.
-      </p>
+    <>
+      <div className="max-w-5xl m-auto">
+        <h2 className="text-2xl text-center text-[#007BFF] font-black">
+          Road Map <span className="text-white">of the Project</span>
+        </h2>
+        <p className="text-center text-l text-white mt-2">
+          Our project roadmap clearly reflects strategic development plans,
+          including key milestones and goals. We strive for full transparency by
+          providing users with access to information about upcoming steps and
+          initiatives.
+        </p>
+      </div>
       <Swiper
         spaceBetween={20}
-        slidesPerView="auto"
+        slidesPerView={5}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="mt-6"
+        style={{
+          marginLeft: "100px",
+          height: "350px",
+          paddingLeft: "25px",
+          display: "flex",
+          justifyContent: "center",
+          paddingTop: "30px",
+        }}
         loop={true}
-        onSlideChange={handleSlideChange} // Slide değiştiğinde çalıştır
+        onSlideChange={handleSlideChange}
       >
         {roadmapData.map((item, index) => (
-          <SwiperSlide style={{ maxWidth: "320px" }} key={index}>
+          <SwiperSlide key={index}>
             <div
-              className={`relative p-[1px] max-w-[300px] rounded-xl shadow-[0_0px_35px_rgba(0,122,255,1)] gradient-border ${
-                activeIndexes.includes(index) ? "" : "grayscale"
+              className={`relative p-[3px] rounded-xl ${
+                activeIndexes.includes(index)
+                  ? "shadow-[0_0px_25px_rgba(0,122,255,1)]"
+                  : "contrast-50"
               }`}
             >
-              <div className="relative p-6 rounded-xl shadow-lg h-[320px] max-w-[300px] bg-[#161C31] text-white flex flex-col items-center">
-                <p className="text-sm font-semibold">{item.date}</p>
-                <h3 className="text-lg font-bold mt-2">{item.title}</h3>
-                <img src={item.icon} className="text-5xl mt-4" />
+              <div
+                className="absolute inset-0 rounded-xl pointer-events-none"
+                style={{
+                  background: activeIndexes.includes(index)
+                    ? "linear-gradient(45deg, #007AFF, #F30EFF)"
+                    : "linear-gradient(to right, rgb(107 114 128), rgb(75 85 99))",
+                }}
+              />
+              <div className="relative justify-between w-full p-4 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col h-[250px] items-center">
+                <div className="flex flex-col items-center">
+                  <p className="text-sm text-center font-semibold">
+                    {item.date}
+                  </p>
+                  <h3 className="text-lg font-bold text-center mt-2">
+                    {item.title}
+                  </h3>
+                </div>
+                <img src={item.icon} className="w-24 h-24" />
               </div>
             </div>
           </SwiperSlide>
         ))}
         <SwiperSlide style={{ maxWidth: "320px" }}>
-           <div></div>
-          </SwiperSlide>
+          <div></div>
+        </SwiperSlide>
         <SwiperSlide style={{ maxWidth: "320px" }}>
-           <div></div>
-          </SwiperSlide>
+          <div></div>
+        </SwiperSlide>
       </Swiper>
-    </div>
+    </>
   );
 };
 

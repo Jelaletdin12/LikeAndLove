@@ -97,20 +97,20 @@ const FeatureCards = () => {
   ];
 
   return (
-    <div className=" min-h-screen pr-32 pl-32 pt-28">
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+    <div className="min-h-screen max-w-6xl m-auto mb-10 pt-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="relative group gradient-border rounded-3xl shadow-[0_0px_35px_rgba(0,122,255,1)] "
+            className="relative p-[3px] rounded-3xl shadow-[0_0px_20px_rgba(0,122,255,1)]"
           >
-            {/* Glow Effect */}
-            <div className="absolute p-[5px] bg-[#161c31] m-[6px] rounded-[28px] opacity-100 inset-0  " />
-
-            {/* Card Content */}
-            <div className="relative rounded-[28px] bg-[#161C31]  p-6 h-full flex flex-col items-center">
+            <div
+              className="absolute inset-0  rounded-[8px] pointer-events-none"
+              style={{ background: "linear-gradient(45deg, #007AFF, #F30EFF)" }}
+            />
+            <div className="relative bg-[#161c31] p-6 rounded-[8px] h-full flex flex-col items-center">
               {/* Phone Image */}
-              <div className="mb-6 ">
+              <div className="mb-6">
                 <img
                   src={feature.image}
                   alt="Phone Screenshot"

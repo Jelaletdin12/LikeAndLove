@@ -38,7 +38,7 @@ const MiningUpgrades = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-navy-900 pr-14 pl-14">
+    <div className="min-h-screen m-auto max-w-6xl">
       {/* Header Section */}
       <div className=" w-full grid grid-cols-[1fr_1fr] gap-[10px]">
         <div>

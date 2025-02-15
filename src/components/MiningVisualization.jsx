@@ -5,7 +5,7 @@ import like from "../assets/like.png";
 
 const MiningDevice = () => {
   return (
-    <div className=" relative top-[-100px] w-full pr-32 pl-32 flex items-center justify-between">
+    <div className=" relative  w-full max-w-5xl mx-auto flex items-center justify-between">
       {/* Left side content */}
       <div className="flex flex-col gap-4">
         <div className="flex relative gap-4">
@@ -19,7 +19,9 @@ const MiningDevice = () => {
             className="absolute top-[55px] right-[-35px]"
           />
         </div>
-        <p className="bg-white text-[18px] rounded-full p-1 pr-4 pl-4 w-max">#like_mining</p>
+        <p className="bg-white text-[18px] rounded-full p-1 pr-4 pl-4 w-max">
+          #like_mining
+        </p>
         <div className="relative pt-[100px]">
           <div className="flex mr">
             <h1 className="text-white text-[80px] font-black tracking-wider">
@@ -37,9 +39,7 @@ const MiningDevice = () => {
           />
         </div>
 
-        <p className="text-white text-[18px] ">
-          #Telegram_mini_app
-        </p>
+        <p className="text-white text-[18px] ">#Telegram_mini_app</p>
       </div>
 
       {/* Mining device */}

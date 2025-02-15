@@ -21,8 +21,8 @@ export default function NFTCollection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="mx-auto ">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center pr-32 pl-32">
+    <div className="mx-auto">
+      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto ">
         <div>
           <h2 className="text-[80px] flex text-white font-black mb-4">
             The <span className="text-[#007BFF] mx-2">NFT</span> Collection
@@ -44,19 +44,20 @@ export default function NFTCollection() {
       <div className="relative py-4">
         <Swiper
           spaceBetween={10}
-          slidesPerView={4}
+          slidesPerView={6}
           centeredSlides={true}
           pagination={{ clickable: true }}
           modules={[Pagination]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          style={{ height: "350px", paddingTop: "40px" }}
         >
           {nftItems.map((item, index) => {
             // Ortadaki kart
-            let scaleClass = "scale-110 shadow-xl";
+            let scaleClass = "scale-100 shadow-[0_0px_35px_rgba(0,122,255,1)]";
 
             // Sağ ve solundaki kartlar (biraz küçük olacak)
             if (index === activeIndex - 1 || index === activeIndex + 1) {
-              scaleClass = "scale-100 opacity-90";
+              scaleClass = "scale-85 opacity-90";
             }
 
             // Diğer tüm kartlar (en küçük olacak)
@@ -65,17 +66,23 @@ export default function NFTCollection() {
               index !== activeIndex - 1 &&
               index !== activeIndex + 1
             ) {
-              scaleClass = "scale-90 opacity-70";
+              scaleClass = "scale-70 opacity-70";
             }
 
             return (
               <SwiperSlide key={index}>
                 <div
-                  className={`relative p-[1px] rounded-xl gradient-border ${scaleClass}`}
+                  className={`relative p-[3px] shadow-[0_0px_35px_rgba(0,122,255,1)] rounded-xl ${scaleClass}`}
                 >
-                  <div className="relative p-6 rounded-xl shadow-lg h-[320px] bg-[#161C31] text-white flex flex-col items-center">
+                  <div
+                    className="absolute inset-0  rounded-xl  "
+                    style={{
+                      background: "linear-gradient(45deg, #007AFF, #F30EFF)",
+                    }}
+                  />
+                  <div className="relative p-6 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
                     <h3 className="text-lg font-bold mt-2">{item.title}</h3>
-                    <img src={item.icon} className="w-40 mt-4" alt="NFT" />
+                    <img src={item.icon} className="w-32 mt-4" alt="NFT" />
                   </div>
                 </div>
               </SwiperSlide>
