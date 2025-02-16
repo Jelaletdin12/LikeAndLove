@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import phone1 from "../assets/phone1.png";
 import phone2 from "../assets/phone2.png";
 import phone3 from "../assets/phone3.png";
@@ -6,8 +6,10 @@ import phone4 from "../assets/phone4.png";
 import phone5 from "../assets/phone5.png";
 import phone6 from "../assets/phone6.png";
 import phone7 from "../assets/phone7.png";
+import FeatureModal from "./FeatureCardModal";
 
 const FeatureCards = () => {
+  const [selectedFeature, setSelectedFeature] = useState(null);
   const features = [
     {
       title: {
@@ -142,7 +144,9 @@ const FeatureCards = () => {
               </div>
 
               {/* Button */}
-              <button className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2">
+              <button className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2"
+               onClick={() => setSelectedFeature(feature)}
+              >
                 MORE DETAILED
                 <svg
                   className="w-5 h-5"
@@ -160,6 +164,13 @@ const FeatureCards = () => {
           </div>
         ))}
       </div>
+      {selectedFeature && (
+        <FeatureModal
+          feature={selectedFeature}
+          isVisible={!!selectedFeature}
+          onClose={() => setSelectedFeature(null)}
+        />
+      )}
     </div>
   );
 };
