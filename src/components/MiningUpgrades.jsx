@@ -1,7 +1,7 @@
 import React from "react";
 import Stabilizator from "../assets/stabilizator.png";
 import brain from "../assets/brain.png";
-import fancard from "../assets/fanCard.png";
+import fancard from "../assets/fancard.png";
 import water from "../assets/water.png";
 import ton from "../assets/ton.png";
 import { CircleArrowRight } from 'lucide-react';
