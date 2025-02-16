@@ -1,12 +1,12 @@
-import React, { useState, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const BurningLikeCarousel = () => {
+  // Track active slides for styling
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-  const startX = useRef(null);
-  const currentX = useRef(null);
-
+  
   const items = [
     { id: 1, value: "-125 000 000" },
     { id: 2, value: "-125 000 000" },
@@ -17,75 +17,9 @@ const BurningLikeCarousel = () => {
     { id: 7, value: "-125 000 000" },
   ];
 
-  const handleNext = () => {
-    setActiveIndex((prev) => (prev + 1) % (items.length - 1));
-  };
-
-  const handlePrev = () => {
-    setActiveIndex(
-      (prev) => (prev - 1 + (items.length - 1)) % (items.length - 1)
-    );
-  };
-
-  // Mouse Events
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
-    startX.current = e.clientX;
-  };
-
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
-    currentX.current = e.clientX;
-  };
-
-  const handleMouseUp = () => {
-    if (!isDragging) return;
-
-    const diff = startX.current - currentX.current;
-    const minSwipeDistance = 50;
-
-    if (Math.abs(diff) > minSwipeDistance) {
-      if (diff > 0) {
-        handleNext();
-      } else {
-        handlePrev();
-      }
-    }
-
-    setIsDragging(false);
-    startX.current = null;
-    currentX.current = null;
-  };
-
-  // Touch Events
-  const handleTouchStart = (e) => {
-    startX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e) => {
-    currentX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    if (!startX.current || !currentX.current) return;
-
-    const diff = startX.current - currentX.current;
-    const minSwipeDistance = 50;
-
-    if (Math.abs(diff) > minSwipeDistance) {
-      if (diff > 0) {
-        handleNext();
-      } else {
-        handlePrev();
-      }
-    }
-
-    startX.current = null;
-    currentX.current = null;
-  };
-
+  // Helper function to check if slide is active (current or next)
   const isActive = (index) => {
-    return index === activeIndex || index === activeIndex + 1;
+    return index === activeIndex || index === (activeIndex + 1) % items.length;
   };
 
   return (
@@ -104,39 +38,29 @@ const BurningLikeCarousel = () => {
           token becomes, the higher its value on the market.
         </p>
       </div>
+      
       <div className="relative ml-15">
-        <div className="flex items-center justify-center gap-4 overflow-hidden">
-          {/* <button
-            onClick={handlePrev}
-            className="absolute left-0 z-20 bg-gray-800 p-2 rounded-full text-blue-500 hover:bg-gray-700"
-          >
-            <ChevronLeft size={24} />
-          </button> */}
-
-          <div
-            className={`flex items-center justify-start gap-4 overflow-x-hidden px-12 h-[100px] touch-pan-y select-none cursor-grab ${
-              isDragging ? "cursor-grabbing" : ""
-            }`}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          >
-            {items.map((item, index) => (
-              <div
-                key={item.id}
-                className="flex items-center gap-4 transition-transform duration-300"
-                style={{
-                  transform: `translateX(-${activeIndex * 260}px)`,
-                }}
-              >
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={0}
+          slidesPerView={5}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          grabCursor={true}
+         style={{height:"100px", paddingTop:"25px", paddingLeft:"20px"}}
+  
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        >
+          {items.map((item, index) => (
+            <SwiperSlide key={item.id}>
+              <div className="flex items-center gap-4">
+                {/* Added conditional styling based on active state */}
                 <div
-                  className={`relative rounded-[8px] transition-all duration-300 shadow-[0_0px_15px_rgba(0,122,255,1)] ${
-                    !isActive(index) ? "grayscale opacity-50" : ""
-                  }`}
+                  className={`relative rounded-[8px] transition-all duration-300 shadow-[0_0px_15px_rgba(0,122,255,1)] 
+                    ${!isActive(index) ? "grayscale opacity-50" : ""}`}
                 >
                   <div className="relative p-[3px] rounded-[8px]">
                     <div
@@ -151,24 +75,17 @@ const BurningLikeCarousel = () => {
                   </div>
                 </div>
 
-                {index < items.length - 1 && (
+                {/* Connector line with conditional styling */}
+                
                   <div
-                    className={`h-1.5 w-14 bg-blue-500 rounded-4xl ${
-                      !isActive(index) ? "grayscale opacity-50" : ""
-                    }`}
+                    className={`h-1.5 w-14 bg-blue-500 rounded-4xl
+                      ${!isActive(index) ? "grayscale opacity-50" : ""}`}
                   />
-                )}
+                
               </div>
-            ))}
-          </div>
-
-          {/* <button
-            onClick={handleNext}
-            className="absolute right-0 z-20 bg-gray-800 p-2 rounded-full text-blue-500 hover:bg-gray-700"
-          >
-            <ChevronRight size={24} />
-          </button> */}
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   );

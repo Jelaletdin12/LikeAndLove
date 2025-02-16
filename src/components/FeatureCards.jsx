@@ -100,6 +100,7 @@ const FeatureCards = () => {
 
   return (
     <div className="min-h-screen max-w-6xl m-auto mb-10 pt-28">
+      <h1 className="text-5xl text-white text-center flex justify-center mb-10">FAQ</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {features.map((feature, index) => (
           <div

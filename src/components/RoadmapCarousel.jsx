@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+
 import set from "../assets/set.png";
 import tel from "../assets/tel.png";
 import { useState } from "react";
@@ -19,11 +20,10 @@ const roadmapData = [
 ];
 
 const RoadmapCarousel = () => {
-  const [activeIndexes, setActiveIndexes] = useState([0, 1]); // İlk iki kart aktif
-
+  const [activeIndexes, setActiveIndexes] = useState([0, 1]);
   const handleSlideChange = (swiper) => {
-    // Swiper'da ilk iki slide'ı belirle
-    setActiveIndexes([swiper.activeIndex, swiper.activeIndex + 1]);
+    const realIndex = swiper.realIndex;
+    setActiveIndexes([realIndex, realIndex + 1]);
   };
 
   return (
@@ -43,7 +43,9 @@ const RoadmapCarousel = () => {
         spaceBetween={20}
         slidesPerView={5}
         pagination={{ clickable: true }}
-        modules={[Pagination]}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+        modules={[Pagination, Autoplay]}
         style={{
           marginLeft: "100px",
           height: "350px",
@@ -52,7 +54,6 @@ const RoadmapCarousel = () => {
           justifyContent: "center",
           paddingTop: "30px",
         }}
-        loop={true}
         onSlideChange={handleSlideChange}
       >
         {roadmapData.map((item, index) => (
@@ -86,12 +87,6 @@ const RoadmapCarousel = () => {
             </div>
           </SwiperSlide>
         ))}
-        <SwiperSlide style={{ maxWidth: "320px" }}>
-          <div></div>
-        </SwiperSlide>
-        <SwiperSlide style={{ maxWidth: "320px" }}>
-          <div></div>
-        </SwiperSlide>
       </Swiper>
     </>
   );

@@ -4,7 +4,7 @@ import brain from "../assets/brain.png";
 import fancard from "../assets/fanCard.png";
 import water from "../assets/water.png";
 import ton from "../assets/ton.png";
-
+import { CircleArrowRight } from 'lucide-react';
 const MiningUpgrades = () => {
   const upgrades = [
     {
@@ -94,19 +94,7 @@ const MiningUpgrades = () => {
       <div className="max-w-6xl mx-auto mt-12 flex justify-center">
         <button className="bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
           WATCH
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 5v14m7-7H5"
-            />
-          </svg>
+          <CircleArrowRight />
         </button>
       </div>
     </div>

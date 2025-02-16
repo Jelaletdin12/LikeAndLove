@@ -43,7 +43,7 @@ const Header = () => {
         </div>
 
         {/* App Button */}
-        <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg  text-sm font-medium hover:opacity-90 transition-opacity">
+        <button className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-6 py-2 rounded-lg  text-sm font-medium hover:opacity-90 transition-opacity">
           GO TO THE APP
         </button>
       </div>

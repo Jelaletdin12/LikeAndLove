@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/logo.png";
-import { Twitter, Youtube, Mail, MessageCircle, Send } from "lucide-react";
+import { CircleArrowRight } from "lucide-react";
 import twitter from "../assets/x.png";
 import youtube from "../assets/youtube.png";
 import tiktok from "../assets/tiktok.png";
@@ -105,10 +105,10 @@ const ContactForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-2 rounded-2xl hover:opacity-90 transition-opacity flex items-center gap-2"
+                className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
               >
                 SEND
-                <Send className="w-4 h-4" />
+                <CircleArrowRight />
               </button>
             </div>
           </form>
@@ -116,7 +116,7 @@ const ContactForm = () => {
       </div>
 
       {/* Social Networks */}
-      <div className="text-center">
+      <div className="text-center mb-4">
         <h2 className="text-2xl font-bold text-white mb-8">SOCIAL NETWORK</h2>
         <div className="flex  justify-center gap-6">
           {socialLinks.map((social, index) => (
