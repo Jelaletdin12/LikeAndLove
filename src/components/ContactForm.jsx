@@ -5,10 +5,10 @@ import twitter from "../assets/x.png";
 import youtube from "../assets/youtube.png";
 import tiktok from "../assets/tiktok.png";
 import telegram from "../assets/telegram.png";
-import telegramBot from "../assets/telegramBot.png";
+import telegramBot from "../assets/telegrambot.png";
 import instagram from "../assets/instagram.png";
 import email from "../assets/email.png";
-import getgames from "../assets/getGames.png";
+import getgames from "../assets/getgames.png";
 import discord from "../assets/discord.png";
 
 const ContactForm = () => {
