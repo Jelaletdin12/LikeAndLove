@@ -1,5 +1,5 @@
 import React from "react";
-import Stabilizator from "../assets/Stabilizator.png";
+import Stabilizator from "../assets/stabilizator.png";
 import brain from "../assets/brain.png";
 import fancard from "../assets/fanCard.png";
 import water from "../assets/water.png";

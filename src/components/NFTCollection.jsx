@@ -1,4 +1,4 @@
-import VectorBig from "../assets/VectorBig.png";
+import VectorBig from "../assets/vectorBig.png";
 import fan from "../assets/fan.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
