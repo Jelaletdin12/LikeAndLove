@@ -1,4 +1,4 @@
-import VectorBig from "../assets/vectorBig.png";
+import vectorbig from "../assets/vectorbig.png";
 import fan from "../assets/fan.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -35,7 +35,7 @@ export default function NFTCollection() {
           </p>
         </div>
         <div className="flex flex-col items-center">
-          <img className="w-[200px] h-[200px]" src={VectorBig} alt="NFT" />
+          <img className="w-[200px] h-[200px]" src={vectorbig} alt="NFT" />
           <h3 className="text-white text-[24px] font-bold mt-2">GetGames.io</h3>
         </div>
       </div>
