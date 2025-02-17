@@ -370,6 +370,7 @@ const NFTPrivilegeCards = () => {
       <h1 className="text-4xl font-bold text-blue-600 mb-12">
         NFT privilege card
       </h1>
+      <p className="text-white">The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.</p>
       <div className=" flex justify-evenly w-full">
         {cardTypes.map((type) => (
           <NFTCard

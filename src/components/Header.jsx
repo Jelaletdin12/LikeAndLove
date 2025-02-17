@@ -36,7 +36,7 @@ const Header = () => {
           </button>
 
           <button className="text-white transition-colors font-bold text-sm">
-            {t("header.goToApp")}
+            {t("header.support")}
           </button>
 
           {/* Language Selector */}

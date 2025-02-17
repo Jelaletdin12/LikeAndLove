@@ -15,11 +15,11 @@ const MiningGuide = () => {
           It's as simple as that! Start earning LIKE Tokens with our NFTs:
         </p>
         <ul className="mb-8">
-          <li className="text-xl text-white">1. Get the NFT</li>
+          <li className="text-xl text-white">Get the NFT</li>
           <li className="text-xl text-white">
-            2. Start the mining process
+           Start the mining process
           </li>
-          <li className="text-xl text-white">3. Collect your tokens!</li>
+          <li className="text-xl text-white"> Collect your tokens!</li>
         </ul>
         <p className="text-xl text-white mb-8">
           Your NFTS will automatically mine valuable tokens, turning them into a
