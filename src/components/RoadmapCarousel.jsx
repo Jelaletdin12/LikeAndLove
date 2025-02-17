@@ -28,11 +28,11 @@ const RoadmapCarousel = () => {
 
   return (
     <>
-      <div className="max-w-5xl m-auto">
-        <h2 className="text-2xl text-center text-[#007BFF] font-black">
+      <div className="max-w-6xl m-auto mt-20">
+        <h2 className="text-6xl text-center text-[#007BFF] font-black ">
           Road Map <span className="text-white">of the Project</span>
         </h2>
-        <p className="text-center text-l text-white mt-2">
+        <p className="text-center text-xl text-white mt-2">
           Our project roadmap clearly reflects strategic development plans,
           including key milestones and goals. We strive for full transparency by
           providing users with access to information about upcoming steps and

@@ -22,13 +22,13 @@ export default function NFTCollection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto mt-15">
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto ">
         <div>
-          <h2 className="text-[80px] flex text-white font-black mb-4">
+          <h2 className="text-6xl flex text-white font-black mb-4">
             The <span className="text-[#007BFF] mx-2">NFT</span> Collection
           </h2>
-          <p className="text-white text-[24px] mb-8 max-w-2xl leading-8">
+          <p className="text-white text-xl mb-8 max-w-2xl">
             To participate in mining and mine LIKI and LOVE tokens, you need to
             acquire at least one NFT from our collection on petgames.io. These
             digital assets not only provide access to mining and increased

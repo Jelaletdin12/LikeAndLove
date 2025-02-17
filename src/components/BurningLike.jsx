@@ -24,11 +24,11 @@ const BurningLikeCarousel = () => {
 
   return (
     <>
-      <div className="max-w-6xl m-auto">
-        <h2 className="text-4xl text-center text-[#007BFF] font-black">
+      <div className="max-w-6xl m-auto mt-20">
+        <h2 className="text-6xl text-center text-[#007BFF] font-black">
           Burning the LiKE <span className="text-white">token</span>
         </h2>
-        <p className="text-center text-l text-white mt-2 mb-5">
+        <p className="text-center text-xl text-white mt-2 mb-5">
           Every week, from 06:00 to 08:00 GMT, we carry out halving, burning
           125,000,000 LIKE tokens out of a total volume of 80 billion. The
           burning mechanism: the key to increasing the value of LIKE tokens.

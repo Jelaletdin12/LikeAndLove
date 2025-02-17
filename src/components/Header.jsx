@@ -2,7 +2,9 @@ import Logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="bg-[#161C31] relative z-10  flex items-center  justify-between  max-w-6xl mx-auto pt-4 pb-4 border-b">
+    <header className="bg-[#161C31] sticky top-0 z-10    border-b">
+      <div className="max-w-6xl flex items-center  justify-between mx-auto pt-4 pb-4">
+
       {/* Logo and Brand */}
       <div className="flex items-center space-x-2">
         <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
@@ -20,7 +22,7 @@ const Header = () => {
 
       {/* Navigation Items */}
       <div className="flex items-center gap-4">
-        <button className="bg-white text-black px-4 py-2 rounded-lg text-sm font-bold hover:bg-gray-100 transition-colors ">
+        <button className="bg-white text-black px-4 py-2 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition-colors ">
           HOW DOES IT WORK?
         </button>
 
@@ -33,19 +35,20 @@ const Header = () => {
         </button>
 
         {/* Language Selector */}
-        <div className="bg-[#007BFF] flex items-center space-x-2 rounded-lg">
-          <button className="bg-[#007BFF] text-white px-3 py-1 rounded-lg  text-sm font-large">
+        <div className="bg-[#007BFF] flex items-center space-x-2 rounded-[8px]">
+          <button className="bg-[#007BFF] text-white px-3 py-2 rounded-[8px]  text-sm font-large">
             EN
           </button>
-          <button className="text-white px-3 py-1 rounded-lg  text-sm font-large hover:bg-white transition-colors">
+          <button className="text-white px-3 py-2 rounded-[8px]  text-sm font-large hover:bg-white transition-colors">
             RU
           </button>
         </div>
 
         {/* App Button */}
-        <button className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-6 py-2 rounded-lg  text-sm font-medium hover:opacity-90 transition-opacity">
+        <button className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-6 py-2 rounded-[8px]  text-sm font-medium hover:opacity-90 transition-opacity">
           GO TO THE APP
         </button>
+      </div>
       </div>
     </header>
   );

@@ -139,14 +139,14 @@ const ExchangeInterface = () => {
   };
 
   return (
-    <div className="min-h-screen bg-navy-900 p-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-4 text-center">
+    <div className="min-h-screen max-w-6xl m-auto mt-20">
+      <div className=" mx-auto">
+        <h1 className="text-6xl font-bold text-white mb-4 text-center">
           <span className="text-white">Партнерские</span>{" "}
           <span className="text-blue-500">Крипто-Биржи</span>
         </h1>
 
-        <p className="text-gray-300 text-center mb-8">
+        <p className="text-gray-300 text-xl text-center mb-8">
           Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод
           ваших активов, а также создают комфортные условия для вашего легкого и
           безопасного погружения в мир криптовалют.
@@ -193,7 +193,7 @@ const ExchangeInterface = () => {
                     : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative bg-[#161C31] p-6 rounded-xl">
+              <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6 rounded-xl">
                 <div className="text-sm text-center text-white mb-2">
                   {exchange.date}
                 </div>

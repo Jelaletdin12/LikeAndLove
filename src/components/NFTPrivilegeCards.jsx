@@ -321,7 +321,7 @@ const NFTCard = ({
 
   return (
     <div
-      className={`rounded-lg  relative cursor-pointer h-max max-w-6xl m-auto
+      className={`rounded-lg  relative cursor-pointer h-max max-w-6xl min-h-[250px]
         ${isExpanded ? "bg-[#171D31] border-4 border-transparent" : ""}
         ${isHovered && !isExpanded ? "border-4 border-transparent" : ""}
       `}

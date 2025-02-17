@@ -4,7 +4,7 @@ import brain from "../assets/brain.png";
 import fancard from "../assets/fancard.png";
 import water from "../assets/water.png";
 import ton from "../assets/ton.png";
-import { CircleArrowRight } from 'lucide-react';
+import { CircleArrowRight } from "lucide-react";
 const MiningUpgrades = () => {
   const upgrades = [
     {
@@ -38,16 +38,16 @@ const MiningUpgrades = () => {
   ];
 
   return (
-    <div className="min-h-screen m-auto max-w-6xl">
+    <div className="min-h-screen m-auto max-w-6xl mt-15">
       {/* Header Section */}
       <div className=" w-full grid grid-cols-[1fr_1fr] gap-[10px]">
-        <div>
-          <h1 className="text-[80px] flex flex-col text-[white] font-black mb-4">
+        <div className="mb-6">
+          <h1 className="text-6xl flex flex-col text-[white] font-black mb-4">
             Buy upgrades and
-            <h1 className="text-[#007BFF] mr-2 ml-2"> Earn More! </h1>
+            <h1 className="text-[#007BFF] "> Earn More! </h1>
           </h1>
 
-          <p className="text-white text-[24px] mb-8 max-w-2xl mx-auto leading-8">
+          <p className="text-white text-xl mb-8 max-w-2xl mx-auto ">
             In addition to the main LIKE mining, our platform offers you the
             opportunity to diversify your income by mining the LOVE subtoken.
             This token plays an important role in our ecosystem and will receive
@@ -67,15 +67,18 @@ const MiningUpgrades = () => {
         {upgrades.map((upgrade, index) => (
           <div
             key={index}
-            className="relative p-[1px] rounded-xl gradient-border shadow-[0_0px_35px_rgba(0,122,255,1)]"
+            className="relative p-[3px] rounded-[8px]  shadow-[0_0px_20px_rgba(0,122,255,1)]"
+            style={{
+              background: "linear-gradient(45deg, #007AFF, #F30EFF)",
+            }}
           >
-            <div className="relative rounded-xl bg-[#161C31] p-6 h-full">
+            <div className="relative rounded-[8px] bg-[#161C31] text-center p-4 h-full flex flex-col items-center justify-center ">
               <img
                 src={upgrade.image}
                 alt={upgrade.title}
-                className="text-4xl mb-4"
+                className=""
               />
-              <h3 className="text-white text-xl font-semibold mb-2">
+              <h3 className="text-white text-xl text-center font-semibold mb-2">
                 {upgrade.title}
               </h3>
               <p className="text-gray-400 text-sm mb-4">

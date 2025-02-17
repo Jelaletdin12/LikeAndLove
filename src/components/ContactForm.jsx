@@ -18,10 +18,35 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setLoading(true);
+    setResponseMessage("");
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbx_al4dZ96CwaJVyAZjVEkQQSGl0pmhRd3tezPiTjKh3tv73W4brv190SCQz7HMx_sU/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+     
+      setResponseMessage("Message sent successfully!");
+    
+    } catch (error) {
+      setResponseMessage("Failed to send message.");
+      console.error("Error:", error);
+    } finally {
+      setLoading(false);
+      setFormData({ name: "", email: "", message: "" });
+    }
   };
 
   const handleChange = (e) => {
@@ -48,11 +73,11 @@ const ContactForm = () => {
       {/* Header */}
       <div className="flex items-center justify-center gap-3 mb-4">
         <img src={Logo} alt="Like & Love" className="w-12 h-12 rounded-full" />
-        <h1 className="text-2xl font-bold">
-          <span className="text-blue-500">LIKE</span>
+        <h1 className="text-6xl font-bold">
+          <span className="text-[#007AFF]">LIKE</span>
           <span className="text-white">&</span>
-          <span className="text-blue-500">LOVE</span>
-          <span className="text-white"> PROJECT</span>
+          <span className="text-[#007AFF]">LOVE</span>
+          <span className="text-white text-2xl"> PROJECT</span>
         </h1>
       </div>
 
@@ -64,10 +89,9 @@ const ContactForm = () => {
 
       {/* Contact Form */}
       <div className="relative rounded-xl overflow-hidden mb-16 p-[3px]">
-        {/* Gradient border */}
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#007AFF] to-[#F30EFF] opacity-50" />
 
-        <div className="relative bg-[#161C31]  rounded-xl p-8">
+        <div className="relative bg-[#161C31] rounded-xl p-8">
           <h2 className="text-2xl text-blue-500 text-center mb-4">
             CONTACT US
           </h2>
@@ -84,6 +108,7 @@ const ContactForm = () => {
                 className="bg-slate-800 rounded-lg p-3 text-white w-full"
                 onChange={handleChange}
                 value={formData.name}
+                required
               />
               <input
                 type="email"
@@ -92,6 +117,7 @@ const ContactForm = () => {
                 className="bg-slate-800 rounded-lg p-3 text-white w-full"
                 onChange={handleChange}
                 value={formData.email}
+                required
               />
             </div>
             <textarea
@@ -101,33 +127,37 @@ const ContactForm = () => {
               className="bg-slate-800 rounded-lg p-3 text-white w-full"
               onChange={handleChange}
               value={formData.message}
+              required
             />
             <div className="flex justify-center">
               <button
                 type="submit"
                 className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
+                disabled={loading}
               >
-                SEND
+                {loading ? "Sending..." : "SEND"}
                 <CircleArrowRight />
               </button>
             </div>
+            {responseMessage && (
+              <p className="text-center text-white mt-4">{responseMessage}</p>
+            )}
           </form>
         </div>
       </div>
 
       {/* Social Networks */}
-      <div className="text-center mb-4">
+      <div className="text-center w-full mb-4">
         <h2 className="text-2xl font-bold text-white mb-8">SOCIAL NETWORK</h2>
-        <div className="flex  justify-center gap-6">
+        <div className="flex justify-evenly">
           {socialLinks.map((social, index) => (
             <div
-              className="flex flex-col items-center  gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:border-[2px] hover:border-[solid] hover:border-[#007AFF] hover:p-[15px] rounded-[8px]"
+              className="flex flex-col items-center gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:border-[2px] hover:border-[solid] hover:border-[#007AFF] hover:p-[15px] rounded-[8px]"
               key={index}
-              href={social.link}
               title={social.name}
             >
-              <a>
-                <img src={social.icon} />
+              <a href={social.link} target="_blank" rel="noopener noreferrer">
+                <img src={social.icon} alt={social.name} />
               </a>
               <div>
                 <p className="text-[#007AFF]">{social.name}</p>

@@ -126,7 +126,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   Now you can quickly and conveniently transfer USDT, TON, Like
                   and Love tokens inside the app
                 </p>
-                <p>How do I send tokens?</p>
+                <p className="text-white">How do I send tokens?</p>
                 <ul className="list-decimal pl-6 mt-4 text-white">
                   <li> Go to the "Send" section.</li>
                   <li>Select the desired token: USDT, TON, Like or Love.</li>
@@ -136,7 +136,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   <li>Specify the transfer amount</li>
                 </ul>
                 <div>
-                  <p>How do I pay the commission?</p>
+                  <p className="text-white">How do I pay the commission?</p>
                   <p className="text-white mb-[-15px] mt-2.5">
                     You can choose one of the following options:
                   </p>
@@ -174,7 +174,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   You can exchange tokens based on your card level, receiving
                   the best conditions and minimum commissions.
                 </p>
-                <p>How does it work?</p>
+                <p className="text-white">How does it work?</p>
                 <ul className="list-decimal pl-6 mt-4 text-white">
                   <li> Select the tokens you want to exchange</li>
                   <li>
@@ -230,16 +230,16 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                       TON).
                     </li>
                     <li>Enter the address of the external wallet.</li>
-                    <li>Confirm the operation.</li>/
+                    <li>Confirm the operation.</li>
                   </li>
                 </ul>
-                <p>Adding funds to your balance:</p>
+                <p className="text-white">Adding funds to your balance:</p>
                 <div>
-                  <p className="text-white mb-[-15px] mt-2.5">
+                  <p className="text-white ">
                     You can top up your balance with USDT, TON, Like and Love.
                     For this:
                   </p>
-                  <ul>
+                  <ul className="text-white">
                     <li>Go to the "Input" section.</li>
                     <li>
                       Copy the project's wallet address or scan the QR code.
@@ -251,7 +251,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   </ul>
                 </div>
                 <p className="text-white pt-2.5">Important:</p>
-                <ul>
+                <ul className="text-white">
                   <li>
                     Replenishment takes place in a 1:1 ratio (sent tokens =
                     credited tokens).
@@ -283,12 +283,10 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   will reset, but you can always start over!
                 </p>
 
-                <p>Adding funds to your balance:</p>
+                <p className="text-white">Adding funds to your balance:</p>
                 <div>
-                  <p className="text-white mb-[-15px] mt-2.5">
-                    How does it work?
-                  </p>
-                  <ul>
+                  <p className="text-white">How does it work?</p>
+                  <ul className="text-white">
                     <li>
                       {" "}
                       Log into the app every day and receive Love tokens (on
@@ -307,7 +305,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                 <p className="text-white pt-2.5">
                   Complete simple daily tasks and earn even more:
                 </p>
-                <ul>
+                <ul className="text-white">
                   <li>Follow the links of the partners.</li>
                   <li>Send posts to your friends in private messages.</li>
                   <li>Share stories and subscribe to channels. </li>
@@ -316,7 +314,9 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                     application.{" "}
                   </li>
                 </ul>
-                <p>Go to the "Tasks" tab and start earning right now!</p>
+                <p className="text-white">
+                  Go to the "Tasks" tab and start earning right now!
+                </p>
               </div>
               <img src={phone6} alt="App Screenshot" className="w-full mb-4" />
             </div>
@@ -340,10 +340,8 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                 </p>
 
                 <div>
-                  <p className="text-white mb-[-15px] mt-2.5">
-                    How does it work?
-                  </p>
-                  <ul>
+                  <p className="text-white">How does it work?</p>
+                  <ul className="text-white">
                     <li>Log in to the game at the specified time.</li>
                     <li>Hold the button for 1 minute to open the drawer.</li>
                     <li>
@@ -354,18 +352,18 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                 </div>
                 <div>
                   <p className="text-white pt-2.5">Did you miss a mailbox?</p>
-                  <p>
+                  <p className="text-white">
                     Not a problem! If you missed a mailbox (for example, No. 3),
                     but the next one (No. 4) is available now, you can restore
                     the reward for the missed mailbox by paying for it with
                     **Like** tokens.{" "}
                   </p>
                 </div>
-                <div>
+                <div className="text-white">
                   <p>Rewards for everyone! </p>
                   <p>Collect bonuses, enjoy the game and win!</p>
                 </div>
-                <div>
+                <div className="text-white">
                   <p>In the plans:</p>
                   <p>
                     New games and activities that will make the process even
@@ -390,8 +388,8 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                 </h2>
 
                 <div>
-                  <p className="text-white mb-[-15px] mt-2.5">Acquisition:</p>
-                  <ul>
+                  <p className="text-white">Acquisition:</p>
+                  <ul className="text-white">
                     <li>
                       Purchase NFT through the Getgems platform or at another
                       suitable site.{" "}
@@ -403,7 +401,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   </ul>
                 </div>
 
-                <div>
+                <div className="text-white">
                   <p>What do you get: </p>
                   <ul>
                     <li>Mining speed: 191.78 Likes and 1920 Loves per day. </li>
@@ -414,7 +412,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   </ul>
                 </div>
 
-                <div>
+                <div className="text-white">
                   <p>Features:</p>
                   <ul>
                     <li>
@@ -424,7 +422,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                     <li>After halving, the mining speed is reduced by 50%. </li>
                   </ul>
                 </div>
-                <div>
+                <div className="text-white">
                   <p>Why is it profitable?</p>
                   <ul>
                     <li>Passive income: Earn tokens effortlessly.</li>
@@ -447,7 +445,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex mb-6">
-              <div>
+              <div className="text-white">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   The mechanics of staking
                 </h2>
@@ -459,7 +457,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
                   and duration of the staking.
                 </p>
                 <div>
-                  <p className="text-white mb-[-15px] mt-2.5">How it works: </p>
+                  <p className="text-white ">How it works: </p>
                   <ul>
                     <li>
                       The entire staking process takes place in the Mini App
@@ -503,7 +501,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       open={isVisible}
       onCancel={onClose}
       footer={null}
-      width={800}
+      width={900}
       className="feature-modal"
     >
       {getModalContent()}

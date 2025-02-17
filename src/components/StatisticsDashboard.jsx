@@ -72,12 +72,12 @@ const StatisticsDashboard = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-8">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold text-white text-center mb-6">
+        <h1 className="text-6xl font-bold text-white text-center mb-6">
           Application <span className="text-[#007AFF]">statistics</span>
         </h1>
-        <p className="text-white mb-3">Visual statistics of our platform</p>
+        <p className="text-white mb-6 text-2xl">Visual statistics of our platform</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, index) => (
@@ -90,6 +90,10 @@ const StatisticsDashboard = () => {
             noShadow={index >= 4} // Remove shadow for the second row and beyond
           />
         ))}
+      </div>
+      <div className="flex flex-col mt-10 items-center mb-10">
+        <h1 className="text-white text-6xl font-bold mb-6">Team</h1>
+        <p className="text-center text-xl text-white">We believe in the power of joint efforts. The Like team is a group of like—minded people who strive to create a future where everyone can achieve financial freedom. Thanks to our experience and innovative solutions, we have created a reliable platform that will help you achieve your goals.</p>
       </div>
     </div>
   );
