@@ -11,7 +11,7 @@ const VideoPlayer = () => {
   return (
     <div className="max-w-6xl mx-auto p-8">
       {/* Header */}
-      <h1 className="text-6xl text-white font-bold text-center mb-8">
+      <h1 className="text-4xl text-white font-bold text-center mb-8 md:text-6xl">
         News
         <span className="text-[#007AFF] ml-4">LiKE</span>&
         <span className="text-[#007AFF]">LOVE</span>

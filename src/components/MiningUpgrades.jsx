@@ -5,33 +5,35 @@ import fancard from "../assets/fancard.png";
 import water from "../assets/water.png";
 import ton from "../assets/ton.png";
 import { CircleArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 const MiningUpgrades = () => {
+  const { t, i18n } = useTranslation();
   const upgrades = [
     {
-      title: "Fan",
+      title:  t("MiningUpgrades.Fan"),
       description:
-        "Upgrade your mining rig with the Fan for cooler operations and higher LOVE",
+        t("MiningUpgrades.UpgradeyourminingrigwiththeFanforcooleroperationsandhigherLOVE"),
       profit: "+195 TLove/h",
       image: fancard,
     },
     {
-      title: "Cable improvements",
+      title: t("MiningUpgrades.Cableimprovements"),
       description:
-        "Boost your mining efficiency with the Cable improvements, providing a stable power supply",
+      t("MiningUpgrades.BoostyourminingefficiencywiththeCableimprovementsprovidingastablepowersupply"),
       profit: "+400 TLove/h",
       image: Stabilizator,
     },
     {
-      title: "Water cooling",
+      title: t("MiningUpgrades.Watercooling"),
       description:
-        "Improve your mining efficiency with Water Cooling, providing superior cooling and performance boost",
+      t("MiningUpgrades.ImproveyourminingefficiencywithWaterCoolingprovidingsuperiorcoolingandperformanceboost"),
       profit: "+680 TLove/h",
       image: water,
     },
     {
-      title: "AI",
+      title: t("MiningUpgrades.AI"),
       description:
-        "Boost your mining setup with the Engineer, optimizing performance and maximizing profits",
+      t("MiningUpgrades.BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits"),
       profit: "+1.008 TLove/h",
       image: brain,
     },
@@ -43,18 +45,12 @@ const MiningUpgrades = () => {
       <div className=" w-full grid grid-cols-[1fr_1fr] gap-[10px]">
         <div className="mb-6">
           <h1 className="text-6xl flex flex-col text-[white] font-black mb-4">
-            Buy upgrades and
-            <h1 className="text-[#007BFF] "> Earn More! </h1>
+          {t("MiningUpgrades.Buyupgradesand")}
+            <h1 className="text-[#007BFF] ">  {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
 
           <p className="text-white text-xl mb-8 max-w-2xl mx-auto ">
-            In addition to the main LIKE mining, our platform offers you the
-            opportunity to diversify your income by mining the LOVE subtoken.
-            This token plays an important role in our ecosystem and will receive
-            a separate listing in the future, which will ensure its high
-            liquidity and demand. Upgrading your mining equipment will allow you
-            to increase the hashrate and increase the efficiency of mining both
-            tokens, as well as open access to additional platform functions.
+          {t("MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions")}
           </p>
         </div>
         <div className="flex justify-between items-center flex-col">
@@ -85,7 +81,7 @@ const MiningUpgrades = () => {
                 {upgrade.description}
               </p>
               <div className="mt-auto">
-                <p className="text-sm text-gray-400">Profit per second</p>
+                <p className="text-sm text-gray-400"> {t("MiningUpgrades.Profitpersecond")}</p>
                 <p className="text-blue-400 font-semibold">{upgrade.profit}</p>
               </div>
             </div>
@@ -95,8 +91,8 @@ const MiningUpgrades = () => {
 
       {/* Watch Button */}
       <div className="max-w-6xl mx-auto mt-12 flex justify-center">
-        <button className="bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
-          WATCH
+        <button className=" bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
+        {t("MiningUpgrades.WATCH")}
           <CircleArrowRight />
         </button>
       </div>

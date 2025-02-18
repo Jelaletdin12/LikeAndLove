@@ -1,7 +1,126 @@
 {
-    "header": {
-      "howItWorks": "КАК ЭТО РАБОТАЕТ?",
-      "support": "ПОДДЕРЖКА",
-      "goToApp": "ПЕРЕЙТИ В ПРИЛОЖЕНИЕ"
-    }
+  "header": {
+    "howItWorks": "HOW DOES IT WORK?",
+    "support": "SUPPORT",
+    "goToApp": "GO TO THE APP"
+  },
+  "MiningVisualization":{
+    "Social_Media_Network": "Social Media Network",
+    "#like_mining": "#like_mining",
+    "YOUR": "Ваш",
+    "MINIG": "МАЙНИНГ",
+    "on_the_phone": "в телефоне!"
+  },
+  "NFTMinerApp":{
+      "How_it_works_Mining": "Как работает Майнинг?",
+      "ItsassimpleasthatStartearningLIKETokenswithourNFTs:": "Это проще простого! Начните зарабатывать токены LIKE с нашими NFT:",
+      "GettheNFT": "Получите NFT",
+      "Starttheminingprocess": "Запустите процесс майнинга",
+      "Collectyourtokens": " Собирайте свои токены!",
+      "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit":"Ваши NFT будут автоматически майнить ценные токены, превращая их в источник дохода. Дополнительные механики ускорят этот процесс и увеличат вашу прибыль!",
+      "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet":"Важно: ваш телефон и его мощности не используются в майнинге — все происходит удаленно через интернет."
+  },
+  "NFTCollection":{
+    "The": " ",
+    "NFT": "NFT",
+    "Collection": "Коллекция",
+    "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue" : " Чтобы участвовать в майнинге и добывать токены LIKE и LOVE, вам нужно владеть хотя бы одним NFT из нашей коллекции на getgames.io. Эти цифровые активы не только дают доступ к майнингу и увеличению дохода, но и являются ценными инвестициями, которые могут расти в цене. Вы можете продавать свои NFT на открытом рынке, извлекая прибыль из их роста. Начните собирать свою коллекцию уже сегодня и откройте для себя новые финансовые возможности!",
+    "BUYNFT": "купить NFT"
+  },
+  "NFTPrivilegeCards": {
+    "Acollectionof": "Коллекция",
+    "NFTprivilegecards": "NFT  карт привилегий",
+    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders":"Уникальные привилегии карт предоставляют такие преимущества, как сниженные комиссии при отправке и конвертации токенов внутри нашей платформы, а также эксклюзивные привилегии для владельцев Platinum Card.",
+    "buyaPlatinumcard": "купить Platinum card"
+  },
+  "MiningUpgrades":{
+    "Fan": "Вентилятор",
+    "UpgradeyourminingrigwiththeFanforcooleroperationsandhigherLOVE": "Усовершенствуйте свой майнер с помощью вентилятора для лучшего охлаждения и более высокой прибыли LOVE.",
+    "Cableimprovements": "Стабилизатор",
+    "BoostyourminingefficiencywiththeCableimprovementsprovidingastablepowersupply": "Повысьте эффективность добычи LOVE с помощью улучшенного стабилизатора, обеспечивающего стабильное питание.",
+    "Watercooling": "Водяное охлаждение",
+    "ImproveyourminingefficiencywithWaterCoolingprovidingsuperiorcoolingandperformanceboost": "Повысьте эффективность добычи с помощью водяного охлаждения, обеспечив превосходное охлаждение и увеличив прибыль LOVE.",
+    "AI": "Искусственный интеллект",
+    "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Улучшите свой майнер с помощью искусственного интеллекта, оптимизируя производительность и максимизируя прибыль LOVE.",
+    "Buyupgradesand": "Покупайте улучшения и ",
+    "EarnMore": "зарабатывайте Больше!",
+    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions":"Помимо основного майнинга LIKE, наша платформа предлагает вам возможность диверсифицировать свой доход за счет майнинга субтокена LOVE. Данный токен играет важную роль в нашей экосистеме и в будущем получит отдельный листинг, что обеспечит ему высокую ликвидность и востребованность. Модернизация вашего майнингового оборудования позволит увеличить хешрейт и повысить эффективность добычи обоих токенов, а также открыть доступ к дополнительным функциям платформы",
+    "Profitpersecond": "Прибыль в час",
+    "WATCH": "Посмотреть"
+  },
+  "FeatureCards":{
+    "Thefirststep" : "Первый шаг",
+    "INTHEAPP": "В приложение!",
+    "Prizesfrom": "Призы от",
+    "WHEELOFFORTUNE": "КОЛЕСА ФОРТУНЫ?",
+    "Passiveincomeon" : "Пассивный доход на ",
+    "STACKING": "СТЕЙКИНГЕ?",
+    "Howitworks" : "Как работает",
+    "CONVERSION": "КОНВЕРТАЦИЯ ?",
+    "Fast": "Быстрый",
+    "DEPOSIT": "ВВОД",
+    "and": "и",
+    "WITHDRAWAL": "ВЫВОД",
+    "offunds?": "средств?",
+    "Daily": "Daily",   
+    "TASKS": "ИГРЫ",
+    "Whatkindof" : "Как работает",
+    "GAMES": "отправка",
+    "arethereformakingmoney": "",
+    "Howdoes": "Ежедневные",
+    "Mining": "ЗАДАНИЯ",
+    "work?": "work?",
+    "sending": "sending",
+"MORE DETAILED": "ПОДРОБНЕЕ"
+  },
+
+  "RoadmapCarousel": {
+    "ApplicationDevelopment": "Разработка приложения",
+    "TelegramMiniAppLaunch": "Запуск Telegram MiniApp",
+    "EnteringthestockexchangeSTONfi": "Выход на биржу STON.fi ",
+    "ListingoftheLiKEtoken" : "Листинг токена LiKE",
+    "Partnershipwithotherprojects": "Партнерство с другими проектами",
+    "RoadMap": "Road Map",
+    "oftheProject": "Проекта",
+    "OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives":"Наша дорожная карта проекта наглядно отражает стратегические планы развития, включая ключевые этапы и цели. Мы стремимся к полной прозрачности, предоставляя пользователям доступ к информации о предстоящих шагах и инициативам"
+  },
+  "BurningLike": {
+    "BurningtheLiKE": "Сжигание LIKE",
+    "token":"токена",
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket":"Каждую неделю, с 06:00 до 08:00 утра по Гринвичу, мы проводим халвинг, сжигая 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Механизм сжигания: ключ к росту стоимости токенов LIKE. Регулярное сжигание токенов – это сердцевина нашей экономической модели. Этот процесс не только сокращает общее предложение токенов, но и создает дефицит, который неизбежно ведет к росту цен. Чем реже становится токен, тем выше его стоимость на рынке."
+  },
+  "ExchangeInterface": {
+    "Partner": "Партнерcкие",
+    "CryptoExchanges": "Крипто-Биржи",
+    "Toparticipateinminingandassetue": "Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод ваших активов, а также создают комфортные условия для вашего легкого и безопасного погружения в мир криптовалют."
+  },
+  "VideoPlayer": {
+    "News": "Новости",
+    "Weareactivelydevelopingourchannelherewenotonly ": "Мы активно развиваем наш канал, где не только объясняем, как легко и грамотно зарабатывать на NFT, но и обучаем работе с нашей инновационной платформой, предоставляя пошаговые инструкции и полезные советы."
+  },
+  "StatisticsDashboard": {
+    "Activeusers": "Активных пользователей",
+    "Transactionsperday" : "Транзакций в день",
+    "SentbyLOVE": "Отправленных LOVE",
+    "Invitedriends": "Приглашенных друзей",
+    "ComingSoon": "Coming Soon",
+    "Application": "приложения",
+    "statistics": "Статистика",
+    "Visualstatisticsofourplatform": "Наглядная статистика нашей платформы ",
+    "Team": "Команда",
+    "We believe in the": "Мы верим в силу совместных усилий. Команда Like — это группа единомышленников, стремящихся создать будущее, где каждый может достичь финансовой свободы. Благодаря нашему опыту и инновационным решениям, мы создали надежную платформу, которая поможет вам достичь ваших целей."
+  },
+  "ContactForm":{
+    "Wearealwaysopentonewpartnerships": "Мы всегда открыты для новых партнерств для связи с нами опишите свое предложение в контактной форме ниже.",
+    "CONTACTUS": "Свяжитесь с нами",
+    "Wearealwaysintouchandopentonewsuggestions": "Мы всегда на связи и открыты для новых предложений!",
+    "SEND": "Отправить",
+    "SENDING": "SENDING",
+    "SOCIALNETWORK": "Социальные сети"
   }
+
+
+  
+  
+
+}

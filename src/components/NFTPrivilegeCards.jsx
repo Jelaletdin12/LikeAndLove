@@ -3,7 +3,7 @@ import silver from "../assets/silver.png";
 import gold from "../assets/gold.png";
 import platinum from "../assets/platinium.png";
 import tick from "../assets/tick.svg";
-
+import { useTranslation } from "react-i18next";
 const NFTCard = ({
   type,
   isExpanded,
@@ -362,6 +362,7 @@ const NFTCard = ({
 };
 
 const NFTPrivilegeCards = () => {
+  const { t, i18n } = useTranslation();
   const [expandedCard, setExpandedCard] = useState(null);
   const [hoveredCard, setHoveredCard] = useState(null);
   const cardTypes = ["silver", "gold", "platinum"];
@@ -417,9 +418,9 @@ const NFTPrivilegeCards = () => {
   return (
     <div className="flex flex-col items-center space-y-8 p-8">
       <h1 className="text-4xl font-bold text-blue-600 mb-12">
-        NFT privilege card
+       <span className="text-white">{t("NFTPrivilegeCards.Acollectionof")}</span> {t("NFTPrivilegeCards.NFTprivilegecards")}
       </h1>
-      <p className="text-white">The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.</p>
+      <p className="text-white">{t("NFTPrivilegeCards.TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders")}</p>
       <div className="flex justify-center items-center w-full h-96 relative">
 
       <div className=" relative w-full h-full max-w-4xl">

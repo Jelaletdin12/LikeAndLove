@@ -7,7 +7,7 @@
     "MiningVisualization":{
       "Social_Media_Network": "Social Media Network",
       "#like_mining": "#like_mining",
-      "YOUR": "YOUR",
+      "YOUR": "Your",
       "MINIG": "MINIG",
       "on_the_phone": "on the phone"
     },
@@ -18,13 +18,13 @@
         "Starttheminingprocess": "Start the mining process",
         "Collectyourtokens": "Collect your tokens!",
         "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit":"Your NFTS will automatically mine valuable tokens, turning them into a source of income. Additional mechanics will speed up this process and increase your profit!",
-        "Importantyourphoneanditspowerarenotusedinmining—everythinghappensremotelyviatheInternet":"Important: your phone and its power are not used in mining — everything happens remotely via the Internet."
+        "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet":"Important: your phone and its power are not used in mining — everything happens remotely via the Internet."
     },
     "NFTCollection":{
       "The": "The",
       "NFT": "NFT",
       "Collection": "Collection",
-      "ToparticipateinminingandmineLIKIandLOVEtokens,youneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue" : " To participate in mining and mine LIKI and LOVE tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
+      "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue" : " To participate in mining and mine LIKI and LOVE tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
       "BUYNFT": "BUY NFT"
     },
     "NFTPrivilegeCards": {
@@ -43,22 +43,22 @@
       "AI": "AI",
       "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Boost your mining setup with the Engineer, optimizing performance and maximizing profits",
       "Buyupgradesand": "Buy upgrades and",
-      "EarnMore!": "Earn More!",
+      "EarnMore": "Earn More!",
       "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions":" In addition to the main LIKE mining, our platform offers you the opportunity to diversify your income by mining the LOVE subtoken. This token plays an important role in our ecosystem and will receive a separate listing in the future, which will ensure its high liquidity and demand. Upgrading your mining equipment will allow you to increase the hashrate and increase the efficiency of mining both tokens, as well as open access to additional platform functions.",
       "Profitpersecond": "Profit per second",
       "WATCH": "WATCH"
     },
     "FeatureCards":{
       "Thefirststep" : "The first step",
-      "INTHEAPP": "IN THE APP",
+      "INTHEAPP": "IN THE APP!",
       "Prizesfrom": "Prizes from",
-      "WHEELOFFORTUNE": "WHEEL OF FORTUNE",
+      "WHEELOFFORTUNE": "WHEEL OF FORTUNE?",
       "Passiveincomeon" : "Passive income on",
-      "STACKING": "STACKING",
+      "STACKING": "STACKING?",
       "Howitworks" : "How it works",
-      "CONVERSION": "CONVERSION",
+      "CONVERSION": "CONVERSION?",
       "Fast": "Fast",
-      "DEPOSIT": "DEPOSIT",
+      "DEPOSIT": "DEPOSIT?",
       "and": "and",
       "WITHDRAWAL": "WITHDRAWAL",
       "offunds?": "of funds?",
@@ -69,7 +69,7 @@
       "arethereformakingmoney": "are there for making money",
       "Howdoes": "How does",
       "Mining": "Mining",
-      "work?": "work?",
+      "work": "work?",
       "sending": "sending",
 "MORE DETAILED": "MORE DETAILED"
     },

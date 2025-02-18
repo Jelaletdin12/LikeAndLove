@@ -1,34 +1,32 @@
 import Phone from "../assets/phone.png";
-
+import { useTranslation } from "react-i18next";
 const MiningGuide = () => {
+  const { t, i18n } = useTranslation();
   return (
-    <div className="flex max-w-6xl m-auto  bg-[#161C31] p-6 ">
+    <div className="max-w-6xl m-auto  bg-[#161C31] p-6 md:flex">
       <div className="w-[50%]">
         <img src={Phone} alt="" />
       </div>
       <div className="w-[50%]">
         <h2 className="text-6xl text-[white] font-black mb-4 leading-none">
-          How it works Mining?
+        {t("NFTMinerApp.How_it_works_Mining")}
         </h2>
 
         <p className="text-xl text-white mb-8">
-          It's as simple as that! Start earning LIKE Tokens with our NFTs:
+        {t("NFTMinerApp.ItsassimpleasthatStartearningLIKETokenswithourNFTs")}
         </p>
         <ul className="mb-8">
-          <li className="text-xl text-white">Get the NFT</li>
+          <li className="text-xl text-white">{t("NFTMinerApp.GettheNFT")}</li>
           <li className="text-xl text-white">
-           Start the mining process
+          {t("NFTMinerApp.Starttheminingprocess")}
           </li>
-          <li className="text-xl text-white"> Collect your tokens!</li>
+          <li className="text-xl text-white"> {t("NFTMinerApp.Collectyourtokens")}</li>
         </ul>
         <p className="text-xl text-white mb-8">
-          Your NFTS will automatically mine valuable tokens, turning them into a
-          source of income. Additional mechanics will speed up this process and
-          increase your profit!
+        {t("NFTMinerApp.YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit")}
         </p>
         <p className="text-xl text-white">
-          Important: your phone and its power are not used in mining — everything happens remotely via the Internet
-        </p>
+        {t("NFTMinerApp.ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet")} </p>
       </div>
     </div>
   );

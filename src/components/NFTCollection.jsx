@@ -5,9 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
-import { CircleArrowRight } from 'lucide-react';
-
+import { CircleArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 export default function NFTCollection() {
+  const { t, i18n } = useTranslation();
   const nftItems = [
     { title: "Like #113", icon: fan },
     { title: "Like #1040", icon: fan },
@@ -25,14 +26,15 @@ export default function NFTCollection() {
     <div className="mx-auto mt-15">
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto ">
         <div>
-          <h2 className="text-6xl flex text-white font-black mb-4">
-            The <span className="text-[#007BFF] mx-2">NFT</span> Collection
+          <h2 className="text-4xl flex text-white font-black mb-4 md:text-6xl">
+            {t("NFTCollection.The")}{" "}
+            <span className="text-[#007BFF] mx-2">NFT</span>{" "}
+            {t("NFTCollection.Collection")}
           </h2>
           <p className="text-white text-xl mb-8 max-w-2xl">
-            To participate in mining and mine LIKI and LOVE tokens, you need to
-            acquire at least one NFT from our collection on petgames.io. These
-            digital assets not only provide access to mining and increased
-            income, but are also valuable investments that can grow in value.
+            {t(
+              "NFTCollection.ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue"
+            )}
           </p>
         </div>
         <div className="flex flex-col items-center">
@@ -100,7 +102,7 @@ export default function NFTCollection() {
           href="#"
           className=" w-auto  flex bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80"
         >
-          BUY NFT
+          {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />
         </a>
       </div>
