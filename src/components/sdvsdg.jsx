@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import silver from "../assets/silver.png";
 import gold from "../assets/gold.png";
 import platinum from "../assets/platinium.png";
@@ -11,7 +11,6 @@ const NFTCard = ({
   onMouseEnter,
   onMouseLeave,
   onClick,
-  position
 }) => {
   // Resimleri type'a göre seç
   const image = {
@@ -19,12 +18,6 @@ const NFTCard = ({
     gold: gold,
     platinum: platinum,
   }[type];
-
-  const positionClasses = {
-    left: "absolute left-0 transform -translate-x-1/4 scale-75 opacity-80",
-    center: "absolute left-1/2 transform -translate-x-1/2 scale-100 z-10",
-    right: "absolute right-0 transform translate-x-1/4 scale-75 opacity-80"
-  }[position];
 
   // Silver
   const details =
@@ -326,11 +319,9 @@ const NFTCard = ({
       ),
     }[type];
 
-    
-
   return (
     <div
-      className={`rounded-lg  cursor-pointer  w-64 min-h-[250px] transition-all duration-900 ease-in-out ${positionClasses}
+      className={`rounded-lg  relative cursor-pointer h-max max-w-6xl min-h-[250px]
         ${isExpanded ? "bg-[#171D31] border-4 border-transparent" : ""}
         ${isHovered && !isExpanded ? "border-4 border-transparent" : ""}
       `}
@@ -365,52 +356,12 @@ const NFTPrivilegeCards = () => {
   const [expandedCard, setExpandedCard] = useState(null);
   const [hoveredCard, setHoveredCard] = useState(null);
   const cardTypes = ["silver", "gold", "platinum"];
-  const [isPaused, setIsPaused] = useState(false);
-  const [positions, setPositions] = useState({
-    silver: "left",
-    gold: "center",
-    platinum: "right"
-  });
-  useEffect(() => {
-    if (isPaused) return;
-    
-    const interval = setInterval(() => {
-      setPositions(prevPositions => {
-        const newPositions = {};
-        Object.keys(prevPositions).forEach(type => {
-          if (prevPositions[type] === "left") {
-            newPositions[type] = "right";
-          } else if (prevPositions[type] === "center") {
-            newPositions[type] = "left";
-          } else if (prevPositions[type] === "right") {
-            newPositions[type] = "center";
-          }
-        });
-        return newPositions;
-      });
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [isPaused]);
 
   const handleCardClick = (clickedType) => {
     if (expandedCard === clickedType) {
       setExpandedCard(null);
-      setIsPaused(false);
     } else {
       setExpandedCard(clickedType);
-      setIsPaused(true);
-    }
-  };
-  const handleCardHover = (type) => {
-    setHoveredCard(type);
-    setIsPaused(true);
-  };
-
-  const handleCardLeave = () => {
-    setHoveredCard(null);
-    if (!expandedCard) {
-      setIsPaused(false);
     }
   };
 
@@ -420,25 +371,18 @@ const NFTPrivilegeCards = () => {
         NFT privilege card
       </h1>
       <p className="text-white">The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.</p>
-      <div className="flex justify-center items-center w-full h-96 relative">
-
-      <div className=" relative w-full h-full max-w-4xl">
+      <div className=" flex justify-evenly w-full">
         {cardTypes.map((type) => (
           <NFTCard
             key={type}
             type={type}
             isExpanded={expandedCard === type}
             isHovered={hoveredCard === type}
-            // onMouseEnter={() => setHoveredCard(type)}
-            // onMouseLeave={() => setHoveredCard(null)}
+            onMouseEnter={() => setHoveredCard(type)}
+            onMouseLeave={() => setHoveredCard(null)}
             onClick={() => handleCardClick(type)}
-            onMouseEnter={() => handleCardHover(type)}
-            onMouseLeave={handleCardLeave}
-            
-            position={positions[type]}
           />
         ))}
-      </div>
       </div>
     </div>
   );

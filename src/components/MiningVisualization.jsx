@@ -5,7 +5,8 @@ import like from "../assets/like.png";
 
 const MiningDevice = () => {
   return (
-    <div className=" relative  w-full max-w-6xl mx-auto flex items-center justify-between">
+    <div className="relative w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center">
+
       {/* Left side content */}
       <div className="flex flex-col gap-4">
         <div className="flex flex-col">
@@ -46,7 +47,7 @@ const MiningDevice = () => {
       </div>
 
       {/* Mining device */}
-      <div className="relative w-[50%] ">
+      <div className="relative w-[50%]  ">
         <img className="w-full h-full" src={fan} alt="" />
       </div>
     </div>
