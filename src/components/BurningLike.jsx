@@ -25,12 +25,12 @@ const BurningLikeCarousel = () => {
 
   return (
     <>
-      <div className="max-w-6xl m-auto mt-20">
-        <h2 className="text-6xl text-center text-[#007BFF] font-black">
+      <div className="max-w-6xl m-auto mt-20 p-4">
+        <h2 className="text-5xl md:text-6xl text-center text-[#007BFF] font-black">
           {t("BurningLike.BurningtheLiKE")}{" "}
           <span className="text-white"> {t("BurningLike.token")}</span>
         </h2>
-        <p className="text-center text-xl text-white mt-2 mb-5">
+        <p className="text-center text-l md:text-xl text-white mt-2 mb-5">
           {t(
             "BurningLike.Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket"
           )}
@@ -50,6 +50,7 @@ const BurningLikeCarousel = () => {
           grabCursor={true}
           style={{ height: "100px", paddingTop: "25px", paddingLeft: "20px" }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          
         >
           {items.map((item, index) => (
             <SwiperSlide key={item.id}>

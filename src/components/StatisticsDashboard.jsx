@@ -73,14 +73,14 @@ const StatisticsDashboard = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-4">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl font-bold text-white text-center mb-6">
         {t("StatisticsDashboard.Application")} <span className="text-[#007AFF]">{t("StatisticsDashboard.statistics")}</span>
         </h1>
         <p className="text-white mb-6 text-2xl">{t("StatisticsDashboard.Visualstatisticsofourplatform")}</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" >
         {stats.map((stat, index) => (
           <StatisticsCard
             key={index}

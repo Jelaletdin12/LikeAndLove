@@ -40,11 +40,11 @@ const MiningUpgrades = () => {
   ];
 
   return (
-    <div className="min-h-screen m-auto max-w-6xl mt-15">
+    <div className="min-h-screen m-auto max-w-6xl mt-15  ">
       {/* Header Section */}
-      <div className=" w-full grid grid-cols-[1fr_1fr] gap-[10px]">
+      <div className=" w-full flex flex-col md:flex-row gap-[10px] p-4">
         <div className="mb-6">
-          <h1 className="text-6xl flex flex-col text-[white] font-black mb-4">
+          <h1 className="text-5xl md:text-6xl flex flex-col text-[white] font-black mb-4">
           {t("MiningUpgrades.Buyupgradesand")}
             <h1 className="text-[#007BFF] ">  {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
@@ -59,7 +59,7 @@ const MiningUpgrades = () => {
       </div>
 
       {/* Upgrades Grid */}
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
         {upgrades.map((upgrade, index) => (
           <div
             key={index}
@@ -72,7 +72,7 @@ const MiningUpgrades = () => {
               <img
                 src={upgrade.image}
                 alt={upgrade.title}
-                className=""
+                className="w-[100px]"
               />
               <h3 className="text-white text-xl text-center font-semibold mb-2">
                 {upgrade.title}

@@ -8,7 +8,7 @@ const MiningDevice = () => {
   return (
     <div className="relative w-full pt-4 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center ">
       {/* Left side content */}
-      <div className="flex flex-col gap-4 w-[100%] p-4">
+      <div className="flex flex-col gap-4 w-[100%] md:w-[50%] p-4">
         <div className="flex flex-col">
           <div className="flex relative gap-4 items-center">
             <img src={vector} alt="" />
@@ -18,7 +18,7 @@ const MiningDevice = () => {
             <img
               src={love}
               alt=""
-              className=" absolute top-[35px] right-[30px] w-[80px] h-auto md:w-[180px] md:right-[-75px]"
+              className="absolute top-[40px] right-[30px] w-[80px] h-auto md:w-[110px] md:right-[145px]"
             />
           </div>
           <p className="bg-white mt-[65px] text-l rounded-full p-1 pr-4 pl-4 w-max">
@@ -41,7 +41,7 @@ const MiningDevice = () => {
           <img
             src={like}
             alt=""
-            className="absolute z-10 w-[80px] h-auto  top-[85%] right-[15%] translate-y-[50%] md:w-[180px]"
+            className="absolute z-10 w-[80px] h-auto  top-[80%] right-[15%] translate-y-[50%] md:w-[110px] md:right-[40%] md:z-0 "
           />
         </div>
 

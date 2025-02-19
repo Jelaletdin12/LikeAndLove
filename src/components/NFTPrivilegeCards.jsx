@@ -415,8 +415,8 @@ const NFTPrivilegeCards = () => {
   const expandedHeight = expandedCard ? "h-[640px]" : "h-[200px]";
 
   return (
-    <div className="flex flex-col items-center space-y-8 p-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-12">
+    <div className="flex flex-col items-center space-y-8 p-4">
+      <h1 className="text-4xl font-bold text-[#007BFF] mb-12">
         <span className="text-white">
           {t("NFTPrivilegeCards.Acollectionof")}
         </span>{" "}

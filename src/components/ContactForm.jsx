@@ -70,11 +70,11 @@ const ContactForm = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-4">
       {/* Header */}
       <div className="flex items-center justify-center gap-3 mb-4">
         <img src={Logo} alt="Like & Love" className="w-12 h-12 rounded-full" />
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl font-bold md:text-6xl flex items-baseline">
           <span className="text-[#007AFF]">LIKE</span>
           <span className="text-white">&</span>
           <span className="text-[#007AFF]">LOVE</span>

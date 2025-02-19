@@ -97,9 +97,9 @@ export default function NFTCollection() {
                       background: "linear-gradient(45deg, #007AFF, #F30EFF)",
                     }}
                   />
-                  <div className="relative p-2 md:p-6 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
+                  <div className="relative p-2  rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
                     <h3 className="text-m md:text-lg font-bold mt-2">{item.title}</h3>
-                    <img src={item.icon} className="w-32 mt-4" alt="NFT" />
+                    <img src={item.icon} className="w-40 mt-0 md:mt-4" alt="NFT" />
                   </div>
                 </div>
               </SwiperSlide>

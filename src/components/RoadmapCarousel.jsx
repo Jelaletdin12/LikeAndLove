@@ -50,15 +50,15 @@ const RoadmapCarousel = () => {
 
   return (
     <>
-      <div className="max-w-6xl m-auto mt-20">
-        <h2 className="text-6xl text-center text-[#007BFF] font-black ">
+      <div className="max-w-6xl m-auto mt-20 p-4">
+        <h2 className="text-5xl md:text-6xl text-center text-[#007BFF] font-black ">
           {t("RoadmapCarousel.RoadMap")}{" "}
           <span className="text-white">
             {" "}
             {t("RoadmapCarousel.oftheProject")}
           </span>
         </h2>
-        <p className="text-center text-xl text-white mt-2">
+        <p className="text-center text-l md:text-xl text-white mt-2">
           {t(
             "RoadmapCarousel.OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives"
           )}
@@ -66,18 +66,23 @@ const RoadmapCarousel = () => {
       </div>
       <Swiper
         spaceBetween={20}
-        slidesPerView={5}
+        slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}
         modules={[Pagination, Autoplay]}
-        style={{
-          marginLeft: "100px",
-          height: "350px",
-          paddingLeft: "25px",
-          display: "flex",
-          justifyContent: "center",
-          paddingTop: "30px",
+        className="roadMap"
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
         }}
         onSlideChange={handleSlideChange}
       >

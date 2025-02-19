@@ -139,14 +139,14 @@ const ExchangeInterface = () => {
   };
 
   return (
-    <div className="min-h-screen max-w-6xl m-auto mt-20">
+    <div className="min-h-screen max-w-6xl m-auto mt-20 p-4">
       <div className=" mx-auto">
-        <h1 className="text-6xl font-bold text-white mb-4 text-center">
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 text-center">
           <span className="text-white">Партнерские</span>{" "}
           <span className="text-blue-500">Крипто-Биржи</span>
         </h1>
 
-        <p className="text-gray-300 text-xl text-center mb-8">
+        <p className="text-gray-300 text-l md:text-xl text-center mb-8">
           Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод
           ваших активов, а также создают комфортные условия для вашего легкого и
           безопасного погружения в мир криптовалют.
