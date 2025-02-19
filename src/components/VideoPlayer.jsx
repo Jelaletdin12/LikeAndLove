@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Play, Pause } from "lucide-react";
-
+import { useTranslation } from "react-i18next";
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-
+ const { t, i18n } = useTranslation();
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
@@ -12,7 +12,7 @@ const VideoPlayer = () => {
     <div className="max-w-6xl mx-auto p-8">
       {/* Header */}
       <h1 className="text-4xl text-white font-bold text-center mb-8 md:text-6xl">
-        News
+      {t("VideoPlayer.News")}
         <span className="text-[#007AFF] ml-4">LiKE</span>&
         <span className="text-[#007AFF]">LOVE</span>
       </h1>
@@ -49,10 +49,7 @@ const VideoPlayer = () => {
         </div>
       </div>
       <p className="text-white text-xl text-center mb-6 mt-6">
-        We are actively developing our channel, where we not only explain how to
-        make money on NFT easily and competently, but also teach you how to work
-        with our innovative platform, providing step-by-step instructions and
-        useful tips.
+      {t("VideoPlayer.Weareactivelydevelopingourchannelherewenotonly")}
       </p>
     </div>
   );

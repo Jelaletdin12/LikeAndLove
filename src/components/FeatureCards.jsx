@@ -7,68 +7,69 @@ import phone5 from "../assets/phone5.png";
 import phone6 from "../assets/phone6.png";
 import phone7 from "../assets/phone7.png";
 import FeatureModal from "./FeatureCardModal";
-
+import { useTranslation } from "react-i18next";
 const FeatureCards = () => {
+  const { t, i18n } = useTranslation();
   const [selectedFeature, setSelectedFeature] = useState(null);
   const features = [
     {
       title: {
-        regular: "The first step",
-        highlight: "IN THE APP",
+        regular: t("FeatureCards.Thefirststep"),
+        highlight: t("FeatureCards.INTHEAPP"),
         hasQuestionMark: false,
       },
       image: phone1,
     },
     {
       title: {
-        regular: "Prizes from",
-        highlight: "WHEEL OF FORTUNE",
+        regular: t("FeatureCards.Prizesfrom"),
+        highlight: t("FeatureCards.WHEELOFFORTUNE"),
         hasQuestionMark: true,
       },
       image: phone2,
     },
     {
       title: {
-        regular: "Passive income on",
-        highlight: "STACKING",
+        regular: t("FeatureCards.Passiveincomeon"),
+        highlight: t("FeatureCards.STACKING"),
         hasQuestionMark: true,
       },
       image: phone3,
     },
     {
       title: {
-        regular: "How it works",
-        highlight: "CONVERSION",
+        regular: t("FeatureCards.Howitworks"),
+        highlight: t("FeatureCards.CONVERSION"),
         hasQuestionMark: true,
       },
       image: phone4,
     },
     {
       title: {
-        regular: "Fast",
-        highlight: "DEPOSIT",
+        regular:  t("FeatureCards.Fast"),
+        highlight:  t("FeatureCards.DEPOSIT"),
         secondLine: {
-          regular: "and",
-          highlight: "WITHDRAWAL",
-          end: "of funds?",
+          regular:  t("FeatureCards.and"),
+          highlight:  t("FeatureCards.WITHDRAWAL"),
+          end:  t("FeatureCards.offunds"),
         },
       },
       image: phone5,
     },
     {
       title: {
-        regular: "Daily",
-        highlight: "TASKS",
+        regular: t("FeatureCards.Daily"),
+        highlight: t("FeatureCards.TASKS"),
         hasQuestionMark: true,
       },
       image: phone6,
     },
     {
       title: {
-        regular: "What kind of",
-        highlight: "GAMES",
+        regular: t("FeatureCards.Whatkindof"),
+        highlight: t("FeatureCards.GAMES"),
         secondLine: {
-          regular: "are there for making money",
+          regular: t("FeatureCards.arethereformakingmoney"),
           hasQuestionMark: true,
         },
       },
@@ -76,10 +77,10 @@ const FeatureCards = () => {
     },
     {
       title: {
-        regular: "How does",
-        highlight: "Mining",
+        regular:  t("FeatureCards.Howdoes"),
+        highlight: t("FeatureCards.Mining"),
         secondLine: {
-          regular: "work",
+          regular:  t("FeatureCards.work"),
           hasQuestionMark: true,
         },
       },
@@ -87,10 +88,10 @@ const FeatureCards = () => {
     },
     {
       title: {
-        regular: "How does",
-        highlight: "sending",
+        regular: t("FeatureCards.Howdoes"),
+        highlight: t("FeatureCards.sending"),
         secondLine: {
-          regular: "work",
+          regular: t("FeatureCards.work"),
           hasQuestionMark: true,
         },
       },
@@ -148,7 +149,7 @@ const FeatureCards = () => {
               <button className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2"
                onClick={() => setSelectedFeature(feature)}
               >
-                MORE DETAILED
+                {t("FeatureCards.MOREDETAILED")}
                 <svg
                   className="w-5 h-5"
                   fill="none"

@@ -10,8 +10,9 @@ import instagram from "../assets/instagram.png";
 import email from "../assets/email.png";
 import getgames from "../assets/getgames.png";
 import discord from "../assets/discord.png";
-
+import { useTranslation } from "react-i18next";
 const ContactForm = () => {
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -82,9 +83,7 @@ const ContactForm = () => {
       </div>
 
       <p className="text-center text-gray-300 mb-8">
-        We are always open to new partnerships.
-        <br />
-        Please describe your offer in the contact form below.
+      {t("ContactForm.Wearealwaysopentonewpartnerships")} 
       </p>
 
       {/* Contact Form */}
@@ -93,10 +92,10 @@ const ContactForm = () => {
 
         <div className="relative bg-[#161C31] rounded-xl p-8">
           <h2 className="text-2xl text-blue-500 text-center mb-4">
-            CONTACT US
+          {t("ContactForm.CONTACTUS")} 
           </h2>
           <p className="text-center text-gray-300 mb-8">
-            We are always in touch and open to new suggestions!
+          {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")} 
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -148,7 +147,7 @@ const ContactForm = () => {
 
       {/* Social Networks */}
       <div className="text-center w-full mb-4">
-        <h2 className="text-2xl font-bold text-white mb-8">SOCIAL NETWORK</h2>
+        <h2 className="text-2xl font-bold text-white mb-8">   {t("ContactForm.SOCIALNETWORK")} </h2>
         <div className="grid grid-cols-2 md:flex md:justify-evenly">
           {socialLinks.map((social, index) => (
             <div

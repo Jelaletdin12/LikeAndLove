@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import { useTranslation } from "react-i18next";
 
 const BurningLikeCarousel = () => {
   // Track active slides for styling
   const [activeIndex, setActiveIndex] = useState(0);
-  
+  const { t, i18n } = useTranslation();
   const items = [
     { id: 1, value: "-125 000 000" },
     { id: 2, value: "-125 000 000" },
@@ -26,19 +27,16 @@ const BurningLikeCarousel = () => {
     <>
       <div className="max-w-6xl m-auto mt-20">
         <h2 className="text-6xl text-center text-[#007BFF] font-black">
-          Burning the LiKE <span className="text-white">token</span>
+          {t("BurningLike.BurningtheLiKE")}{" "}
+          <span className="text-white"> {t("BurningLike.token")}</span>
         </h2>
         <p className="text-center text-xl text-white mt-2 mb-5">
-          Every week, from 06:00 to 08:00 GMT, we carry out halving, burning
-          125,000,000 LIKE tokens out of a total volume of 80 billion. The
-          burning mechanism: the key to increasing the value of LIKE tokens.
-          Regular token burning is at the core of our economic model. This
-          process not only reduces the total supply of tokens, but also creates
-          a shortage, which inevitably leads to higher prices. The rarer the
-          token becomes, the higher its value on the market.
+          {t(
+            "BurningLike.Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket"
+          )}
         </p>
       </div>
-      
+
       <div className="relative ml-15">
         <Swiper
           modules={[Autoplay]}
@@ -50,8 +48,7 @@ const BurningLikeCarousel = () => {
           }}
           loop={true}
           grabCursor={true}
-         style={{height:"100px", paddingTop:"25px", paddingLeft:"20px"}}
-  
+          style={{ height: "100px", paddingTop: "25px", paddingLeft: "20px" }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         >
           {items.map((item, index) => (
@@ -76,12 +73,11 @@ const BurningLikeCarousel = () => {
                 </div>
 
                 {/* Connector line with conditional styling */}
-                
-                  <div
-                    className={`h-1.5 w-14 bg-blue-500 rounded-4xl
+
+                <div
+                  className={`h-1.5 w-14 bg-blue-500 rounded-4xl
                       ${!isActive(index) ? "grayscale opacity-50" : ""}`}
-                  />
-                
+                />
               </div>
             </SwiperSlide>
           ))}

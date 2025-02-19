@@ -84,3 +84,10 @@ body {
 .ant-modal-close-x {
   color: #fff !important;
 }
+
+/* Add this to your CSS file */
+@media (max-width: 520px) {
+  .swiper {
+    height: 270px !important;
+  }
+}

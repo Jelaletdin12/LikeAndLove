@@ -24,14 +24,14 @@ export default function NFTCollection() {
 
   return (
     <div className="mx-auto mt-15">
-      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto ">
+      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto p-4">
         <div>
-          <h2 className="text-4xl flex text-white font-black mb-4 md:text-6xl">
+          <h2 className=" text-4xl flex text-white font-black mb-4 md:text-6xl">
             {t("NFTCollection.The")}{" "}
             <span className="text-[#007BFF] mx-2">NFT</span>{" "}
             {t("NFTCollection.Collection")}
           </h2>
-          <p className="text-white text-xl mb-8 max-w-2xl">
+          <p className="text-white text-l mb-8 max-w-2xl text-l md:text-xl">
             {t(
               "NFTCollection.ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue"
             )}
@@ -47,7 +47,7 @@ export default function NFTCollection() {
       <div className="relative py-4">
         <Swiper
           spaceBetween={10}
-          slidesPerView={6}
+          slidesPerView={1}
           centeredSlides={true}
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
@@ -55,14 +55,26 @@ export default function NFTCollection() {
           style={{ height: "350px", paddingTop: "50px" }}
           autoplay={{ delay: 3000 }}
           loop={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 5,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+            },
+          }}
         >
           {nftItems.map((item, index) => {
             // Ortadaki kart
-            let scaleClass = "scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
+            let scaleClass = "scale-100 md:scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
 
             // Sağ ve solundaki kartlar (biraz küçük olacak)
             if (index === activeIndex - 1 || index === activeIndex + 1) {
-              scaleClass = "scale-85 opacity-90";
+              scaleClass = "scale-75 md:scale-85 opacity-90";
             }
 
             // Diğer tüm kartlar (en küçük olacak)
@@ -71,7 +83,7 @@ export default function NFTCollection() {
               index !== activeIndex - 1 &&
               index !== activeIndex + 1
             ) {
-              scaleClass = "scale-70 opacity-70";
+              scaleClass = "scale-60 md:scale-70 opacity-70";
             }
 
             return (
@@ -85,8 +97,8 @@ export default function NFTCollection() {
                       background: "linear-gradient(45deg, #007AFF, #F30EFF)",
                     }}
                   />
-                  <div className="relative p-6 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
-                    <h3 className="text-lg font-bold mt-2">{item.title}</h3>
+                  <div className="relative p-2 md:p-6 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
+                    <h3 className="text-m md:text-lg font-bold mt-2">{item.title}</h3>
                     <img src={item.icon} className="w-32 mt-4" alt="NFT" />
                   </div>
                 </div>

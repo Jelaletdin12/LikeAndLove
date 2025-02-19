@@ -1,11 +1,11 @@
 import React from "react";
 import lock from "../assets/lock.png";
-
+import { useTranslation } from "react-i18next";
 const StatisticsCard = ({ title, value, image, contrast, noShadow }) => {
   const formatNumber = (num) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   };
-
+const { t, i18n } = useTranslation();
   return (
     <div className="relative p-[3px] rounded-lg group">
       {/* Gradient border container */}
@@ -36,21 +36,22 @@ const StatisticsCard = ({ title, value, image, contrast, noShadow }) => {
   );
 };
 const StatisticsDashboard = () => {
+  const { t, i18n } = useTranslation();
   const stats = [
     {
-      title: "Active users",
+      title:  t("StatisticsDashboard.Activeusers"),
       value: 10000,
     },
     {
-      title: "Transactions per day",
+      title: t("StatisticsDashboard.Transactionsperday"),
       value: 25000,
     },
     {
-      title: "Sent by LOVE",
+      title: t("StatisticsDashboard.SentbyLOVE"),
       value: 1875000000,
     },
     {
-      title: "Invited friends",
+      title: t("StatisticsDashboard.Invitedriends"),
       value: 9072,
     },
     {
@@ -75,9 +76,9 @@ const StatisticsDashboard = () => {
     <div className="max-w-6xl mx-auto p-8">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-6xl font-bold text-white text-center mb-6">
-          Application <span className="text-[#007AFF]">statistics</span>
+        {t("StatisticsDashboard.Application")} <span className="text-[#007AFF]">{t("StatisticsDashboard.statistics")}</span>
         </h1>
-        <p className="text-white mb-6 text-2xl">Visual statistics of our platform</p>
+        <p className="text-white mb-6 text-2xl">{t("StatisticsDashboard.Visualstatisticsofourplatform")}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {stats.map((stat, index) => (
@@ -92,8 +93,8 @@ const StatisticsDashboard = () => {
         ))}
       </div>
       <div className="flex flex-col mt-10 items-center mb-10">
-        <h1 className="text-white text-6xl font-bold mb-6">Team</h1>
-        <p className="text-center text-xl text-white">We believe in the power of joint efforts. The Like team is a group of like—minded people who strive to create a future where everyone can achieve financial freedom. Thanks to our experience and innovative solutions, we have created a reliable platform that will help you achieve your goals.</p>
+        <h1 className="text-white text-6xl font-bold mb-6">{t("StatisticsDashboard.Team")}</h1>
+        <p className="text-center text-xl text-white">{t("StatisticsDashboard.Webelieveinthe")}</p>
       </div>
     </div>
   );

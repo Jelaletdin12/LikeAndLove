@@ -2,41 +2,66 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import { useTranslation } from "react-i18next";
 import set from "../assets/set.png";
 import tel from "../assets/tel.png";
 import { useState } from "react";
 
-const roadmapData = [
-  { date: "23.01.2025", title: "Разработка приложения", icon: tel },
-  { date: "23.02.2025", title: "Запуск Telegram MiniApp", icon: set },
-  { date: "01.03.2025", title: "Выход на биржу STON.fi ", icon: tel },
-  { date: "25.02.2025", title: "Листинг токена LiKE", icon: set },
-  { date: "Q3 2025", title: "Партнерство с другими проектами", icon: tel },
-  { date: "Q4 2025", title: "Дополнения функций", icon: set },
-  { date: "Q4 2025", title: "Глобализация проекта", icon: tel },
-  { date: "Q1 2026", title: "Расширение экосистемы", icon: set },
-  { date: "19.01.2026", title: "Халвинг LiKE", icon: tel },
-];
+
 
 const RoadmapCarousel = () => {
+  const { t, i18n } = useTranslation();
   const [activeIndexes, setActiveIndexes] = useState([0, 1]);
   const handleSlideChange = (swiper) => {
     const realIndex = swiper.realIndex;
     setActiveIndexes([realIndex, realIndex + 1]);
   };
+  const roadmapData = [
+    {
+      date: "23.01.2025",
+      title: t("RoadmapCarousel.ApplicationDevelopment"),
+      icon: tel,
+    },
+    {
+      date: "23.02.2025",
+      title: t("RoadmapCarousel.TelegramMiniAppLaunch"),
+      icon: set,
+    },
+    {
+      date: "01.03.2025",
+      title: t("RoadmapCarousel.EnteringthestockexchangeSTONfi"),
+      icon: tel,
+    },
+    {
+      date: "25.02.2025",
+      title: t("RoadmapCarousel.ListingoftheLiKEtoken"),
+      icon: set,
+    },
+    {
+      date: "Q3 2025",
+      title: t("RoadmapCarousel.Partnershipwithotherprojects"),
+      icon: tel,
+    },
+    { date: "Q4 2025", title: "Дополнения функций", icon: set },
+    { date: "Q4 2025", title: "Глобализация проекта", icon: tel },
+    { date: "Q1 2026", title: "Расширение экосистемы", icon: set },
+    { date: "19.01.2026", title: "Халвинг LiKE", icon: tel },
+  ];
 
   return (
     <>
       <div className="max-w-6xl m-auto mt-20">
         <h2 className="text-6xl text-center text-[#007BFF] font-black ">
-          Road Map <span className="text-white">of the Project</span>
+          {t("RoadmapCarousel.RoadMap")}{" "}
+          <span className="text-white">
+            {" "}
+            {t("RoadmapCarousel.oftheProject")}
+          </span>
         </h2>
         <p className="text-center text-xl text-white mt-2">
-          Our project roadmap clearly reflects strategic development plans,
-          including key milestones and goals. We strive for full transparency by
-          providing users with access to information about upcoming steps and
-          initiatives.
+          {t(
+            "RoadmapCarousel.OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives"
+          )}
         </p>
       </div>
       <Swiper

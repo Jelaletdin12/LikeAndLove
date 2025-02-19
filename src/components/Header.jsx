@@ -38,7 +38,7 @@ const Header = () => {
         ref={headerRef}
         className="bg-[#161C31] sticky top-0 z-20 border-b"
       >
-        <div className="max-w-6xl flex items-center justify-between mx-auto pt-4 pb-4">
+        <div className="max-w-6xl flex items-center justify-between mx-auto p-4">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
@@ -94,7 +94,7 @@ const Header = () => {
 
             {/* App Button */}
             <button className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-6 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity">
-              GO TO THE APP
+              {t("header.goToApp")}
             </button>
           </div>
 
@@ -156,7 +156,7 @@ const Header = () => {
 
             {/* App Button */}
             <button className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-6 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity w-full">
-              GO TO THE APP
+              {t("header.goToApp")}
             </button>
           </div>
         </div>
