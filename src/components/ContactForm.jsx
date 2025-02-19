@@ -82,7 +82,7 @@ const ContactForm = () => {
         </h1>
       </div>
 
-      <p className="text-center text-gray-300 mb-8">
+      <p className="text-center text-white mb-8">
       {t("ContactForm.Wearealwaysopentonewpartnerships")} 
       </p>
 
@@ -91,10 +91,10 @@ const ContactForm = () => {
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#007AFF] to-[#F30EFF] opacity-50" />
 
         <div className="relative bg-[#161C31] rounded-xl p-8">
-          <h2 className="text-2xl text-blue-500 text-center mb-4">
+          <h2 className="text-2xl text-[#007AFF] text-center mb-4">
           {t("ContactForm.CONTACTUS")} 
           </h2>
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-white mb-8">
           {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")} 
           </p>
 

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
 
 import dedust from "../assets/dedust.png";
 import ston from "../assets/ston.png";
@@ -141,12 +144,12 @@ const ExchangeInterface = () => {
   return (
     <div className="min-h-screen max-w-6xl m-auto mt-20 p-4">
       <div className=" mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
           <span className="text-white">Партнерские</span>{" "}
-          <span className="text-blue-500">Крипто-Биржи</span>
+          <span className="text-[#007AFF]">Крипто-Биржи</span>
         </h1>
 
-        <p className="text-gray-300 text-l md:text-xl text-center mb-8">
+        <p className="text-white text-l md:text-xl text-center mb-8">
           Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод
           ваших активов, а также создают комфортные условия для вашего легкого и
           безопасного погружения в мир криптовалют.
@@ -157,8 +160,8 @@ const ExchangeInterface = () => {
             onClick={() => setExchangeType("DEX")}
             className={`px-6 py-2 rounded-full ${
               exchangeType === "DEX"
-                ? "bg-blue-500 text-white"
-                : "bg-transparent text-gray-400"
+                ? "bg-[#007AFF] text-white"
+                : "bg-transparent text-white"
             }`}
           >
             DEX
@@ -167,15 +170,15 @@ const ExchangeInterface = () => {
             onClick={() => setExchangeType("CEX")}
             className={`px-6 py-2 rounded-full ${
               exchangeType === "CEX"
-                ? "bg-blue-500 text-white"
-                : "bg-transparent text-gray-400"
+                ? "bg-[#007AFF] text-white"
+                : "bg-transparent text-white"
             }`}
           >
             CEX
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {exchanges[exchangeType].map((exchange) => (
             <div
               key={exchange.id}
@@ -216,6 +219,52 @@ const ExchangeInterface = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="md:hidden">
+          <Swiper spaceBetween={16} slidesPerView={2}>
+            {exchanges[exchangeType].map((exchange) => (
+              <SwiperSlide key={exchange.id}>
+                <div
+                  className={`relative p-[3px] rounded-xl overflow-hidden ${
+                    exchange.active
+                      ? "bg-navy-800 shadow-[0_0px_15px_rgba(0,122,255,1)]"
+                      : "contrast-50"
+                  }`}
+                >
+                  <div
+                    className="absolute inset-0 rounded-xl pointer-events-none"
+                    style={{
+                      background: exchange.active
+                        ? "linear-gradient(45deg, #007AFF, #F30EFF)"
+                        : "linear-gradient(45deg, #4B5563, #9CA3AF)",
+                    }}
+                  />
+                  <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6 rounded-xl">
+                    <div className="text-sm text-center text-white mb-2">
+                      {exchange.date}
+                    </div>
+                    <div className="text-md font-bold text-center text-white mb-4">
+                      Выход на биржу {exchange.name}
+                    </div>
+                    <div className="flex justify-center mb-4">
+                      <img src={exchange.logo} alt={exchange.name} />
+                    </div>
+                    <button
+                      className={`w-full py-2 px-4 rounded-lg ${
+                        exchange.active
+                          ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
+                          : "bg-gray-700 text-gray-400 cursor-not-allowed"
+                      }`}
+                      disabled={!exchange.active}
+                    >
+                      ПЕРЕЙТИ
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

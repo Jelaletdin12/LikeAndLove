@@ -51,7 +51,7 @@ const RoadmapCarousel = () => {
   return (
     <>
       <div className="max-w-6xl m-auto mt-20 p-4">
-        <h2 className="text-5xl md:text-6xl text-center text-[#007BFF] font-black ">
+        <h2 className="text-3xl md:text-6xl text-center text-[#007BFF] font-black ">
           {t("RoadmapCarousel.RoadMap")}{" "}
           <span className="text-white">
             {" "}
@@ -68,7 +68,7 @@ const RoadmapCarousel = () => {
         spaceBetween={20}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="roadMap"

@@ -10,7 +10,7 @@ const { t, i18n } = useTranslation();
     <div className="relative p-[3px] rounded-lg group">
       {/* Gradient border container */}
       <div
-        className={`absolute inset-0 bg-gradient-to-r from-[#007AFF] to-[#F30EFF] rounded-[8px] ${
+        className={`absolute inset-0 bg-gradient-to-r from-[#007AFF] to-[#F30EFF] rounded-[8px]  ${
           contrast ? "filter contrast-15" : ""
         }`}
       />
@@ -25,9 +25,9 @@ const { t, i18n } = useTranslation();
       `}
       >
         {image && <img className="mb-3" src={image} alt="" />}
-        <h3 className="text-gray-300 text-center mb-3">{title}</h3>
+        <h3 className="text-white text-center mb-3">{title}</h3>
         {value !== undefined && (
-          <p className="text-blue-500 text-xl lg:text-2xl font-bold text-center">
+          <p className="text-[#007AFF] text-xl lg:text-2xl font-bold text-center">
             {formatNumber(value)}
           </p>
         )}

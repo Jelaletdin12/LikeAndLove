@@ -37,7 +37,7 @@ export default function NFTCollection() {
             )}
           </p>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="hidden md:flex flex-col items-center">
           <img className="w-[200px] h-[200px]" src={vectorbig} alt="NFT" />
           <h3 className="text-white text-[24px] font-bold mt-2">GetGames.io</h3>
         </div>
@@ -52,7 +52,8 @@ export default function NFTCollection() {
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-          style={{ height: "350px", paddingTop: "50px" }}
+          className="nftCollection"
+       
           autoplay={{ delay: 3000 }}
           loop={true}
           breakpoints={{
@@ -99,7 +100,7 @@ export default function NFTCollection() {
                   />
                   <div className="relative p-2  rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
                     <h3 className="text-m md:text-lg font-bold mt-2">{item.title}</h3>
-                    <img src={item.icon} className="w-40 mt-0 md:mt-4" alt="NFT" />
+                    <img src={item.icon} className="w-[100px] md:w-40 mt-0 md:mt-4" alt="NFT" />
                   </div>
                 </div>
               </SwiperSlide>

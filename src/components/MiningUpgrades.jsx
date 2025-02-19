@@ -42,9 +42,9 @@ const MiningUpgrades = () => {
   return (
     <div className="min-h-screen m-auto max-w-6xl mt-15  ">
       {/* Header Section */}
-      <div className=" w-full flex flex-col md:flex-row gap-[10px] p-4">
+      <div className=" w-full flex flex-col-reverse md:flex-row gap-[10px] p-4">
         <div className="mb-6">
-          <h1 className="text-5xl md:text-6xl flex flex-col text-[white] font-black mb-4">
+          <h1 className="hidden text-4xl text-center md:text-6xl md:flex flex-col text-[white] font-black md:text-left mb-4">
           {t("MiningUpgrades.Buyupgradesand")}
             <h1 className="text-[#007BFF] ">  {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
@@ -54,6 +54,10 @@ const MiningUpgrades = () => {
           </p>
         </div>
         <div className="flex justify-between items-center flex-col">
+        <h1 className=" text-4xl text-center md:text-6xl md:hidden flex-col text-[white] font-black mb-4">
+          {t("MiningUpgrades.Buyupgradesand")}
+            <h1 className="text-[#007BFF] ">  {t("MiningUpgrades.EarnMore")}</h1>
+          </h1>
           <img className="w-auto h-auto" src={ton} alt="" />
         </div>
       </div>
@@ -68,21 +72,24 @@ const MiningUpgrades = () => {
               background: "linear-gradient(45deg, #007AFF, #F30EFF)",
             }}
           >
-            <div className="relative rounded-[8px] bg-[#161C31] text-center p-4 h-full flex flex-col items-center justify-center ">
+            <div className="relative rounded-[8px] bg-[#161C31] text-center p-4 h-full flex gap-2 flex-row md:flex-col items-center justify-center ">
               <img
                 src={upgrade.image}
                 alt={upgrade.title}
                 className="w-[100px]"
               />
-              <h3 className="text-white text-xl text-center font-semibold mb-2">
+              <div className="flex flex-col">
+
+              <h3 className="text-white text-xl text-left md:text-center font-semibold mb-2">
                 {upgrade.title}
               </h3>
-              <p className="text-gray-400 text-sm mb-4">
+              <p className="text-white text-sm mb-4 text-left md:text-center">
                 {upgrade.description}
               </p>
               <div className="mt-auto">
-                <p className="text-sm text-gray-400"> {t("MiningUpgrades.Profitpersecond")}</p>
-                <p className="text-blue-400 font-semibold">{upgrade.profit}</p>
+                <p className="text-sm text-white text-left md:text-center"> {t("MiningUpgrades.Profitpersecond")}</p>
+                <p className="text-[#007AFF] font-semibold">{upgrade.profit}</p>
+              </div>
               </div>
             </div>
           </div>

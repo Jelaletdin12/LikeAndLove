@@ -16,7 +16,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "IN THE APP":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   The First Step into the App

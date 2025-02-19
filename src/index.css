@@ -104,5 +104,13 @@ body {
     margin-left: 16px !important;
   margin-right: 16px !important;
   }
- 
+  .nftCollection{
+    height: 250px !important; 
+    padding-top: 50px !important;
+  }
+}
+
+.nftCollection{
+  height: 350px ; 
+padding-top: 50px !important;
 }
