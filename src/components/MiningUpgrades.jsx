@@ -1,9 +1,9 @@
 import React from "react";
-import Stabilizator from "../assets/stabilizator.png";
-import brain from "../assets/brain.png";
-import fancard from "../assets/fancard.png";
-import water from "../assets/water.png";
-import ton from "../assets/ton.png";
+import Stabilizator from "../assets/stabilizator.gif";
+import brain from "../assets/brain.gif";
+import fancard from "../assets/fancard.gif";
+import water from "../assets/water.gif";
+import ton from "../assets/ton.gif";
 import { CircleArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 const MiningUpgrades = () => {
@@ -49,7 +49,7 @@ const MiningUpgrades = () => {
             <h1 className="text-[#007BFF] ">  {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
 
-          <p className="text-white text-xl mb-8 max-w-2xl mx-auto ">
+          <p className="text-white text-l md:text-xl mb-8 max-w-2xl mx-auto ">
           {t("MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions")}
           </p>
         </div>
@@ -88,7 +88,7 @@ const MiningUpgrades = () => {
               </p>
               <div className="mt-auto">
                 <p className="text-sm text-white text-left md:text-center"> {t("MiningUpgrades.Profitpersecond")}</p>
-                <p className="text-[#007AFF] font-semibold">{upgrade.profit}</p>
+                <p className="text-[#007AFF] text-left md:text-center font-semibold">{upgrade.profit}</p>
               </div>
               </div>
             </div>
@@ -98,7 +98,9 @@ const MiningUpgrades = () => {
 
       {/* Watch Button */}
       <div className="max-w-6xl mx-auto mt-12 flex justify-center">
-        <button className=" bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
+        <button  style={{
+                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
+                }} className=" text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
         {t("MiningUpgrades.WATCH")}
           <CircleArrowRight />
         </button>

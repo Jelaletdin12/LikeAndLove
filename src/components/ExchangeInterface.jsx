@@ -196,7 +196,7 @@ const ExchangeInterface = () => {
                     : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6 rounded-xl">
+              <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6  h-full rounded-xl">
                 <div className="text-sm text-center text-white mb-2">
                   {exchange.date}
                 </div>
@@ -210,7 +210,7 @@ const ExchangeInterface = () => {
                   className={`w-full py-2 px-4 rounded-lg ${
                     exchange.active
                       ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
-                      : "bg-gray-700 text-gray-400 cursor-not-allowed"
+                      : "bg-[#5b6069] text-[#8c9097] cursor-not-allowed"
                   }`}
                   disabled={!exchange.active}
                 >
@@ -222,50 +222,53 @@ const ExchangeInterface = () => {
         </div>
 
         <div className="md:hidden">
-          <Swiper spaceBetween={16} slidesPerView={2}>
-            {exchanges[exchangeType].map((exchange) => (
-              <SwiperSlide key={exchange.id}>
-                <div
-                  className={`relative p-[3px] rounded-xl overflow-hidden ${
-                    exchange.active
-                      ? "bg-navy-800 shadow-[0_0px_15px_rgba(0,122,255,1)]"
-                      : "contrast-50"
-                  }`}
-                >
-                  <div
-                    className="absolute inset-0 rounded-xl pointer-events-none"
-                    style={{
-                      background: exchange.active
-                        ? "linear-gradient(45deg, #007AFF, #F30EFF)"
-                        : "linear-gradient(45deg, #4B5563, #9CA3AF)",
-                    }}
-                  />
-                  <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6 rounded-xl">
-                    <div className="text-sm text-center text-white mb-2">
-                      {exchange.date}
-                    </div>
-                    <div className="text-md font-bold text-center text-white mb-4">
-                      Выход на биржу {exchange.name}
-                    </div>
-                    <div className="flex justify-center mb-4">
-                      <img src={exchange.logo} alt={exchange.name} />
-                    </div>
-                    <button
-                      className={`w-full py-2 px-4 rounded-lg ${
-                        exchange.active
-                          ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
-                          : "bg-gray-700 text-gray-400 cursor-not-allowed"
-                      }`}
-                      disabled={!exchange.active}
-                    >
-                      ПЕРЕЙТИ
-                    </button>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+  <Swiper spaceBetween={16} slidesPerView={2}>
+    {exchanges[exchangeType].map((exchange) => (
+      <SwiperSlide key={exchange.id}>
+        <div
+          className={`relative p-[3px] rounded-xl overflow-hidden ${
+            exchange.active
+              ? "bg-navy-800 shadow-[0_0px_15px_rgba(0,122,255,1)]"
+              : ""
+          }`}
+          style={{
+            filter: !exchange.active ? "contrast(50%)" : "none",
+          }}
+        >
+          <div
+            className="absolute inset-0 rounded-xl pointer-events-none"
+            style={{
+              background: exchange.active
+                ? "linear-gradient(45deg, #007AFF, #F30EFF)"
+                : "linear-gradient(45deg, #4B5563, #9CA3AF)",
+            }}
+          />
+          <div className="relative flex flex-col gap-2.5 bg-[#161C31] items-center p-2 md:p-6 rounded-xl">
+            <div className="text-sm text-center text-white mb-2">
+              {exchange.date}
+            </div>
+            <div className="text-sm md:text-md font-bold text-center text-white mb-4">
+              Выход на биржу {exchange.name}
+            </div>
+            <div className="flex justify-center mb-4 w-[60px] md:w-auto">
+              <img src={exchange.logo} alt={exchange.name} />
+            </div>
+            <button
+              className={`w-full py-2 px-4 rounded-lg ${
+                exchange.active
+                  ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
+                  : "bg-gray-700 text-gray-400 cursor-not-allowed"
+              }`}
+              disabled={!exchange.active}
+            >
+              ПЕРЕЙТИ
+            </button>
+          </div>
         </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
       </div>
     </div>
   );

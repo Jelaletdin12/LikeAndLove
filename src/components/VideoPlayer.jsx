@@ -3,24 +3,29 @@ import { Play, Pause } from "lucide-react";
 import { useTranslation } from "react-i18next";
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
- const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-4">
+    <div className=" max-w-6xl mx-auto p-4">
       {/* Header */}
       <h1 className="text-4xl text-white font-bold text-center mb-8 md:text-6xl">
-      {t("VideoPlayer.News")}
+        {t("VideoPlayer.News")}
         <span className="text-[#007AFF] ml-4">LiKE</span>&
         <span className="text-[#007AFF]">LOVE</span>
       </h1>
 
       {/* Video Container */}
-      <div className="relative aspect-video rounded-2xl overflow-hidden p-[3px]">
+      <div className="relative aspect-video rounded-[8px] overflow-hidden p-[3px]">
         {/* Video player border gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#007AFF] to-[#F30EFF] rounded-2xl" />
+        <div
+          className="absolute inset-0  rounded-2xl"
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
+        />
 
         {/* Content container */}
         <div className="relative bg-[#161C31] rounded-2xl w-full h-full flex items-center justify-center overflow-hidden">
@@ -49,7 +54,7 @@ const VideoPlayer = () => {
         </div>
       </div>
       <p className="text-white text-xl text-center mb-6 mt-6">
-      {t("VideoPlayer.Weareactivelydevelopingourchannelherewenotonly")}
+        {t("VideoPlayer.Weareactivelydevelopingourchannelherewenotonly")}
       </p>
     </div>
   );

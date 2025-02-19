@@ -88,7 +88,9 @@ const ContactForm = () => {
 
       {/* Contact Form */}
       <div className="relative rounded-xl overflow-hidden mb-16 p-[3px]">
-        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#007AFF] to-[#F30EFF] opacity-50" />
+        <div style={{
+        background: "linear-gradient(to right, #007AFF, #F30EFF)",
+      }} className="absolute inset-0 rounded-xl bg-gradient-to-r  opacity-50" />
 
         <div className="relative bg-[#161C31] rounded-xl p-8">
           <h2 className="text-2xl text-[#007AFF] text-center mb-4">
@@ -98,13 +100,13 @@ const ContactForm = () => {
           {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")} 
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-6 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
               <input
                 type="text"
                 name="name"
                 placeholder="Name:"
-                className="bg-slate-800 rounded-lg p-3 text-white w-full"
+                className="bg-[#1d293d] rounded-lg p-3 text-white w-full"
                 onChange={handleChange}
                 value={formData.name}
                 required
@@ -113,7 +115,7 @@ const ContactForm = () => {
                 type="email"
                 name="email"
                 placeholder="E-mail:"
-                className="bg-slate-800 rounded-lg p-3 text-white w-full"
+                className="bg-[#1d293d] rounded-lg p-3 text-white w-full"
                 onChange={handleChange}
                 value={formData.email}
                 required
@@ -123,7 +125,7 @@ const ContactForm = () => {
               name="message"
               placeholder="Messages"
               rows={4}
-              className="bg-slate-800 rounded-lg p-3 text-white w-full"
+              className="bg-[#1d293d] rounded-lg p-3 text-white w-full mb-4"
               onChange={handleChange}
               value={formData.message}
               required
@@ -131,8 +133,11 @@ const ContactForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#007BFF] to-[#F30EFF] text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
+                className=" w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
                 disabled={loading}
+                style={{
+                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
+                }}
               >
                 {loading ? "Sending..." : "SEND"}
                 <CircleArrowRight />

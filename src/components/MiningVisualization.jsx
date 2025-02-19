@@ -1,4 +1,4 @@
-import fan from "../assets/fan.png";
+import fan from "../assets/fan.gif";
 import vector from "../assets/vector.png";
 import love from "../assets/love.png";
 import like from "../assets/like.png";
@@ -41,7 +41,7 @@ const MiningDevice = () => {
           <img
             src={like}
             alt=""
-            className="absolute z-10 w-[80px] h-auto  top-[80%] right-[15%] translate-y-[50%] md:w-[110px] md:right-[40%] md:z-0 "
+            className="absolute  w-[80px] h-auto  top-[80%] right-[15%] translate-y-[50%] md:w-[110px] md:right-[40%]  "
           />
         </div>
 

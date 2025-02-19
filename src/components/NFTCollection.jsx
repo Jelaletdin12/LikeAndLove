@@ -1,5 +1,5 @@
 import vectorbig from "../assets/vectorbig.png";
-import fan from "../assets/fan.png";
+import fan from "../assets/fan.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -111,9 +111,11 @@ export default function NFTCollection() {
 
       {/* Buy NFT Button */}
       <div className="text-center mt-8 flex justify-center">
-        <a
+        <a  style={{
+                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
+                }}
           href="#"
-          className=" w-auto  flex bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80"
+          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80"
         >
           {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />

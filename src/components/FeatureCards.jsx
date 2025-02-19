@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import phone1 from "../assets/phone1.png";
-import phone2 from "../assets/phone2.png";
-import phone3 from "../assets/phone3.png";
-import phone4 from "../assets/phone4.png";
-import phone5 from "../assets/phone5.png";
-import phone6 from "../assets/phone6.png";
-import phone7 from "../assets/phone7.png";
+import phone1 from "../assets/phone1.gif";
+import phone2 from "../assets/phone2.gif";
+import phone3 from "../assets/phone3.gif";
+import phone4 from "../assets/phone4.gif";
+import phone5 from "../assets/phone5.gif";
+import phone6 from "../assets/phone6.gif";
+import phone7 from "../assets/phone7.gif";
 import FeatureModal from "./FeatureCardModal";
 import { useTranslation } from "react-i18next";
 const FeatureCards = () => {

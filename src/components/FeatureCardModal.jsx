@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Modal } from "antd";
-import phone1 from "../assets/phone1.png";
-import phone2 from "../assets/phone2.png";
-import phone3 from "../assets/phone3.png";
-import phone4 from "../assets/phone4.png";
-import phone5 from "../assets/phone5.png";
-import phone6 from "../assets/phone6.png";
-import phone7 from "../assets/phone7.png";
+import phone1 from "../assets/phone1.gif";
+import phone2 from "../assets/phone2.gif";
+import phone3 from "../assets/phone3.gif";
+import phone4 from "../assets/phone4.gif";
+import phone5 from "../assets/phone5.gif";
+import phone6 from "../assets/phone6.gif";
+import phone7 from "../assets/phone7.gif";
 
 // Modal Content Component
 const FeatureModal = ({ feature, isVisible, onClose }) => {
@@ -64,7 +64,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone1} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -72,7 +77,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "WHEEL OF FORTUNE":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   Prizes from the WHEEL OF FORTUNE?
@@ -109,7 +114,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone2} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -117,7 +127,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "STACKING":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   How do internal transfers work?
@@ -157,7 +167,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone3} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -165,7 +180,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "CONVERSION":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   Token Conversion
@@ -205,7 +220,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone4} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -213,7 +233,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "DEPOSIT":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   Fast DEPOSIT and WITHDRAWAL of funds?
@@ -264,7 +284,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -272,7 +297,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "TASKS":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   Daily tasks
@@ -320,7 +345,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone6} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -328,7 +358,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "GAMES":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   Daily in-game rewards!
@@ -373,7 +403,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone7} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -381,7 +416,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "Mining":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div>
                 <h2 className="text-xl font-bold mb-4 text-white">
                   NFT mining
@@ -436,7 +471,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>
@@ -444,7 +484,7 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
       case "sending":
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex mb-6">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="text-white">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   The mechanics of staking
@@ -486,7 +526,12 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
               </div>
               <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
             </div>
-            <button className="bg-gradient-to-r from-[#007BFF] to-[#FF00FF] text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity">
+            <button
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+            >
               Continue
             </button>
           </div>

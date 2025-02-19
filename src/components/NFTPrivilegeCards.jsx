@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import silver from "../assets/silver.png";
-import gold from "../assets/gold.png";
-import platinum from "../assets/platinium.png";
+import silver from "../assets/silver.gif";
+import gold from "../assets/gold.gif";
+import platinum from "../assets/platinum.gif";
 import NFTCardDetails from "./NFTPrivilegeCardsDetail";
 import { useTranslation } from "react-i18next";
 import { CircleArrowRight } from "lucide-react";
@@ -81,7 +81,7 @@ const NFTPrivilegeCards = () => {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
   const isDragging = useRef(false);
- const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const getCardPosition = (index) => {
     if (index === currentIndex) return "current";
     if (index === (currentIndex + 1) % cardTypes.length) return "next";
@@ -175,7 +175,7 @@ const NFTPrivilegeCards = () => {
       document.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
-  const containerHeight = expandedCard !== null ? "h-[800px]" : "h-[300px]";
+  const containerHeight = expandedCard !== null ? "h-[800px]" : "h-[400px]";
 
   return (
     <div
@@ -189,11 +189,17 @@ const NFTPrivilegeCards = () => {
       onMouseLeave={handleMouseUp}
       style={{ userSelect: "none" }}
     >
-      <h1 className="text-4xl font-bold text-[#007BFF] mb-12">
-        <span className="text-white"> {t("NFTPrivilegeCards.Acollectionof")}</span> {t("NFTPrivilegeCards.NFTprivilegecards")}
+      <h1 className="text-4xl font-bold text-[#007BFF] mt-12 mb-12">
+        <span className="text-white">
+          {" "}
+          {t("NFTPrivilegeCards.Acollectionof")}
+        </span>{" "}
+        {t("NFTPrivilegeCards.NFTprivilegecards")}
       </h1>
       <p className="text-white text-center max-w-2xl">
-      {t("NFTPrivilegeCards.TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders")}
+        {t(
+          "NFTPrivilegeCards.TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders"
+        )}
       </p>
 
       <div
@@ -212,9 +218,14 @@ const NFTPrivilegeCards = () => {
           />
         ))}
       </div>
-      <div className="max-w-6xl mx-auto mt-12 flex justify-center">
-        <button className=" bg-gradient-to-r from-[#007AFF] to-[#F30EFF] text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
-        {t("MiningUpgrades.WATCH")}
+      <div className="max-w-6xl mx-auto mt-8 flex justify-center">
+        <button
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
+          className=" text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300"
+        >
+          {t("MiningUpgrades.WATCH")}
           <CircleArrowRight />
         </button>
       </div>
