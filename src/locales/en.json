@@ -1,126 +1,243 @@
 {
-    "header": {
-      "howItWorks": "HOW DOES IT WORK?",
-      "support": "SUPPORT",
-      "goToApp": "GO TO THE APP"
-    },
-    "MiningVisualization":{
-      "Social_Media_Network": "Social Media Network",
-      "#like_mining": "#like_mining",
-      "YOUR": "Your",
-      "MINIG": "MINING",
-      "on_the_phone": "on the phone"
-    },
-    "NFTMinerApp":{
-        "How_it_works_Mining": "How it works Mining?",
-        "ItsassimpleasthatStartearningLIKETokenswithourNFTs": "It's as simple as that! Start earning LIKE Tokens with our NFTs:",
-        "GettheNFT": "Get the NFT",
-        "Starttheminingprocess": "Start the mining process",
-        "Collectyourtokens": "Collect your tokens!",
-        "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit":"Your NFTS will automatically mine valuable tokens, turning them into a source of income. Additional mechanics will speed up this process and increase your profit!",
-        "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet":"Important: your phone and its power are not used in mining — everything happens remotely via the Internet."
-    },
-    "NFTCollection":{
-      "The": "The",
-      "NFT": "NFT",
-      "Collection": "Collection",
-      "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue" : " To participate in mining and mine LIKI and LOVE tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
-      "BUYNFT": "BUY NFT"
-    },
-    "NFTPrivilegeCards": {
-      "Acollectionof": "A collection of",
-      "NFTprivilegecards": "NFT privilege cards",
-      "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders":"The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.",
-      "buyaPlatinumcard": "Buy a Platinum card"
-    },
-    "MiningUpgrades":{
-      "Fan": "Fan",
-      "UpgradeyourminingrigwiththeFanforcooleroperationsandhigherLOVE": "Upgrade your mining rig with the Fan for cooler operations and higher LOVE",
-      "Cableimprovements": "Cable improvements",
-      "BoostyourminingefficiencywiththeCableimprovementsprovidingastablepowersupply": "Boost your mining efficiency with the Cable improvements, providing a stable power supply",
-      "Watercooling": "Water cooling",
-      "ImproveyourminingefficiencywithWaterCoolingprovidingsuperiorcoolingandperformanceboost": "Improve your mining efficiency with Water Cooling, providing superior cooling and performance boost",
-      "AI": "AI",
-      "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Boost your mining setup with the Engineer, optimizing performance and maximizing profits",
-      "Buyupgradesand": "Buy upgrades and",
-      "EarnMore": "Earn More!",
-      "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions":" In addition to the main LIKE mining, our platform offers you the opportunity to diversify your income by mining the LOVE subtoken. This token plays an important role in our ecosystem and will receive a separate listing in the future, which will ensure its high liquidity and demand. Upgrading your mining equipment will allow you to increase the hashrate and increase the efficiency of mining both tokens, as well as open access to additional platform functions.",
-      "Profitpersecond": "Profit per second",
-      "WATCH": "WATCH"
-    },
-    "FeatureCards":{
-      "Thefirststep" : "The first step",
-      "INTHEAPP": "IN THE APP",
-      "Prizesfrom": "Prizes from",
-      "WHEELOFFORTUNE": "WHEEL OF FORTUNE",
-      "Passiveincomeon" : "Passive income on",
-      "STACKING": "STACKING",
-      "Howitworks" : "How it works",
-      "CONVERSION": "CONVERSION",
-      "Fast": "Fast",
-      "DEPOSIT": "DEPOSIT",
-      "and": "and",
-      "WITHDRAWAL": "WITHDRAWAL",
-      "offunds": "of funds",
-      "Daily": "Daily",
-      "TASKS": "TASKS",
-      "Whatkindof" : "What kind of",
-      "GAMES": "GAMES",
-      "arethereformakingmoney": "are there for making money",
-      "Howdoes": "How does",
-      "Mining": "Mining",
-      "work": "work",
-      "sending": "sending",
-      "MOREDETAILED": "MORE DETAILED"
-    },
+  "header": {
+    "howItWorks": "HOW DOES IT WORK?",
+    "support": "SUPPORT",
+    "goToApp": "GO TO THE APP"
+  },
+  "MiningVisualization": {
+    "Social_Media_Network": "Social Media Network",
+    "#like_mining": "#like_mining",
+    "YOUR": "Your",
+    "MINIG": "MINING",
+    "on_the_phone": "on the phone"
+  },
+  "NFTMinerApp": {
+    "How_it_works_Mining": "How it works Mining?",
+    "ItsassimpleasthatStartearningLIKETokenswithourNFTs": "It's as simple as that! Start earning LIKE Tokens with our NFTs:",
+    "GettheNFT": "Get the NFT",
+    "Starttheminingprocess": "Start the mining process",
+    "Collectyourtokens": "Collect your tokens!",
+    "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit": "Your NFTS will automatically mine valuable tokens, turning them into a source of income. Additional mechanics will speed up this process and increase your profit!",
+    "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet": "Important: your phone and its power are not used in mining — everything happens remotely via the Internet."
+  },
+  "NFTCollection": {
+    "The": "The",
+    "NFT": "NFT",
+    "Collection": "Collection",
+    "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue": " To participate in mining and mine LIKI and LOVE tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
+    "BUYNFT": "BUY NFT"
+  },
+  "NFTPrivilegeCards": {
+    "Acollectionof": "A collection of",
+    "NFTprivilegecards": "NFT privilege cards",
+    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders": "The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.",
+    "buyaPlatinumcard": "Buy a Platinum card"
+  },
+  "MiningUpgrades": {
+    "Fan": "Fan",
+    "UpgradeyourminingrigwiththeFanforcooleroperationsandhigherLOVE": "Upgrade your mining rig with the Fan for cooler operations and higher LOVE",
+    "Cableimprovements": "Cable improvements",
+    "BoostyourminingefficiencywiththeCableimprovementsprovidingastablepowersupply": "Boost your mining efficiency with the Cable improvements, providing a stable power supply",
+    "Watercooling": "Water cooling",
+    "ImproveyourminingefficiencywithWaterCoolingprovidingsuperiorcoolingandperformanceboost": "Improve your mining efficiency with Water Cooling, providing superior cooling and performance boost",
+    "AI": "AI",
+    "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Boost your mining setup with the Engineer, optimizing performance and maximizing profits",
+    "Buyupgradesand": "Buy upgrades and",
+    "EarnMore": "Earn More!",
+    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": " In addition to the main LIKE mining, our platform offers you the opportunity to diversify your income by mining the LOVE subtoken. This token plays an important role in our ecosystem and will receive a separate listing in the future, which will ensure its high liquidity and demand. Upgrading your mining equipment will allow you to increase the hashrate and increase the efficiency of mining both tokens, as well as open access to additional platform functions.",
+    "Profitpersecond": "Profit per second",
+    "WATCH": "WATCH"
+  },
+  "FeatureCards": {
+    "Thefirststep": "The first step",
+    "INTHEAPP": "IN THE APP",
+    "Prizesfrom": "Prizes from",
+    "WHEELOFFORTUNE": "WHEEL OF FORTUNE",
+    "Passiveincomeon": "Passive income on",
+    "STACKING": "STACKING",
+    "Howitworks": "How it works",
+    "CONVERSION": "CONVERSION",
+    "Fast": "Fast",
+    "DEPOSIT": "DEPOSIT",
+    "and": "and",
+    "WITHDRAWAL": "WITHDRAWAL",
+    "offunds": "of funds",
+    "Daily": "Daily",
+    "TASKS": "TASKS",
+    "Whatkindof": "What kind of",
+    "GAMES": "GAMES",
+    "arethereformakingmoney": "are there for making money",
+    "Howdoes": "How does",
+    "Mining": "Mining",
+    "work": "work",
+    "sending": "sending",
+    "MOREDETAILED": "MORE DETAILED"
+  },
 
-    "RoadmapCarousel": {
-      "ApplicationDevelopment": "Application Development",
-      "TelegramMiniAppLaunch": "Telegram MiniApp Launch",
-      "EnteringthestockexchangeSTONfi": "Entering the stock exchange STON.fi",
-      "ListingoftheLiKEtoken" : "Listing of the LiKE token",
-      "Partnershipwithotherprojects": "Partnership with other projects",
-      "RoadMap": "Road Map",
-      "oftheProject": "of the Project",
-      "OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives":"Our project roadmap clearly reflects strategic development plans, including key milestones and goals. We strive for full transparency by providing users with access to information about upcoming steps and initiatives."
-    },
-    "BurningLike": {
-      "BurningtheLiKE": "Burning the LiKE",
-      "token":"token",
-      "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket":"Every week, from 06:00 to 08:00 GMT, we carry out halving, burning 125,000,000 LIKE tokens out of a total volume of 80 billion. The burning mechanism: the key to increasing the value of LIKE tokens. Regular token burning is at the core of our economic model. This process not only reduces the total supply of tokens, but also creates a shortage, which inevitably leads to higher prices. The rarer the token becomes, the higher its value on the market."
-    },
-    "ExchangeInterface": {
-      "Partner": "Partner",
-      "CryptoExchanges": "Crypto Exchanges",
-      "Toparticipateinminingandassetue": "To participate in mining and mine LIKE and LOVE tokens, you need to own at least one NFT from our collection on getgames.io . These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value. You can sell your NFTs on the open market, profiting from their growth. Start building your collection today and discover new financial opportunities!"
-    },
-    "VideoPlayer": {
-      "News": "News",
-      "Weareactivelydevelopingourchannelherewenotonly": "We are actively developing our channel, where we not only explain how to make money on NFT easily and competently, but also teach you how to work with our innovative platform, providing step-by-step instructions and useful tips."
-    },
-    "StatisticsDashboard": {
-      "Activeusers": "Active users",
-      "Transactionsperday" : "Transactions per day",
-      "SentbyLOVE": "Sent by LOVE",
-      "Invitedriends": "Invited friends",
-      "ComingSoon": "Coming Soon",
-      "Application": "Application",
-      "statistics": "statistics",
-      "Visualstatisticsofourplatform": "Visual statistics of our platform",
-      "Team": "Team",
-      "Webelieveinthe": "We believe in the power of joint efforts. The Like team is a group of like—minded people who strive to create a future where everyone can achieve financial freedom. Thanks to our experience and innovative solutions, we have created a reliable platform that will help you achieve your goals."
-    },
-    "ContactForm":{
-      "Wearealwaysopentonewpartnerships": "We are always open to new partnerships. Please describe your offer in the contact form below.",
-      "CONTACTUS": "CONTACT US",
-      "Wearealwaysintouchandopentonewsuggestions": "We are always in touch and open to new suggestions!",
-      "SEND": "SEND",
-      "SENDING": "SENDING",
-      "SOCIALNETWORK": "SOCIAL NETWORK"
-    }
-
-
-    
-    
-
+  "RoadmapCarousel": {
+    "ApplicationDevelopment": "Application Development",
+    "TelegramMiniAppLaunch": "Telegram MiniApp Launch",
+    "EnteringthestockexchangeSTONfi": "Entering the stock exchange STON.fi",
+    "ListingoftheLiKEtoken": "Listing of the LiKE token",
+    "Partnershipwithotherprojects": "Partnership with other projects",
+    "RoadMap": "Road Map",
+    "oftheProject": "of the Project",
+    "OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives": "Our project roadmap clearly reflects strategic development plans, including key milestones and goals. We strive for full transparency by providing users with access to information about upcoming steps and initiatives."
+  },
+  "BurningLike": {
+    "BurningtheLiKE": "Burning the LiKE",
+    "token": "token",
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Every week, from 06:00 to 08:00 GMT, we carry out halving, burning 125,000,000 LIKE tokens out of a total volume of 80 billion. The burning mechanism: the key to increasing the value of LIKE tokens. Regular token burning is at the core of our economic model. This process not only reduces the total supply of tokens, but also creates a shortage, which inevitably leads to higher prices. The rarer the token becomes, the higher its value on the market."
+  },
+  "ExchangeInterface": {
+    "Partner": "Partner",
+    "CryptoExchanges": "Crypto Exchanges",
+    "Toparticipateinminingandassetue": "To participate in mining and mine LIKE and LOVE tokens, you need to own at least one NFT from our collection on getgames.io . These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value. You can sell your NFTs on the open market, profiting from their growth. Start building your collection today and discover new financial opportunities!"
+  },
+  "VideoPlayer": {
+    "News": "News",
+    "Weareactivelydevelopingourchannelherewenotonly": "We are actively developing our channel, where we not only explain how to make money on NFT easily and competently, but also teach you how to work with our innovative platform, providing step-by-step instructions and useful tips."
+  },
+  "StatisticsDashboard": {
+    "Activeusers": "Active users",
+    "Transactionsperday": "Transactions per day",
+    "SentbyLOVE": "Sent by LOVE",
+    "Invitedriends": "Invited friends",
+    "ComingSoon": "Coming Soon",
+    "Application": "Application",
+    "statistics": "statistics",
+    "Visualstatisticsofourplatform": "Visual statistics of our platform",
+    "Team": "Team",
+    "Webelieveinthe": "We believe in the power of joint efforts. The Like team is a group of like—minded people who strive to create a future where everyone can achieve financial freedom. Thanks to our experience and innovative solutions, we have created a reliable platform that will help you achieve your goals."
+  },
+  "ContactForm": {
+    "Wearealwaysopentonewpartnerships": "We are always open to new partnerships. Please describe your offer in the contact form below.",
+    "CONTACTUS": "CONTACT US",
+    "Wearealwaysintouchandopentonewsuggestions": "We are always in touch and open to new suggestions!",
+    "SEND": "SEND",
+    "SENDING": "SENDING",
+    "SOCIALNETWORK": "SOCIAL NETWORK"
+  },
+  "Modal1": {
+    "firstStep": "The first step into the app!",
+    "intro": "This moment will be your first step into the world of Web 3 and financial independence. Follow these simple steps to get started:",
+    "step1": "1. Follow the link in the Telegram mini-application.",
+    "step2": "2. Click the \"Start\" button to activate the process.",
+    "step3": "3. Connect your crypto wallet by following the on-screen instructions.",
+    "accessPossibilities": "Now you have access to many possibilities!",
+    "easyAccess": "Easy access for everyone: Master new Web3 technologies without difficulties.",
+    "participateDeFi": "Participate in Decentralized Profitable Finance (DeFi): Earn income from your assets.",
+    "manageAssets": "Manage your assets with complete freedom and security: Control your funds without intermediaries.",
+    "speedAndConvenience": "The speed and convenience of the application: All operations are performed instantly, without delay.",
+    "fullFledgedUser": "You have become a full-fledged user of our platform and can start using all these features today."
+  },
+  "Modal2": {
+    "wheelOfFortune": "Prizes from the WHEEL OF FORTUNE?",
+    "intro": "One of the main features of our project is the Wheel of Fortune, an exciting game mechanic that gives you a chance to win cool prizes: tokens, NFT, and other valuable rewards.",
+    "spinEvery6Hours": "You can spin the wheel every 6 hours, so you can try your luck several times a day!",
+    "nftMiners": "If you have NFT miners, special conditions apply for you:",
+    "multipleNFTs": "If you own more than one NFT, the chance of winning Love tokens in the Wheel of Fortune mechanics increases (as a percentage from 2% to 20% of the winning amount).",
+    "awardsUpdated": "In addition, the list of awards will be updated regularly, so that even more interesting and valuable prizes await you in the future.",
+    "spinAndEnjoy": "Just spin the wheel and enjoy the possibilities!"
+  },
+  "Modal3": {
+    "internalTransfers": "How do internal transfers work?",
+    "intro": "Now you can quickly and conveniently transfer USDT, TON, Like and Love tokens inside the app!",
+    "sendTokens": "How do I send tokens?",
+    "step1": "1. Go to the \"Send\" section.",
+    "step2": "2. Select the desired token: USDT, TON, Like or Love.",
+    "step3": "3. Enter the recipient's ID manually or scan the QR code.",
+    "step4": "4. Specify the transfer amount.",
+    "payCommission": "How do I pay the commission?",
+    "commissionOptions": "You can choose one of the following options:",
+    "payWithTokens": "* Pay the commission with tokens (USDT, TON, Like, Love).",
+    "completeTask": "* Complete a simple task (for example, clicking on a link, reposting, subscribing to a channel, etc.).",
+    "noCommission": "Complete tasks and transfer tokens without commission! All details and settings are available in the app."
+  },
+  "Modal4": {
+    "tokenConversion": "Token Conversion",
+    "intro": "You can exchange tokens based on your card level, receiving the best conditions and minimum commissions.",
+    "howItWorks": "How does it work?",
+    "step1": "1. Select the tokens you want to exchange.",
+    "step2": "2. We will automatically select the current exchange rate for you, which is calculated based on data from several leading exchanges.",
+    "step3": "3. Depending on your card level, an individual commission is applied:",
+    "silver": "- Silver – 1%",
+    "gold": "- Gold – 0.75%",
+    "platinum": "- Platinum – 0.5%",
+    "step4": "4. Before confirming the exchange, you will see the total amount, including the commission.",
+    "tryNow": "Try token conversion right now and get maximum benefits!"
+  },
+  "Modal5": {
+    "fastDepositWithdrawal": "Fast DEPOSIT and WITHDRAWAL of funds?",
+    "withdrawalIntro": "You can withdraw USDT, TON, Like and Love tokens from your internal balance to an external wallet. To do this:",
+    "withdrawStep1": "Go to the \"Output\" section.",
+    "withdrawStep2": "Select the token you want to withdraw (Like, Love, USDT, TON).",
+    "withdrawStep3": "Enter the address of the external wallet.",
+    "withdrawStep4": "Confirm the operation.",
+    "depositIntro": "Adding funds to your balance:",
+    "depositStep1": "You can top up your balance with USDT, TON, Like and Love. For this:",
+    "depositStep2": "Go to the \"Input\" section.",
+    "depositStep3": "Copy the project's wallet address or scan the QR code.",
+    "depositStep4": "Make a transfer and the tokens will be credited automatically.",
+    "important": "Important:",
+    "replenishmentRatio": "Replenishment takes place in a 1:1 ratio (sent tokens = credited tokens).",
+    "trc20Support": "Support for TRC20 Tether (USDT): You can now top up your balance using the TRC20 USDT wallet."
+  },
+  "Modal6": {
+    "dailyTasks": "Daily tasks",
+    "intro": "Earn rewards every day! Log in to the app daily and receive bonuses that increase every day. Missed a day? The counter will reset, but you can always start over!",
+    "howItWorks": "How does it work?",
+    "step1": "1. Log into the app every day and receive Love tokens (on certain days – Like).",
+    "step2": "2. Keep track of your progress on a 10-day calendar. The longer you log in in a row, the more bonuses you get!",
+    "step3": "3. Did you miss the day? Start over and get a bonus for the first day.",
+    "completeTasks": "Complete simple daily tasks and earn even more:",
+    "task1": "✔ Follow the links of the partners.",
+    "task2": "✔ Send posts to your friends in private messages.",
+    "task3": "✔ Share stories and subscribe to channels.",
+    "task4": "✔ Confirm the completion of tasks using the code in the application.",
+    "earnNow": "Go to the \"Tasks\" tab and start earning right now!"
+  },
+  "Modal7": {
+    "dailyRewards": "Daily in-game rewards!",
+    "intro": "Get rewards by logging into the game at the right time and opening special boxes. Each mailbox is available at its own time interval.",
+    "howItWorks": "How does it work?",
+    "step1": "Log in to the game at the specified time.",
+    "step2": "Hold the button for 1 minute to open the drawer.",
+    "step3": "Keep an eye on the time intervals so as not to miss the boxes.",
+    "missedMailbox": "Did you miss a mailbox?",
+    "missedMailboxSolution": "Not a problem! If you missed a mailbox (for example, No. 3), but the next one (No. 4) is available now, you can restore the reward for the missed mailbox by paying for it with **Like** tokens.",
+    "rewardsForEveryone": "Rewards for everyone!",
+    "bonusCollection": "Collect bonuses, enjoy the game and win!",
+    "plans": "In the plans:",
+    "futurePlans": "New games and activities that will make the process even more interesting. Stay tuned!"
+ },
+  "Modal8": {
+    "nftMining": "NFT mining",
+    "acquisition": "Acquisition:",
+    "step1": "1. Purchase NFT through the Getgems platform or at another suitable site.",
+    "step2": "2. Connect the TON wallet in our application – mining will start automatically.",
+    "whatYouGet": "What do you get:",
+    "miningSpeed": "- Mining speed: 191.78 Likes and 1920 Loves per day.",
+    "tokensCredited": "- Tokens are credited automatically to the balance in the Mini App.",
+    "features": "Features:",
+    "feature1": "- One NFT is linked to one account. If the NFT is transferred to another user, mining stops.",
+    "feature2": "- After halving, the mining speed is reduced by 50%.",
+    "whyProfitable": "Why is it profitable?",
+    "passiveIncome": "Passive income: Earn tokens effortlessly.",
+    "simplicity": "Simplicity: Connect your wallet and you're done.",
+    "earlyStart": "Early start: Manage to maximize your income before halving."
+  },
+  "Modal9": {
+    "stakingMechanics": "The mechanics of staking",
+    "intro": "Staking is the process of locking your assets on the network to participate in transaction verification and maintain its security. In return, you receive a reward in the form of additional tokens, the amount of which depends on the volume and duration of the staking.",
+    "howItWorks": "How it works:",
+    "step1": "The entire staking process takes place in the Mini App.",
+    "step2": "You block the desired number of tokens.",
+    "step3": "Your tokens remain frozen for 14 days.",
+    "step4": "Upon expiration, you will receive back the frozen amount and accrued interest.",
+    "noCommission": "There is no commission for staking.",
+    "futurePlans": "There are plans to add support for other tokens.",
+    "important": "Important:",
+    "yieldCalculation": "The yield is calculated automatically, taking into account the compound interest system. This means that the larger the volume of staking, the higher the amount of accruals."
   }
+}

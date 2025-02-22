@@ -6,14 +6,17 @@ import phone4 from "../assets/phone4.gif";
 import phone5 from "../assets/phone5.gif";
 import phone6 from "../assets/phone6.gif";
 import phone7 from "../assets/phone7.gif";
+import phone8 from "../assets/phone8.gif";
+import phone9 from "../assets/phone9.gif";
 import FeatureModal from "./FeatureCardModal";
 import { useTranslation } from "react-i18next";
 const FeatureCards = () => {
   const { t, i18n } = useTranslation();
-  const [selectedFeature, setSelectedFeature] = useState(null);
+  const [selectedFeatureId, setSelectedFeatureId] = useState(null);
   const features = [
     {
       title: {
+        id: 1,
         regular: t("FeatureCards.Thefirststep"),
         highlight: t("FeatureCards.INTHEAPP"),
         hasQuestionMark: false,
@@ -22,6 +25,7 @@ const FeatureCards = () => {
     },
     {
       title: {
+        id: 2,
         regular: t("FeatureCards.Prizesfrom"),
         highlight: t("FeatureCards.WHEELOFFORTUNE"),
         hasQuestionMark: true,
@@ -30,6 +34,7 @@ const FeatureCards = () => {
     },
     {
       title: {
+        id: 3,
         regular: t("FeatureCards.Passiveincomeon"),
         highlight: t("FeatureCards.STACKING"),
         hasQuestionMark: true,
@@ -38,6 +43,7 @@ const FeatureCards = () => {
     },
     {
       title: {
+        id: 4,
         regular: t("FeatureCards.Howitworks"),
         highlight: t("FeatureCards.CONVERSION"),
         hasQuestionMark: true,
@@ -46,18 +52,20 @@ const FeatureCards = () => {
     },
     {
       title: {
-        regular:  t("FeatureCards.Fast"),
-        highlight:  t("FeatureCards.DEPOSIT"),
+        id: 5,
+        regular: t("FeatureCards.Fast"),
+        highlight: t("FeatureCards.DEPOSIT"),
         secondLine: {
-          regular:  t("FeatureCards.and"),
-          highlight:  t("FeatureCards.WITHDRAWAL"),
-          end:  t("FeatureCards.offunds"),
+          regular: t("FeatureCards.and"),
+          highlight: t("FeatureCards.WITHDRAWAL"),
+          end: t("FeatureCards.offunds"),
         },
       },
       image: phone5,
     },
     {
       title: {
+        id: 6,
         regular: t("FeatureCards.Daily"),
         highlight: t("FeatureCards.TASKS"),
         hasQuestionMark: true,
@@ -66,6 +74,7 @@ const FeatureCards = () => {
     },
     {
       title: {
+        id: 7,
         regular: t("FeatureCards.Whatkindof"),
         highlight: t("FeatureCards.GAMES"),
         secondLine: {
@@ -77,17 +86,19 @@ const FeatureCards = () => {
     },
     {
       title: {
-        regular:  t("FeatureCards.Howdoes"),
+        id: 8,
+        regular: t("FeatureCards.Howdoes"),
         highlight: t("FeatureCards.Mining"),
         secondLine: {
-          regular:  t("FeatureCards.work"),
+          regular: t("FeatureCards.work"),
           hasQuestionMark: true,
         },
       },
-      image: phone5,
+      image: phone9,
     },
     {
       title: {
+        id: 9,
         regular: t("FeatureCards.Howdoes"),
         highlight: t("FeatureCards.sending"),
         secondLine: {
@@ -95,13 +106,26 @@ const FeatureCards = () => {
           hasQuestionMark: true,
         },
       },
-      image: phone5,
+      image: phone8,
     },
   ];
 
+  const handleContinue = () => {
+    const currentIndex = features.findIndex(f => f.title.id === selectedFeatureId);
+    if (currentIndex < features.length - 1) {
+      setSelectedFeatureId(features[currentIndex + 1].title.id);
+    } else {
+      setSelectedFeatureId(null); // Close modal if we're at the last feature
+    }
+  };
+
+  const selectedFeature = features.find(f => f.title.id === selectedFeatureId);
+
   return (
     <div className="min-h-screen max-w-6xl m-auto mb-10 pt-28 p-4">
-      <h1 className="text-6xl font-bold text-white text-center flex justify-center mb-10">FAQ</h1>
+      <h1 className="text-6xl font-bold text-white text-center flex justify-center mb-10">
+        FAQ
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {features.map((feature, index) => (
           <div
@@ -146,8 +170,9 @@ const FeatureCards = () => {
               </div>
 
               {/* Button */}
-              <button className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2"
-               onClick={() => setSelectedFeature(feature)}
+              <button
+                className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2"
+                onClick={() => setSelectedFeatureId(feature.title.id)}
               >
                 {t("FeatureCards.MOREDETAILED")}
                 <svg
@@ -170,7 +195,9 @@ const FeatureCards = () => {
         <FeatureModal
           feature={selectedFeature}
           isVisible={!!selectedFeature}
-          onClose={() => setSelectedFeature(null)}
+          onClose={() => setSelectedFeatureId(null)}
+          onContinue={handleContinue}
+          isLastFeature={selectedFeature.title.id === features.length}
         />
       )}
     </div>

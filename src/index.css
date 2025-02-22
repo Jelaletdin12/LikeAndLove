@@ -110,7 +110,31 @@ body {
   }
 }
 
-.nftCollection{
-  height: 350px ; 
-padding-top: 50px !important;
+.nftCollection {
+  height: 400px;
+  padding-top: 50px !important;
 }
+
+@media screen and (max-width: 1024px) {
+  .nftCollection {
+    height: 350px;
+    padding-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .nftCollection {
+    height: 350px;
+    padding-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .nftCollection {
+    height: 500px;
+    padding-top: 50px !important;
+  }
+}
+
+
+

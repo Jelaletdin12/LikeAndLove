@@ -43,8 +43,8 @@ const NFTCard = ({
       }}
     >
       <div
-        className={`rounded-lg relative cursor-pointer min-h-[250px] w-[450px] ${
-          isExpanded ? "bg-[#171D31]" : ""
+        className={`rounded-lg relative cursor-pointer  ${
+          isExpanded ? "" : ""
         }`}
         style={{
           background:
@@ -63,8 +63,8 @@ const NFTCard = ({
             {type.charAt(0).toUpperCase() + type.slice(1)} Card
           </div>
         )}
-        <div className="flex justify-center m-2.5 mx-5">
-          <img src={image} alt={type} className="w-[300px] md:w-full" />
+        <div className="flex justify-center m-2">
+          <img src={image} alt={type} className="w-[300px] max-w-[304px]" />
         </div>
         {isExpanded && <NFTCardDetails type={type} />}
       </div>
@@ -175,7 +175,7 @@ const NFTPrivilegeCards = () => {
       document.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
-  const containerHeight = expandedCard !== null ? "h-[800px]" : "h-[400px]";
+  const containerHeight = expandedCard !== null ? "h-[650px]" : "h-[250px]";
 
   return (
     <div
@@ -203,7 +203,7 @@ const NFTPrivilegeCards = () => {
       </p>
 
       <div
-        className={`relative w-full ${containerHeight} overflow-hidden transition-all duration-500`}
+        className={`relative w-full ${containerHeight} overflow-hidden transition-all duration-500 m-0`}
       >
         {cardTypes.map((type, index) => (
           <NFTCard
@@ -218,16 +218,16 @@ const NFTPrivilegeCards = () => {
           />
         ))}
       </div>
-      <div className="max-w-6xl mx-auto mt-8 flex justify-center">
-        <button
-          style={{
-            background: "linear-gradient(to right, #007AFF, #F30EFF)",
-          }}
-          className=" text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300"
+      <div className="text-center mt-2 flex justify-center">
+        <a  style={{
+                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
+                }}
+          href="https://getgems.io/collection/EQB1v1TKh_7y1hSgbQhD4K5vUg0gu76o4E6d9WD3148YndjK"
+          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
         >
-          {t("MiningUpgrades.WATCH")}
+          {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />
-        </button>
+        </a>
       </div>
     </div>
   );

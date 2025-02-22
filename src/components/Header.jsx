@@ -68,16 +68,21 @@ const Header = () => {
 
           {/* Navigation Items */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="bg-white text-black px-4 py-2 rounded-[8px] text-sm font-bold transition-colors">
+            <button className="bg-white text-black px-4 py-2 rounded-[8px] text-sm font-bold transition-colors uppercase">
               {t("header.howItWorks")}
             </button>
 
-            <button className="!text-white transition-colors font-bold text-sm">
-              WHITE PAPER
+            <button className="!text-white transition-colors font-bold text-sm uppercase">
+              <a
+                className=""
+                href="https://docs.google.com/document/d/1UFtE2KyLq6nJJQIaGEW_4OJM_06Z4zS5260h_rciQH4/edit?tab=t.0"
+              >
+                WHITE PAPER
+              </a>
             </button>
 
-            <button className="!text-white transition-colors font-bold text-sm">
-              {t("header.support")}
+            <button className="!text-white transition-colors font-bold text-sm uppercase">
+              <a href="https://t.me/Likeminingsupport">{t("header.support")}</a>
             </button>
 
             {/* Language Selector */}
@@ -109,9 +114,9 @@ const Header = () => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-6 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity"
+              className="text-white px-6 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase"
             >
-              {t("header.goToApp")}
+              <a href="https://t.me/Like_Project_Bot">{t("header.goToApp")}</a>
             </button>
           </div>
 
@@ -135,16 +140,18 @@ const Header = () => {
           style={{ top: `${headerHeight + window.scrollY}px` }}
         >
           <div className="flex flex-col items-center gap-4 p-4 min-h-screen pt-15">
-            <button className="text-left text-white  rounded-[8px] text-xl font-bold transition-colors w-full">
+            <button className="text-left text-white  rounded-[8px] text-xl font-bold transition-colors w-full uppercase">
               {t("header.howItWorks")}
             </button>
             <div className="h-0.5 w-full bg-[#99a1af]"></div>
-            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2">
-              WHITE PAPER
+            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2 uppercase">
+              <a href="https://docs.google.com/document/d/1UFtE2KyLq6nJJQIaGEW_4OJM_06Z4zS5260h_rciQH4/edit?tab=t.0">
+                WHITE PAPER
+              </a>
             </button>
             <div className="h-0.5 w-full bg-[#99a1af]"></div>
-            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2">
-              {t("header.support")}
+            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2 uppercase">
+              <a href="https://t.me/Likeminingsupport">{t("header.support")}</a>
             </button>
             <div className="h-0.5 w-full bg-[#99a1af]"></div>
             {/* Language Selector */}
@@ -176,9 +183,9 @@ const Header = () => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-6 py-2 rounded-[8px] text-l font-medium hover:opacity-90 transition-opacity w-full"
+              className="text-white px-6 py-2 rounded-[8px] text-l font-medium hover:opacity-90 transition-opacity w-full uppercase"
             >
-              {t("header.goToApp")}
+              <a href="https://t.me/Like_Project_Bot">{t("header.goToApp")}</a>
             </button>
           </div>
         </div>

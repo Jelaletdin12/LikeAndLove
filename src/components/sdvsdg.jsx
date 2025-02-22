@@ -1,543 +1,134 @@
-import React, { useState } from "react";
-import silver from "../assets/silver.png";
-import gold from "../assets/gold.png";
-import platinum from "../assets/platinium.png";
-import tick from "../assets/tick.svg";
+import vectorbig from "../assets/vectorbig.png";
+import fan from "../assets/fan.gif";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
+import { useState } from "react";
+import { CircleArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+export default function NFTCollection() {
+  const { t, i18n } = useTranslation();
+  const nftItems = [
+    { title: "Like #113", icon: fan },
+    { title: "Like #1040", icon: fan },
+    { title: "Like #140", icon: fan },
+    { title: "Like #145", icon: fan },
+    { title: "Like #130", icon: fan },
+    { title: "Like #150", icon: fan },
+    { title: "Like #160", icon: fan },
+    { title: "Like #170", icon: fan },
+  ];
 
-const NFTCard = ({
-  type,
-  isExpanded,
-  isHovered,
-  onMouseEnter,
-  onMouseLeave,
-  onClick,
-}) => {
-  // Resimleri type'a göre seç
-  const image = {
-    silver: silver,
-    gold: gold,
-    platinum: platinum,
-  }[type];
-
-  // Silver
-  const details =
-    isExpanded &&
-    {
-      silver: (
-        <div className="mt-4 space-y-2 p-2.5">
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за конвертацию
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.5 %
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку USDT
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.00999 USDT
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку TON
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0,0019 TON
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Like
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Love
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Особые привелегии в Telegram
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      gold: (
-        <div className="mt-4 space-y-2 p-2.5">
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за конвертацию hh
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.5 %
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку USDT
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.00999 USDT
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку TON
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0,0019 TON
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Like
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Love
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Особые привелегии в Telegram
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-      platinum: (
-        <div className="mt-4 space-y-2 p-2.5">
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за конвертацию
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.5 %
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку USDT
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0.00999 USDT
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку TON
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                    0,0019 TON
-                  </span>
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    независимо от суммы
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Like
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Комиссия за отправку Love
-                </span>
-                <div className="flex">
-                  <span className="text-[#A2ACB0] text-[12px]">
-                    Нет комиссии за Like !
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
-                <img src={tick} alt="" />
-              </div>
-              <div>
-                <span className="text-[14px] font-[600] text-white">
-                  Особые привелегии в Telegram
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      ),
-    }[type];
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div
-      className={`rounded-lg  relative cursor-pointer h-max max-w-6xl min-h-[250px]
-        ${isExpanded ? "bg-[#171D31] border-4 border-transparent" : ""}
-        ${isHovered && !isExpanded ? "border-4 border-transparent" : ""}
-      `}
-      style={{
-        background: isExpanded
-          ? `gradient-border border-box`
-          : isHovered
-          ? `linear-gradient(#171D31, #171D31) padding-box, linear-gradient(30deg, #007AFF, #F30EFF) border-box`
-          : "none",
-        border: isHovered || isExpanded ? "4px solid transparent" : "none",
-      }}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      onClick={onClick}
-    >
-      {(isHovered || isExpanded) && (
-        <div className="  flex justify-center text-white px-3 py-1  text-md ">
-          {type === "silver" && "Silver Card"}
-          {type === "gold" && "Gold Card"}
-          {type === "platinum" && "Platinum Card"}
+    <div className="mx-auto mt-15">
+      <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto p-4">
+        <div>
+          <h2 className=" text-4xl flex text-white font-black mb-4 md:text-6xl">
+            {t("NFTCollection.The")}{" "}
+            <span className="text-[#007BFF] mx-2">NFT</span>{" "}
+            {t("NFTCollection.Collection")}
+          </h2>
+          <p className="text-white text-l mb-8 max-w-2xl text-l md:text-xl">
+            {t(
+              "NFTCollection.ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue"
+            )}
+          </p>
         </div>
-      )}
-      <div className="flex justify-center m-2.5 mr-5 ml-5 ]">
-        <img src={image} alt={type} className="" />
-      </div>
-      {isExpanded && details}
-    </div>
-  );
-};
-
-const NFTPrivilegeCards = () => {
-  const [expandedCard, setExpandedCard] = useState(null);
-  const [hoveredCard, setHoveredCard] = useState(null);
-  const cardTypes = ["silver", "gold", "platinum"];
-
-  const handleCardClick = (clickedType) => {
-    if (expandedCard === clickedType) {
-      setExpandedCard(null);
-    } else {
-      setExpandedCard(clickedType);
-    }
-  };
-
-  return (
-    <div className="flex flex-col items-center space-y-8 p-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-12">
-        NFT privilege card
-      </h1>
-      <p className="text-white">The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.</p>
-      <div className=" flex justify-evenly w-full">
-        {cardTypes.map((type) => (
-          <NFTCard
-            key={type}
-            type={type}
-            isExpanded={expandedCard === type}
-            isHovered={hoveredCard === type}
-            onMouseEnter={() => setHoveredCard(type)}
-            onMouseLeave={() => setHoveredCard(null)}
-            onClick={() => handleCardClick(type)}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default NFTPrivilegeCards;
-
-// skgblegnsg asaky claude dan cykan
-
-
-import React, { useState } from 'react';
-
-const NFTCard = ({
-  type,
-  isExpanded,
-  isHovered,
-  onMouseEnter,
-  onMouseLeave,
-  onClick,
-  position
-}) => {
-  // Pozisyona göre transform değerlerini belirle
-  const getTransformStyle = () => {
-    switch (position) {
-      case 'prev':
-        return 'translate(-135%, -50%) scale(0.8)';
-      case 'next':
-        return 'translate(35%, -50%) scale(0.8)';
-      case 'current':
-        return 'translate(-50%, -50%) scale(1)';
-      default:
-        return 'translate(-50%, -50%) scale(0.3)';
-    }
-  };
-
-  return (
-    <div
-      className={`
-        absolute top-1/2 left-1/2 
-        transition-all duration-1000 ease-in-out
-        ${position === 'current' ? 'z-10' : 'z-0'}
-        ${position === 'hidden' ? 'opacity-0' : 'opacity-100'}
-      `}
-      style={{
-        transform: getTransformStyle(),
-        filter: position === 'prev' || position === 'next' ? 'brightness(85%)' : 'none'
-      }}
-    >
-      <div
-        className={`
-          rounded-lg relative cursor-pointer 
-          min-h-[250px] w-[450px]
-          ${isExpanded ? "bg-[#171D31]" : ""}
-        `}
-        style={{
-          background: isExpanded || isHovered
-            ? `linear-gradient(#171D31, #171D31) padding-box, 
-               linear-gradient(30deg, #007AFF, #F30EFF) border-box`
-            : "#171D31",
-          border: isHovered || isExpanded ? "4px solid transparent" : "none",
-        }}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        onClick={onClick}
-      >
-        {(isHovered || isExpanded) && (
-          <div className="flex justify-center text-white px-3 py-1 text-md">
-            {type.charAt(0).toUpperCase() + type.slice(1)} Card
-          </div>
-        )}
-        <div className="flex justify-center m-2.5 mx-5">
-          <img 
-            src={`/api/placeholder/300/200`} 
-            alt={type} 
-            className="w-full" 
-          />
+        <div className="hidden md:flex flex-col items-center">
+          <img className="w-[200px] h-[200px]" src={vectorbig} alt="NFT" />
+          <h3 className="text-white text-[24px] font-bold mt-2">GetGames.io</h3>
         </div>
       </div>
-    </div>
-  );
-};
 
-const NFTPrivilegeCards = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [hoveredCard, setHoveredCard] = useState(null);
-  const cardTypes = ["silver", "gold", "platinum"];
-
-  const getCardPosition = (index) => {
-    if (index === currentIndex) return 'current';
-    if (index === (currentIndex + 1) % cardTypes.length) return 'next';
-    if (index === (currentIndex - 1 + cardTypes.length) % cardTypes.length) return 'prev';
-    return 'hidden';
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % cardTypes.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + cardTypes.length) % cardTypes.length);
-  };
-
-  return (
-    <div className="flex flex-col items-center space-y-8 p-8">
-      <h1 className="text-4xl font-bold text-blue-600 mb-12">
-        NFT Privilege Cards
-      </h1>
-      <p className="text-white text-center max-w-2xl">
-        The unique privileges of the cards provide advantages such as reduced fees 
-        for sending and converting tokens within our platform, as well as exclusive 
-        privileges for Platinum Card holders.
-      </p>
-      
-      <div className="relative w-full h-[400px] overflow-hidden">
-        {cardTypes.map((type, index) => (
-          <NFTCard
-            key={type}
-            type={type}
-            isExpanded={currentIndex === index}
-            isHovered={hoveredCard === type}
-            onMouseEnter={() => setHoveredCard(type)}
-            onMouseLeave={() => setHoveredCard(null)}
-            onClick={() => setCurrentIndex(index)}
-            position={getCardPosition(index)}
-          />
-        ))}
-
-        <button 
-          onClick={handlePrev}
-          className="absolute left-8 top-1/2 -translate-y-1/2 z-20 
-                     text-white bg-blue-600 p-2 rounded-full"
+      {/* Carousel */}
+      <div className="relative py-4">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={1}
+          centeredSlides={true}
+          pagination={{ clickable: true }}
+          modules={[Pagination, Autoplay]}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          className="nftCollection"
+          autoplay={{ delay: 3000 }}
+          loop={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 5,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 6,
+            },
+            
+          }}
         >
-          ←
-        </button>
-        <button 
-          onClick={handleNext}
-          className="absolute right-8 top-1/2 -translate-y-1/2 z-20 
-                     text-white bg-blue-600 p-2 rounded-full"
-        >
-          →
-        </button>
+          {nftItems.map((item, index) => {
+            // Ortadaki kart
+            let scaleClass =
+              "scale-100 md:scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {cardTypes.map((_, index) => (
-            <button
-              key={index}
-              className={`w-4 h-4 rounded-full border border-blue-600
-                ${currentIndex === index ? 'bg-blue-600' : 'bg-transparent'}`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
-        </div>
+            // Sağ ve solundaki kartlar (biraz küçük olacak)
+            if (index === activeIndex - 1 || index === activeIndex + 1) {
+              scaleClass = "scale-75 md:scale-85 opacity-90";
+            }
+
+            // Diğer tüm kartlar (en küçük olacak)
+            if (
+              index !== activeIndex &&
+              index !== activeIndex - 1 &&
+              index !== activeIndex + 1
+            ) {
+              scaleClass = "scale-60 md:scale-70 opacity-70";
+            }
+
+            return (
+              <SwiperSlide key={index}>
+                <div
+                  className={`relative p-[3px] shadow-[0_0px_35px_rgba(0,122,255,1)] rounded-xl transition-all duration-300  ${scaleClass}`}
+                >
+                  <div
+                    className="absolute inset-0  rounded-xl  "
+                    style={{
+                      background: "linear-gradient(45deg, #007AFF, #F30EFF)",
+                    }}
+                  />
+                  <div className="relative p-2  rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center ">
+                    <h3 className="text-m md:text-lg font-bold xl:mt-2">
+                      {item.title}
+                    </h3>
+                    <img
+                      src={item.icon}
+                      className="w-[100px] md:w-48 "
+                      alt="NFT"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+
+      {/* Buy NFT Button */}
+      <div className="text-center mt-8 flex justify-center">
+        <a
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
+          href="https://getgems.io/collection/EQDMvchkiDT6H2ufjqCecyLb6-S9YYE1-JzSC7D-AbJfee2g"
+          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
+        >
+          {t("NFTCollection.BUYNFT")}
+          <CircleArrowRight />
+        </a>
       </div>
     </div>
   );
-};
-
-export default NFTPrivilegeCards;
+}

@@ -53,7 +53,6 @@ export default function NFTCollection() {
           modules={[Pagination, Autoplay]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           className="nftCollection"
-       
           autoplay={{ delay: 3000 }}
           loop={true}
           breakpoints={{
@@ -67,11 +66,13 @@ export default function NFTCollection() {
             1024: {
               slidesPerView: 6,
             },
+            
           }}
         >
           {nftItems.map((item, index) => {
             // Ortadaki kart
-            let scaleClass = "scale-100 md:scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
+            let scaleClass =
+              "scale-100 md:scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
 
             // Sağ ve solundaki kartlar (biraz küçük olacak)
             if (index === activeIndex - 1 || index === activeIndex + 1) {
@@ -90,17 +91,23 @@ export default function NFTCollection() {
             return (
               <SwiperSlide key={index}>
                 <div
-                  className={`relative p-[3px] shadow-[0_0px_35px_rgba(0,122,255,1)] rounded-xl ${scaleClass}`}
+                  className={`relative p-0.5 md:p-[3px]  shadow-[0_0px_35px_rgba(0,122,255,1)] rounded-xl transition-all duration-300  ${scaleClass}`}
                 >
                   <div
-                    className="absolute inset-0  rounded-xl  "
+                    className="absolute inset-0 rounded-xl  "
                     style={{
                       background: "linear-gradient(45deg, #007AFF, #F30EFF)",
                     }}
                   />
-                  <div className="relative p-2  rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center">
-                    <h3 className="text-m md:text-lg font-bold mt-2">{item.title}</h3>
-                    <img src={item.icon} className="w-[100px] md:w-40 mt-0 md:mt-4" alt="NFT" />
+                  <div className="relative p-2  rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col items-center ">
+                    <h3 className="text-m md:text-lg font-bold md:mt-2 xl:mt-2">
+                      {item.title}
+                    </h3>
+                    <img
+                      src={item.icon}
+                       className="w-4/5 h-4/5 object-contain"
+                      alt="NFT"
+                    />
                   </div>
                 </div>
               </SwiperSlide>
@@ -111,11 +118,12 @@ export default function NFTCollection() {
 
       {/* Buy NFT Button */}
       <div className="text-center mt-8 flex justify-center">
-        <a  style={{
-                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
-                }}
-          href="#"
-          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80"
+        <a
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
+          href="https://getgems.io/collection/EQDMvchkiDT6H2ufjqCecyLb6-S9YYE1-JzSC7D-AbJfee2g"
+          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
         >
           {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />

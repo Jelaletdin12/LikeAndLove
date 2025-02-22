@@ -18,7 +18,7 @@ const MiningGuide = () => {
         <p className="text-l text-white mb-8 md:text-xl">
         {t("NFTMinerApp.ItsassimpleasthatStartearningLIKETokenswithourNFTs")}
         </p>
-        <ul className="mb-8">
+        <ul className="mb-8 list-decimal list-inside">
           <li className="text-l md:text-xl text-white">{t("NFTMinerApp.GettheNFT")}</li>
           <li className="text-l md:text-xl text-white">
           {t("NFTMinerApp.Starttheminingprocess")}

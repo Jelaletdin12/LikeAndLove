@@ -118,6 +118,7 @@ const RoadmapCarousel = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      
     </>
   );
 };

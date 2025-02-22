@@ -4,36 +4,36 @@
     "support": "Поддержка",
     "goToApp": "приложение"
   },
-  "MiningVisualization":{
+  "MiningVisualization": {
     "Social_Media_Network": "Social Media Network",
     "#like_mining": "#like_mining",
     "YOUR": "Ваш",
     "MINIG": "МАЙНИНГ",
     "on_the_phone": "в телефоне!"
   },
-  "NFTMinerApp":{
-      "How_it_works_Mining": "Как работает Майнинг?",
-      "ItsassimpleasthatStartearningLIKETokenswithourNFTs:": "Это проще простого! Начните зарабатывать токены LIKE с нашими NFT:",
-      "GettheNFT": "Получите NFT",
-      "Starttheminingprocess": "Запустите процесс майнинга",
-      "Collectyourtokens": " Собирайте свои токены!",
-      "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit":"Ваши NFT будут автоматически майнить ценные токены, превращая их в источник дохода. Дополнительные механики ускорят этот процесс и увеличат вашу прибыль!",
-      "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet":"Важно: ваш телефон и его мощности не используются в майнинге — все происходит удаленно через интернет."
+  "NFTMinerApp": {
+    "How_it_works_Mining": "Как работает Майнинг?",
+    "ItsassimpleasthatStartearningLIKETokenswithourNFTs:": "Это проще простого! Начните зарабатывать токены LIKE с нашими NFT:",
+    "GettheNFT": "Получите NFT",
+    "Starttheminingprocess": "Запустите процесс майнинга",
+    "Collectyourtokens": " Собирайте свои токены!",
+    "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit": "Ваши NFT будут автоматически майнить ценные токены, превращая их в источник дохода. Дополнительные механики ускорят этот процесс и увеличат вашу прибыль!",
+    "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet": "Важно: ваш телефон и его мощности не используются в майнинге — все происходит удаленно через интернет."
   },
-  "NFTCollection":{
+  "NFTCollection": {
     "The": " ",
     "NFT": "NFT",
     "Collection": "Коллекция",
-    "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue" : " Чтобы участвовать в майнинге и добывать токены LIKE и LOVE, вам нужно владеть хотя бы одним NFT из нашей коллекции на getgames.io. Эти цифровые активы не только дают доступ к майнингу и увеличению дохода, но и являются ценными инвестициями, которые могут расти в цене. Вы можете продавать свои NFT на открытом рынке, извлекая прибыль из их роста. Начните собирать свою коллекцию уже сегодня и откройте для себя новые финансовые возможности!",
+    "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue": " Чтобы участвовать в майнинге и добывать токены LIKE и LOVE, вам нужно владеть хотя бы одним NFT из нашей коллекции на getgames.io. Эти цифровые активы не только дают доступ к майнингу и увеличению дохода, но и являются ценными инвестициями, которые могут расти в цене. Вы можете продавать свои NFT на открытом рынке, извлекая прибыль из их роста. Начните собирать свою коллекцию уже сегодня и откройте для себя новые финансовые возможности!",
     "BUYNFT": "купить NFT"
   },
   "NFTPrivilegeCards": {
     "Acollectionof": "Коллекция",
     "NFTprivilegecards": "NFT  карт привилегий",
-    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders":"Уникальные привилегии карт предоставляют такие преимущества, как сниженные комиссии при отправке и конвертации токенов внутри нашей платформы, а также эксклюзивные привилегии для владельцев Platinum Card.",
+    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders": "Уникальные привилегии карт предоставляют такие преимущества, как сниженные комиссии при отправке и конвертации токенов внутри нашей платформы, а также эксклюзивные привилегии для владельцев Platinum Card.",
     "buyaPlatinumcard": "купить Platinum card"
   },
-  "MiningUpgrades":{
+  "MiningUpgrades": {
     "Fan": "Вентилятор",
     "UpgradeyourminingrigwiththeFanforcooleroperationsandhigherLOVE": "Усовершенствуйте свой майнер с помощью вентилятора для лучшего охлаждения и более высокой прибыли LOVE.",
     "Cableimprovements": "Стабилизатор",
@@ -44,27 +44,27 @@
     "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Улучшите свой майнер с помощью искусственного интеллекта, оптимизируя производительность и максимизируя прибыль LOVE.",
     "Buyupgradesand": "Покупайте улучшения и ",
     "EarnMore": "зарабатывайте Больше!",
-    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions":"Помимо основного майнинга LIKE, наша платформа предлагает вам возможность диверсифицировать свой доход за счет майнинга субтокена LOVE. Данный токен играет важную роль в нашей экосистеме и в будущем получит отдельный листинг, что обеспечит ему высокую ликвидность и востребованность. Модернизация вашего майнингового оборудования позволит увеличить хешрейт и повысить эффективность добычи обоих токенов, а также открыть доступ к дополнительным функциям платформы",
+    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": "Помимо основного майнинга LIKE, наша платформа предлагает вам возможность диверсифицировать свой доход за счет майнинга субтокена LOVE. Данный токен играет важную роль в нашей экосистеме и в будущем получит отдельный листинг, что обеспечит ему высокую ликвидность и востребованность. Модернизация вашего майнингового оборудования позволит увеличить хешрейт и повысить эффективность добычи обоих токенов, а также открыть доступ к дополнительным функциям платформы",
     "Profitpersecond": "Прибыль в час",
     "WATCH": "Посмотреть"
   },
-  "FeatureCards":{
-    "Thefirststep" : "Первый шаг",
+  "FeatureCards": {
+    "Thefirststep": "Первый шаг",
     "INTHEAPP": "В приложение!",
     "Prizesfrom": "Призы от",
     "WHEELOFFORTUNE": "КОЛЕСА ФОРТУНЫ",
-    "Passiveincomeon" : "Пассивный доход на ",
+    "Passiveincomeon": "Пассивный доход на ",
     "STACKING": "СТЕЙКИНГЕ",
-    "Howitworks" : "Как работает",
+    "Howitworks": "Как работает",
     "CONVERSION": "КОНВЕРТАЦИЯ",
     "Fast": "Быстрый",
     "DEPOSIT": "ВВОД",
     "and": "и",
     "WITHDRAWAL": "ВЫВОД",
     "offunds": "средств",
-    "Daily": "Daily",   
+    "Daily": "Daily",
     "TASKS": "ИГРЫ",
-    "Whatkindof" : "Как работает",
+    "Whatkindof": "Как работает",
     "GAMES": "отправка",
     "arethereformakingmoney": "",
     "Howdoes": "Ежедневные",
@@ -78,16 +78,16 @@
     "ApplicationDevelopment": "Разработка приложения",
     "TelegramMiniAppLaunch": "Запуск Telegram MiniApp",
     "EnteringthestockexchangeSTONfi": "Выход на биржу STON.fi ",
-    "ListingoftheLiKEtoken" : "Листинг токена LiKE",
+    "ListingoftheLiKEtoken": "Листинг токена LiKE",
     "Partnershipwithotherprojects": "Партнерство с другими проектами",
     "RoadMap": "Road Map",
     "oftheProject": "Проекта",
-    "OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives":"Наша дорожная карта проекта наглядно отражает стратегические планы развития, включая ключевые этапы и цели. Мы стремимся к полной прозрачности, предоставляя пользователям доступ к информации о предстоящих шагах и инициативам"
+    "OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives": "Наша дорожная карта проекта наглядно отражает стратегические планы развития, включая ключевые этапы и цели. Мы стремимся к полной прозрачности, предоставляя пользователям доступ к информации о предстоящих шагах и инициативам"
   },
   "BurningLike": {
     "BurningtheLiKE": "Сжигание LIKE",
-    "token":"токена",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket":"Каждую неделю, с 06:00 до 08:00 утра по Гринвичу, мы проводим халвинг, сжигая 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Механизм сжигания: ключ к росту стоимости токенов LIKE. Регулярное сжигание токенов – это сердцевина нашей экономической модели. Этот процесс не только сокращает общее предложение токенов, но и создает дефицит, который неизбежно ведет к росту цен. Чем реже становится токен, тем выше его стоимость на рынке."
+    "token": "токена",
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Каждую неделю, с 06:00 до 08:00 утра по Гринвичу, мы проводим халвинг, сжигая 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Механизм сжигания: ключ к росту стоимости токенов LIKE. Регулярное сжигание токенов – это сердцевина нашей экономической модели. Этот процесс не только сокращает общее предложение токенов, но и создает дефицит, который неизбежно ведет к росту цен. Чем реже становится токен, тем выше его стоимость на рынке."
   },
   "ExchangeInterface": {
     "Partner": "Партнерcкие",
@@ -100,7 +100,7 @@
   },
   "StatisticsDashboard": {
     "Activeusers": "Активных пользователей",
-    "Transactionsperday" : "Транзакций в день",
+    "Transactionsperday": "Транзакций в день",
     "SentbyLOVE": "Отправленных LOVE",
     "Invitedriends": "Приглашенных друзей",
     "ComingSoon": "Coming Soon",
@@ -110,17 +110,134 @@
     "Team": "Команда",
     "Webelieveinthe": "Мы верим в силу совместных усилий. Команда Like — это группа единомышленников, стремящихся создать будущее, где каждый может достичь финансовой свободы. Благодаря нашему опыту и инновационным решениям, мы создали надежную платформу, которая поможет вам достичь ваших целей."
   },
-  "ContactForm":{
+  "ContactForm": {
     "Wearealwaysopentonewpartnerships": "Мы всегда открыты для новых партнерств для связи с нами опишите свое предложение в контактной форме ниже.",
     "CONTACTUS": "Свяжитесь с нами",
     "Wearealwaysintouchandopentonewsuggestions": "Мы всегда на связи и открыты для новых предложений!",
     "SEND": "Отправить",
     "SENDING": "SENDING",
     "SOCIALNETWORK": "Социальные сети"
+  },
+  "Modal1": {
+    "firstStep": "Первый шаг в приложение!",
+    "intro": "Этот момент будет вашим первым шагом в мир Web 3 и финансовой независимости. Следуйте этим простым шагам, чтобы начать:",
+    "step1": "1. Перейдите по ссылке в мини-приложении Telegram.",
+    "step2": "2. Нажмите кнопку \"Старт\", чтобы активировать процесс.",
+    "step3": "3. Подключите свой криптокошелек, следуя инструкциям на экране.",
+    "accessPossibilities": "Теперь у вас есть доступ ко многим возможностям!",
+    "easyAccess": "Легкий доступ для всех: Осваивайте новые технологии Web3 без трудностей.",
+    "participateDeFi": "Участвуйте в децентрализованных прибыльных финансах (DeFi): Зарабатывайте доход от ваших активов.",
+    "manageAssets": "Управляйте своими активами с полной свободой и безопасностью: Контролируйте свои средства без посредников.",
+    "speedAndConvenience": "Скорость и удобство приложения: Все операции выполняются мгновенно, без задержек.",
+    "fullFledgedUser": "Вы стали полноценным пользователем нашей платформы и можете начать использовать все эти функции уже сегодня."
+  },
+  "Modal2": {
+    "wheelOfFortune": "Призы из КОЛЕСА ФОРТУНЫ?",
+    "intro": "Одна из главных особенностей нашего проекта — Колесо Фортуны, увлекательный игровой механизм, который дает вам шанс выиграть классные призы: токены, NFT и другие ценные награды.",
+    "spinEvery6Hours": "Вы можете вращать колесо каждые 6 часов, так что можете испытать удачу несколько раз в день!",
+    "nftMiners": "Если у вас есть NFT-майнеры, для вас действуют специальные условия:",
+    "multipleNFTs": "Если у вас есть более одного NFT, шанс выиграть токены Love в механике Колеса Фортуны увеличивается (в процентах от 2% до 20% от суммы выигрыша).",
+    "awardsUpdated": "Кроме того, список призов будет обновляться регулярно, чтобы в будущем вас ждали еще более интересные и ценные награды.",
+    "spinAndEnjoy": "Просто крути колесо и наслаждайся возможностями!"
+  },
+  "Modal3": {
+    "internalTransfers": "Как работают внутренние переводы?",
+    "intro": "Теперь вы можете быстро и удобно переводить токены USDT, TON, Like и Love внутри приложения!",
+    "sendTokens": "Как отправить токены?",
+    "step1": "1. Перейдите в раздел \"Отправить\".",
+    "step2": "2. Выберите желаемый токен: USDT, TON, Like или Love.",
+    "step3": "3. Введите ID получателя вручную или отсканируйте QR-код.",
+    "step4": "4. Укажите сумму перевода.",
+    "payCommission": "Как оплатить комиссию?",
+    "commissionOptions": "Вы можете выбрать один из следующих вариантов:",
+    "payWithTokens": "* Оплатить комиссию токенами (USDT, TON, Like, Love).",
+    "completeTask": "* Выполнить простую задачу (например, кликнуть по ссылке, сделать репост, подписаться на канал и т.д.).",
+    "noCommission": "Выполняйте задачи и переводите токены без комиссии! Все подробности и настройки доступны в приложении."
+  },
+  "Modal4": {
+    "tokenConversion": "Обмен токенов",
+    "intro": "Вы можете обменивать токены в зависимости от уровня вашей карты, получая лучшие условия и минимальные комиссии.",
+    "howItWorks": "Как это работает?",
+    "step1": "1. Выберите токены, которые хотите обменять.",
+    "step2": "2. Мы автоматически выберем текущий курс обмена для вас, который рассчитывается на основе данных с нескольких ведущих бирж.",
+    "step3": "3. В зависимости от уровня вашей карты применяется индивидуальная комиссия:",
+    "silver": "- Серебро – 1%",
+    "gold": "- Золото – 0.75%",
+    "platinum": "- Платина – 0.5%",
+    "step4": "4. Перед подтверждением обмена вы увидите общую сумму, включая комиссию.",
+    "tryNow": "Попробуйте обмен токенов прямо сейчас и получите максимальную выгоду!"
+  },
+  "Modal5": {
+    "fastDepositWithdrawal": "Быстрый ВНЕСЕНИЕ и ВЫВОД средств?",
+    "withdrawalIntro": "Вы можете вывести токены USDT, TON, Like и Love с вашего внутреннего баланса на внешний кошелек. Для этого:",
+    "withdrawStep1": "Перейдите в раздел \"Вывод\".",
+    "withdrawStep2": "Выберите токен, который хотите вывести (Like, Love, USDT, TON).",
+    "withdrawStep3": "Введите адрес внешнего кошелька.",
+    "withdrawStep4": "Подтвердите операцию.",
+    "depositIntro": "Добавление средств на ваш баланс:",
+    "depositStep1": "Вы можете пополнить свой баланс с помощью USDT, TON, Like и Love. Для этого:",
+    "depositStep2": "Перейдите в раздел \"Ввод\".",
+    "depositStep3": "Скопируйте адрес кошелька проекта или отсканируйте QR-код.",
+    "depositStep4": "Сделайте перевод, и токены будут зачислены автоматически.",
+    "important": "Важно:",
+    "replenishmentRatio": "Пополнение происходит в соотношении 1:1 (отправленные токены = зачисленные токены).",
+    "trc20Support": "Поддержка TRC20 Tether (USDT): Теперь вы можете пополнить баланс с помощью кошелька TRC20 USDT."
+  },
+  "Modal6": {
+    "dailyTasks": "Ежедневные задания",
+    "intro": "Зарабатывайте бонусы каждый день! Входите в приложение каждый день и получайте бонусы, которые увеличиваются с каждым днем. Пропустили день? Счетчик сбросится, но вы всегда можете начать заново!",
+    "howItWorks": "Как это работает?",
+    "step1": "1. Входите в приложение каждый день и получайте токены Love (в определенные дни – Like).",
+    "step2": "2. Следите за своим прогрессом на 10-дневном календаре. Чем дольше вы входите подряд, тем больше бонусов получаете!",
+    "step3": "3. Пропустили день? Начните заново и получите бонус за первый день.",
+    "completeTasks": "Выполняйте простые ежедневные задания и зарабатывайте еще больше:",
+    "task1": "✔ Перейдите по ссылкам партнеров.",
+    "task2": "✔ Отправляйте сообщения своим друзьям в личных сообщениях.",
+    "task3": "✔ Делитесь историями и подписывайтесь на каналы.",
+    "task4": "✔ Подтвердите выполнение заданий с помощью кода в приложении.",
+    "earnNow": "Перейдите на вкладку \"Задания\" и начните зарабатывать прямо сейчас!"
+  },
+  "Modal7": {
+    "dailyRewards": "Ежедневные игровые бонусы!",
+    "intro": "Получайте бонусы, заходя в игру в нужное время и открывая специальные ящики. Каждый почтовый ящик доступен в свой временной интервал.",
+    "howItWorks": "Как это работает?",
+    "step1": "Зайдите в игру в указанное время.",
+    "step2": "Держите кнопку 1 минуту, чтобы открыть ящик.",
+    "step3": "Следите за временными интервалами, чтобы не пропустить ящики.",
+    "missedMailbox": "Пропустили почтовый ящик?",
+    "missedMailboxSolution": "Не проблема! Если вы пропустили почтовый ящик (например, № 3), но следующий (№ 4) уже доступен, вы можете восстановить вознаграждение за пропущенный ящик, заплатив **Like** токенами.",
+    "rewardsForEveryone": "Бонусы для всех!",
+    "bonusCollection": "Собирайте бонусы, наслаждайтесь игрой и побеждайте!",
+    "futurePlans": "новые игры и активности, которые сделают процесс еще более увлекательным. Следите за новостями!",
+    "plans": "В планах:"
+  },
+  "Modal8": {
+    "nftMining": "NFT майнинг",
+    "acquisition": "Приобретение:",
+    "step1": "1. Купите NFT через платформу Getgems или на другом подходящем сайте.",
+    "step2": "2. Подключите TON кошелек в нашем приложении – майнинг начнется автоматически.",
+    "whatYouGet": "Что вы получаете:",
+    "miningSpeed": "- Скорость майнинга: 191.78 Like и 1920 Love в день.",
+    "tokensCredited": "- Токены автоматически зачисляются на баланс в Мини-Приложении.",
+    "features": "Особенности:",
+    "feature1": "- Один NFT привязан к одной учетной записи. Если NFT передается другому пользователю, майнинг останавливается.",
+    "feature2": "- После хальвинга скорость майнинга снижается на 50%.",
+    "whyProfitable": "Почему это выгодно?",
+    "passiveIncome": "Пассивный доход: зарабатывайте токены без усилий.",
+    "simplicity": "Простота: подключите свой кошелек, и все готово.",
+    "earlyStart": "Ранний старт: успейте максимизировать свой доход до хальвинга."
+  },
+  "Modal9": {
+    "stakingMechanics": "Механика стейкинга",
+    "intro": "Стейкинг — это процесс блокировки ваших активов в сети для участия в верификации транзакций и поддержания ее безопасности. Взамен вы получаете вознаграждение в виде дополнительных токенов, количество которых зависит от объема и продолжительности стейкинга.",
+    "howItWorks": "Как это работает:",
+    "step1": "Весь процесс стейкинга происходит в Мини-Приложении.",
+    "step2": "Вы блокируете необходимое количество токенов.",
+    "step3": "Ваши токены остаются замороженными на 14 дней.",
+    "step4": "По истечении срока вы получите обратно замороженную сумму и начисленные проценты.",
+    "noCommission": "Комиссии за стейкинг нет.",
+    "futurePlans": "Планируется добавление поддержки других токенов.",
+    "important": "Важно:",
+    "yieldCalculation": "Доходность рассчитывается автоматически с учетом системы сложных процентов. Это означает, что чем больше объем стейкинга, тем выше сумма начислений."
   }
-
-
-  
-  
-
 }

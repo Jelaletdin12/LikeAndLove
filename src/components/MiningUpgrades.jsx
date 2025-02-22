@@ -98,12 +98,17 @@ const MiningUpgrades = () => {
 
       {/* Watch Button */}
       <div className="max-w-6xl mx-auto mt-12 flex justify-center">
-        <button  style={{
+      <div className="text-center mt-8 flex justify-center">
+        <a  style={{
                   background: "linear-gradient(to right, #007AFF, #F30EFF)",
-                }} className=" text-white font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-300">
-        {t("MiningUpgrades.WATCH")}
+                }}
+          href="https://t.me/Like_Project_Bot"
+          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
+        >
+          {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />
-        </button>
+        </a>
+      </div>
       </div>
     </div>
   );

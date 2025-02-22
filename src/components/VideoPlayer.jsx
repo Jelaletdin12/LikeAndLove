@@ -45,12 +45,12 @@ const VideoPlayer = () => {
           </div>
 
           {/* Actual video element - uncomment and use when implementing */}
-          {/* <video
+          <video
             className="absolute inset-0 w-full h-full object-cover"
-            src="your-video-source.mp4"
+            src="https://www.youtube.com/@likemining"
             playsInline
-            controls={false}
-          /> */}
+            controls={true}
+          />
         </div>
       </div>
       <p className="text-white text-xl text-center mb-6 mt-6">

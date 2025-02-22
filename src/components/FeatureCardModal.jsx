@@ -7,403 +7,351 @@ import phone4 from "../assets/phone4.gif";
 import phone5 from "../assets/phone5.gif";
 import phone6 from "../assets/phone6.gif";
 import phone7 from "../assets/phone7.gif";
-
+import { useTranslation } from "react-i18next";
 // Modal Content Component
-const FeatureModal = ({ feature, isVisible, onClose }) => {
+const FeatureModal = ({
+  feature,
+  isVisible,
+  onClose,
+  onContinue,
+  isLastFeature,
+}) => {
+  const { t, i18n } = useTranslation();
   // Get modal content based on feature
   const getModalContent = () => {
-    switch (feature.title.highlight) {
-      case "IN THE APP":
+    switch (feature.title.id) {
+      case 1:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  The First Step into the App
+                  {t("Modal1.firstStep")}
                 </h2>
-                <p className="text-white">
-                  This moment will be your first step into the world of Web 3
-                  and financial independence. Follow these simple steps to get
-                  started:
-                </p>
-                <ul className="list-decimal pl-6 mt-4 text-white">
-                  <li>Follow the link in the Telegram mini-application</li>
-                  <li>Click the "Start" button to activate the process</li>
-                  <li>
-                    Connect your crypto wallet by following the on-screen
-                    instructions
-                  </li>
+                <p className="text-white">{t("Modal1.intro")}</p>
+                <ul className=" pl-6 mt-4 text-white">
+                  <li> {t("Modal1.step1")}</li>
+                  <li> {t("Modal1.step2")}</li>
+                  <li>{t("Modal1.step3")}</li>
                 </ul>
                 <div>
                   <p className="text-white mb-[-15px] mt-2.5">
-                    Now you have access to many possibilities!
+                    {t("Modal1.accessPossibilities")}
                   </p>
                   <ul className="list-disc pl-6 mt-4 text-white">
-                    <li>
-                      Easy access for everyone: Master new Web3 technologies
-                      without difficulties.
-                    </li>
-                    <li>
-                      Participate in Decentralized Profitable Finance (DeFi):
-                      Earn income from your assets.
-                    </li>
-                    <li>
-                      Manage your assets with complete freedom and security:
-                      Control your funds without intermediaries.
-                    </li>
-                    <li>
-                      The speed and convenience of the application: All
-                      operations are performed instantly, without delay.
-                    </li>
+                    <li>{t("Modal1.easyAccess")}</li>
+                    <li>{t("Modal1.participateDeFi")}</li>
+                    <li>{t("Modal1.manageAssets")}</li>
+                    <li>{t("Modal1.speedAndConvenience")}</li>
                   </ul>
                 </div>
                 <p className="text-white pt-2.5">
-                  You have become a full-fledged user of our platform and can
-                  start using all these features today.
+                  {t("Modal1.fullFledgedUser")}
                 </p>
               </div>
-              <img src={phone1} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone1}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
           </div>
         );
-      case "WHEEL OF FORTUNE":
+      case 2:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  Prizes from the WHEEL OF FORTUNE?
+                  {t("Modal2.wheelOfFortune")}
                 </h2>
-                <p className="text-white">
-                  One of the main features of our project is the Wheel of
-                  Fortune, an exciting game mechanic that gives you a chance to
-                  win cool prizes.: tokens, NFT, and other valuable rewards.
-                </p>
-                <ul className="list-decimal pl-6 mt-4 text-white">
-                  <li>
-                    You can spin the wheel every 6 hours, so you can try your
-                    luck several times a day!{" "}
-                  </li>
-                  <li>
-                    If you have NFT miners, special conditions apply for you:
-                  </li>
-                  <li>
-                    If you own more than one NFT, the chance of winning Love
-                    tokens in the Wheel of Fortune mechanics increases (as a
-                    percentage from 2% to 20% of the winning amount).
-                  </li>
+                <p className="text-white">{t("Modal2.intro")}</p>
+                <ul className="list-none pl-6 mt-4 text-white">
+                  <li>- {t("Modal2.spinEvery6Hours")}</li>
+                  <li>- {t("Modal2.nftMiners")}</li>
+                  <li>- {t("Modal2.multipleNFTs")}</li>
                 </ul>
                 <div>
                   <p className="text-white mb-[-15px] mt-2.5">
-                    In addition, the list of awards will be updated regularly,
-                    so that even more interesting and valuable prizes await you
-                    in the future.
+                    {t("Modal2.awardsUpdated")}
                   </p>
                 </div>
-                <p className="text-white pt-2.5">
-                  Just spin the wheel and enjoy the possibilities!
-                </p>
+                <p className="text-white pt-2.5">{t("Modal2.spinAndEnjoy")}</p>
               </div>
-              <img src={phone2} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone2}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
           </div>
         );
-      case "STACKING":
+      case 3:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  How do internal transfers work?
+                  {t("Modal3.internalTransfers")}
                 </h2>
-                <p className="text-white">
-                  Now you can quickly and conveniently transfer USDT, TON, Like
-                  and Love tokens inside the app
+                <p className="text-white">{t("Modal3.intro")}</p>
+                <p className="text-white mb-0 mt-10 font-bold">
+                  {t("Modal3.sendTokens")}
                 </p>
-                <p className="text-white">How do I send tokens?</p>
-                <ul className="list-decimal pl-6 mt-4 text-white">
-                  <li> Go to the "Send" section.</li>
-                  <li>Select the desired token: USDT, TON, Like or Love.</li>
-                  <li>
-                    Enter the recipient's ID manually or scan the QR code.
-                  </li>
-                  <li>Specify the transfer amount</li>
+                <ul className=" pl-6  text-white">
+                  <li> {t("Modal3.step1")}</li>
+                  <li>{t("Modal3.step2")}</li>
+                  <li>{t("Modal3.step3")}</li>
+                  <li>{t("Modal3.step4")}</li>
                 </ul>
                 <div>
-                  <p className="text-white">How do I pay the commission?</p>
-                  <p className="text-white mb-[-15px] mt-2.5">
-                    You can choose one of the following options:
+                  <p className="text-white mt-10 font-bold">
+                    {t("Modal3.payCommission")}
                   </p>
-                  <ul className="list-disc pl-6 mt-4 text-white">
-                    <li>
-                      Pay the commission with tokens (USDT, TON, Like, Love).
-                    </li>
-                    <li>
-                      Complete a simple task (for example, clicking on a link,
-                      reposting, subscribing to a channel, etc.).
-                    </li>
+                  <p className="text-white mb-[-15px] mt-2.5">
+                    {t("Modal3.commissionOptions")}
+                  </p>
+                  <ul className="list-none pl-6 mt-4 text-white">
+                    <li>{t("Modal3.payWithTokens")}</li>
+                    <li>{t("Modal3.completeTask")}</li>
                   </ul>
                 </div>
-                <p className="text-white pt-2.5">
-                  Complete tasks and transfer tokens without commission! All
-                  details and settings are available in the app.
-                </p>
+                <p className="text-white pt-2.5">{t("Modal3.noCommission")}</p>
               </div>
-              <img src={phone3} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone3}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
           </div>
         );
-      case "CONVERSION":
+      case 4:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+            <div className="flex flex-col-reverse md:flex-row mb-6">
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  Token Conversion
+                  {t("Modal4.tokenConversion")}
                 </h2>
-                <p className="text-white">
-                  You can exchange tokens based on your card level, receiving
-                  the best conditions and minimum commissions.
+                <p className="text-white">{t("Modal4.intro")}</p>
+                <p className="text-white mt-10 font-bold ">
+                  {" "}
+                  {t("Modal4.howItWorks")}
                 </p>
-                <p className="text-white">How does it work?</p>
-                <ul className="list-decimal pl-6 mt-4 text-white">
-                  <li> Select the tokens you want to exchange</li>
+                <ul className="list-none pl-6  text-white">
+                  <li>{t("Modal4.step1")}</li>
+                  <li>{t("Modal4.step2")}</li>
+                  <li>{t("Modal4.step3")}</li>
                   <li>
-                    We will automatically select the current exchange rate for
-                    you, which is calculated based on data from several leading
-                    exchanges.
-                  </li>
-                  <li>
-                    Depending on your card level, an individual commission is
-                    applied:
-                  </li>
-                  <li>
-                    <ul>
-                      <li>Silver – 1%</li>
-                      <li>Gold – 0.75%</li>
-                      <li>Platinum – 0.5%</li>
+                    <ul className="list-none">
+                      <li>- Silver – 1%</li>
+                      <li>- Gold – 0.75%</li>
+                      <li>- Platinum – 0.5%</li>
                     </ul>
                   </li>
-                  <li>
-                    Before confirming the exchange, you will see the total
-                    amount, including the commission.
-                  </li>
+                  <li>{t("Modal4.step4")}</li>
                 </ul>
 
-                <p className="text-white pt-2.5">
-                  Try token conversion right now and get maximum benefits
-                </p>
+                <p className="text-white pt-2.5">{t("Modal4.tryNow")}</p>
               </div>
-              <img src={phone4} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone4}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
           </div>
         );
-      case "DEPOSIT":
+      case 5:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  Fast DEPOSIT and WITHDRAWAL of funds?
+                  {t("Modal5.fastDepositWithdrawal")}
                 </h2>
-                <p className="text-white">
-                  You can withdraw USDT, TON, Like and Love tokens from your
-                  internal balance to an external wallet. To do this:
-                </p>
+                <p className="text-white">{t("Modal5.withdrawalIntro")}</p>
                 <ul className="list-decimal pl-6 mt-4 text-white">
                   <li>
-                    Go to the "Output" section.
-                    <li>
-                      Select the token you want to withdraw (Like, Love, USDT,
-                      TON).
-                    </li>
-                    <li>Enter the address of the external wallet.</li>
-                    <li>Confirm the operation.</li>
+                    {t("Modal5.withdrawStep1")}
+                    <li>{t("Modal5.withdrawStep2")}</li>
+                    <li> {t("Modal5.withdrawStep3")}</li>
+                    <li> {t("Modal5.withdrawStep4")}</li>
                   </li>
                 </ul>
-                <p className="text-white">Adding funds to your balance:</p>
+                <p className="text-white font-bold mb-4">
+                  {" "}
+                  {t("Modal5.depositIntro")}
+                </p>
                 <div>
-                  <p className="text-white ">
-                    You can top up your balance with USDT, TON, Like and Love.
-                    For this:
+                  <p className="text-white mb-4">{t("Modal5.depositStep1")}</p>
+                  <ul className="text-white">
+                    <li>1. {t("Modal5.depositStep2")}</li>
+                    <li>2. {t("Modal5.depositStep3")}</li>
+                    <li>3. {t("Modal5.depositStep4")}</li>
+                  </ul>
+                </div>
+                <p className="text-white pt-2.5 mt-2 font-bold ">
+                  {" "}
+                  {t("Modal5.important")}
+                </p>
+                <ul className="text-white list-disc">
+                  <li>{t("Modal5.replenishmentRatio")}</li>
+                  <li>{t("Modal5.trc20Support")}</li>
+                </ul>
+              </div>
+              <img
+                src={phone5}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
+            </div>
+            <button
+              onClick={onContinue}
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+            >
+              Continue
+            </button>
+          </div>
+        );
+      case 6:
+        return (
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
+              <div className="h-[250px] overflow-y-auto md:h-auto">
+                <h2 className="text-xl font-bold mb-4 text-white">
+                  {t("Modal6.dailyTasks")}
+                </h2>
+                <p className="text-white">{t("Modal6.intro")}</p>
+
+                <div>
+                  <p className="text-white mt-4 font-bold mb-4">
+                    {" "}
+                    {t("Modal6.howItWorks")}
                   </p>
                   <ul className="text-white">
-                    <li>Go to the "Input" section.</li>
-                    <li>
-                      Copy the project's wallet address or scan the QR code.
-                    </li>
-                    <li>
-                      Make a transfer and the tokens will be credited
-                      automatically.
-                    </li>
+                    <li>{t("Modal6.step1")}</li>
+                    <li>{t("Modal6.step2")}</li>
+                    <li>{t("Modal6.step3")}</li>
                   </ul>
                 </div>
-                <p className="text-white pt-2.5">Important:</p>
+                <p className="text-white pt-2.5 mt-4 font-bold">
+                  {t("Modal6.completeTasks")}
+                </p>
                 <ul className="text-white">
-                  <li>
-                    Replenishment takes place in a 1:1 ratio (sent tokens =
-                    credited tokens).
-                  </li>
-                  <li>
-                    Support for TRC20 Tether (USDT): You can now top up your
-                    balance using the TRC20 USDT wallet.
-                  </li>
+                  <li>{t("Modal6.task1")}</li>
+                  <li>{t("Modal6.task2")}</li>
+                  <li>{t("Modal6.task3")}</li>
+                  <li>{t("Modal6.task4")}</li>
                 </ul>
+                <p className="text-white mt-4">{t("Modal6.earnNow")}</p>
               </div>
-              <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone6}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
           </div>
         );
-      case "TASKS":
+      case 7:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  Daily tasks
+                  {t("Modal7.dailyRewards")}
                 </h2>
-                <p className="text-white">
-                  Earn rewards every day! Log in to the app daily and receive
-                  bonuses that increase every day. Missed a day? The counter
-                  will reset, but you can always start over!
-                </p>
-
-                <p className="text-white">Adding funds to your balance:</p>
-                <div>
-                  <p className="text-white">How does it work?</p>
-                  <ul className="text-white">
-                    <li>
-                      {" "}
-                      Log into the app every day and receive Love tokens (on
-                      certain days – Like).{" "}
-                    </li>
-                    <li>
-                      Keep track of your progress on a 10-day calendar. The
-                      longer you log in in a row, the more bonuses you get!
-                    </li>
-                    <li>
-                      Did you miss the day? Start over and get a bonus for the
-                      first day.
-                    </li>
-                  </ul>
-                </div>
-                <p className="text-white pt-2.5">
-                  Complete simple daily tasks and earn even more:
-                </p>
-                <ul className="text-white">
-                  <li>Follow the links of the partners.</li>
-                  <li>Send posts to your friends in private messages.</li>
-                  <li>Share stories and subscribe to channels. </li>
-                  <li>
-                    Confirm the completion of tasks using the code in the
-                    application.{" "}
-                  </li>
-                </ul>
-                <p className="text-white">
-                  Go to the "Tasks" tab and start earning right now!
-                </p>
-              </div>
-              <img src={phone6} alt="App Screenshot" className="w-full mb-4" />
-            </div>
-            <button
-              style={{
-                background: "linear-gradient(to right, #007AFF, #F30EFF)",
-              }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
-            >
-              Continue
-            </button>
-          </div>
-        );
-      case "GAMES":
-        return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-            <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
-                <h2 className="text-xl font-bold mb-4 text-white">
-                  Daily in-game rewards!
-                </h2>
-                <p className="text-white">
-                  Get rewards by logging into the game at the right time and
-                  opening special boxes. Each mailbox is available at its own
-                  time interval.
-                </p>
+                <p className="text-white">{t("Modal7.intro")}</p>
 
                 <div>
-                  <p className="text-white">How does it work?</p>
-                  <ul className="text-white">
-                    <li>Log in to the game at the specified time.</li>
-                    <li>Hold the button for 1 minute to open the drawer.</li>
-                    <li>
-                      Keep an eye on the time intervals so as not to miss the
-                      boxes.
-                    </li>
+                  <p className="text-white font-bold mt-4">
+                    {" "}
+                    {t("Modal7.howItWorks")}
+                  </p>
+                  <ul className="text-white list-inside list-decimal ">
+                    <li>{t("Modal7.step1")}</li>
+                    <li>{t("Modal7.step2")}</li>
+                    <li>{t("Modal7.step3")}</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="text-white pt-2.5">Did you miss a mailbox?</p>
+                  <p className="text-white pt-2.5 mt-4 font-bold">
+                    {t("Modal7.missedMailbox")}
+                  </p>
                   <p className="text-white">
-                    Not a problem! If you missed a mailbox (for example, No. 3),
-                    but the next one (No. 4) is available now, you can restore
-                    the reward for the missed mailbox by paying for it with
-                    **Like** tokens.{" "}
+                    {t("Modal7.missedMailboxSolution")}
                   </p>
                 </div>
-                <div className="text-white">
-                  <p>Rewards for everyone! </p>
-                  <p>Collect bonuses, enjoy the game and win!</p>
-                </div>
-                <div className="text-white">
-                  <p>In the plans:</p>
-                  <p>
-                    New games and activities that will make the process even
-                    more interesting. Stay tuned!
+                <div className="text-white mt-4">
+                  <p className="font-bold">
+                    {" "}
+                    {t("Modal7.rewardsForEveryone")}{" "}
                   </p>
+                  <p> {t("Modal7.bonusCollection")}</p>
+                </div>
+                <div className="text-white mt-4">
+                  <p className="font-bold">{t("Modal7.plans")}</p>
+                  <p>{t("Modal7.futurePlans")}</p>
                 </div>
               </div>
-              <img src={phone7} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone7}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
@@ -413,124 +361,104 @@ const FeatureModal = ({ feature, isVisible, onClose }) => {
             </button>
           </div>
         );
-      case "Mining":
-        return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
-             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div>
-                <h2 className="text-xl font-bold mb-4 text-white">
-                  NFT mining
-                </h2>
-
-                <div>
-                  <p className="text-white">Acquisition:</p>
-                  <ul className="text-white">
-                    <li>
-                      Purchase NFT through the Getgems platform or at another
-                      suitable site.{" "}
-                    </li>
-                    <li>
-                      Connect the TON wallet in our application – mining will
-                      start automatically.{" "}
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="text-white">
-                  <p>What do you get: </p>
-                  <ul>
-                    <li>Mining speed: 191.78 Likes and 1920 Loves per day. </li>
-                    <li>
-                      Tokens are credited automatically to the balance in the
-                      Mini App.
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="text-white">
-                  <p>Features:</p>
-                  <ul>
-                    <li>
-                      One NFT is linked to one account. If the NFT is
-                      transferred to another user, mining stops.{" "}
-                    </li>
-                    <li>After halving, the mining speed is reduced by 50%. </li>
-                  </ul>
-                </div>
-                <div className="text-white">
-                  <p>Why is it profitable?</p>
-                  <ul>
-                    <li>Passive income: Earn tokens effortlessly.</li>
-                    <li>Simplicity: Connect your wallet and you're done.</li>
-                    <li>
-                      Early start: Manage to maximize your income before
-                      halving.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
-            </div>
-            <button
-              style={{
-                background: "linear-gradient(to right, #007AFF, #F30EFF)",
-              }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
-            >
-              Continue
-            </button>
-          </div>
-        );
-      case "sending":
+      case 8:
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="text-white">
+              <div className="h-[250px] overflow-y-auto md:h-auto">
                 <h2 className="text-xl font-bold mb-4 text-white">
-                  The mechanics of staking
+                  {t("Modal8.nftMining")}
                 </h2>
-                <p>
-                  Staking is the process of locking your assets on the network
-                  to participate in transaction verification and maintain its
-                  security. In return, you receive a reward in the form of
-                  additional tokens, the amount of which depends on the volume
-                  and duration of the staking.
-                </p>
+
                 <div>
-                  <p className="text-white ">How it works: </p>
-                  <ul>
-                    <li>
-                      The entire staking process takes place in the Mini App
-                    </li>
-                    <li>You block the desired number of tokens.</li>
-                    <li>Your tokens remain frozen for 14 days.</li>
-                    <li>
-                      Upon expiration, you will receive back the frozen amount
-                      and accrued interest.
-                    </li>
-                    <li>There is no commission for staking</li>
-                    <li>There are plans to add support for other tokens.</li>
+                  <p className="text-white"> {t("Modal8.acquisition")}</p>
+                  <ul className="text-white">
+                    <li>{t("Modal8.step1")}</li>
+                    <li>{t("Modal8.step2")}</li>
                   </ul>
                 </div>
 
-                <div>
-                  <p>Important:</p>
+                <div className="text-white mt-4">
+                  <p className="font-bold">{t("Modal8.whatYouGet")} </p>
+                  <ul className="text-white">
+                    <li>{t("Modal8.miningSpeed")} </li>
+                    <li>{t("Modal8.tokensCredited")}</li>
+                  </ul>
+                </div>
+
+                <div className="text-white mt-4">
+                  <p className="font-bold"> {t("Modal8.features")}</p>
                   <ul>
-                    <li>
-                      The yield is calculated automatically, taking into account
-                      the compound interest system. This means that the larger
-                      the volume of staking, the higher the amount of accruals.
-                    </li>
+                    <li>{t("Modal8.feature1")}</li>
+                    <li>{t("Modal8.feature2")} </li>
+                  </ul>
+                </div>
+                <div className="text-white mt-4">
+                  <p className="font-black">{t("Modal8.whyProfitable")}</p>
+                  <ul className="text-white list-disc list-inside">
+                    <li>{t("Modal8.passiveIncome")}</li>
+                    <li>{t("Modal8.simplicity")}</li>
+                    <li>{t("Modal8.earlyStart")}</li>
                   </ul>
                 </div>
               </div>
-              <img src={phone5} alt="App Screenshot" className="w-full mb-4" />
+              <img
+                src={phone5}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
             </div>
             <button
+              onClick={onContinue}
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+            >
+              Continue
+            </button>
+          </div>
+        );
+      case 9:
+        return (
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+            <div className="flex flex-col-reverse md:flex-row mb-6">
+              <div className="h-[250px] overflow-y-auto md:h-auto text-white">
+                <h2 className="text-xl font-bold mb-4 text-white">
+                  {t("Modal9.stakingMechanics")}
+                </h2>
+                <p>{t("Modal9.intro")}</p>
+                <div>
+                  <p className="text-white mt-4"> {t("Modal9.howItWorks")}</p>
+                  <ul className="list-disc list-inside text-white mt-4">
+                    <li>{t("Modal9.step1")}</li>
+                    <li> {t("Modal9.step2")}</li>
+                    <li> {t("Modal9.step3")}.</li>
+                    <li>{t("Modal9.step4")}</li>
+                    <li> {t("Modal9.noCommission")}</li>
+                    <li> {t("Modal9.futurePlans")}</li>
+                  </ul>
+                </div>
+
+                <div className="mt-4 text-white">
+                  <p className="font-bold"> {t("Modal9.important")}</p>
+                  <ul className="list-disc list-inside text-white">
+                    <li>{t("Modal9.yieldCalculation")} </li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src={phone5}
+                alt="App Screenshot"
+                className="w-full mb-4 md:w-[50%] md:mb-0"
+              />
+            </div>
+            <button
+              onClick={onContinue}
+              style={{
+                background: "linear-gradient(to right, #007AFF, #F30EFF)",
+              }}
+              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
               Continue
             </button>
