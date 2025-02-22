@@ -5,6 +5,7 @@ import platinum from "../assets/platinum.gif";
 import NFTCardDetails from "./NFTPrivilegeCardsDetail";
 import { useTranslation } from "react-i18next";
 import { CircleArrowRight } from "lucide-react";
+
 const NFTCard = ({
   type,
   isExpanded,
@@ -43,22 +44,22 @@ const NFTCard = ({
       }}
     >
       <div
-        className={`rounded-lg relative cursor-pointer  ${
-          isExpanded ? "" : ""
-        }`}
+        className={`rounded-lg relative cursor-pointer`}
         style={{
           background:
-            isExpanded || isHovered
+            (isExpanded || isHovered) && position === "current"
               ? `linear-gradient(#171D31, #171D31) padding-box, 
                  linear-gradient(30deg, #007AFF, #F30EFF) border-box`
               : "#171D31",
-          border: isHovered || isExpanded ? "4px solid transparent" : "none",
+          border: (isHovered || isExpanded) && position === "current" 
+            ? "4px solid transparent" 
+            : "none",
         }}
-        onMouseEnter={onMouseEnter}
+        onMouseEnter={() => position === "current" && onMouseEnter()}
         onMouseLeave={onMouseLeave}
         onClick={onClick}
       >
-        {(isHovered || isExpanded) && (
+        {(isHovered || isExpanded) && position === "current" && (
           <div className="flex justify-center text-white px-3 py-1 text-md">
             {type.charAt(0).toUpperCase() + type.slice(1)} Card
           </div>
@@ -66,7 +67,7 @@ const NFTCard = ({
         <div className="flex justify-center m-2">
           <img src={image} alt={type} className="w-[300px] max-w-[304px]" />
         </div>
-        {isExpanded && <NFTCardDetails type={type} />}
+        {isExpanded && position === "current" && <NFTCardDetails type={type} />}
       </div>
     </div>
   );
@@ -82,6 +83,7 @@ const NFTPrivilegeCards = () => {
   const touchEndX = useRef(0);
   const isDragging = useRef(false);
   const { t, i18n } = useTranslation();
+
   const getCardPosition = (index) => {
     if (index === currentIndex) return "current";
     if (index === (currentIndex + 1) % cardTypes.length) return "next";
@@ -103,10 +105,23 @@ const NFTPrivilegeCards = () => {
     }
     setCurrentIndex((prev) => (prev - 1 + cardTypes.length) % cardTypes.length);
   };
-  const handleCardClick = (index) =>
-    setExpandedCard(expandedCard === index ? null : index);
 
-  // Otomatik geçişi başlat
+  const handleCardClick = (index) => {
+    const position = getCardPosition(index);
+    if (position === "current") {
+      // Eğer kart zaten merkezde ise, sadece açılıp kapanma işlemi yap
+      setExpandedCard(expandedCard === index ? null : index);
+    } else {
+      // Eğer kart merkezde değilse, önce merkeze getir
+      setExpandedCard(null);
+      setCurrentIndex(index);
+      // Kısa bir süre sonra kartı aç
+      setTimeout(() => {
+        setExpandedCard(index);
+      }, 700); // transition süresi kadar bekle
+    }
+  };
+
   useEffect(() => {
     if (expandedCard !== null) {
       clearInterval(intervalRef.current);
@@ -116,7 +131,6 @@ const NFTPrivilegeCards = () => {
     return () => clearInterval(intervalRef.current);
   }, [expandedCard, currentIndex]);
 
-  // **Mobil Swipe (Dokunmatik)**
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -136,20 +150,15 @@ const NFTPrivilegeCards = () => {
     }
   };
 
-  // **Mouse Swipe (Sürükleme)**
   const handleMouseDown = (e) => {
     isDragging.current = true;
     touchStartX.current = e.clientX;
-    // Sürükleme sırasında text seçimini engelle
     e.preventDefault();
   };
 
   const handleMouseMove = (e) => {
     if (!isDragging.current) return;
     touchEndX.current = e.clientX;
-    // Optional: Sürükleme efekti eklenebilir
-    const deltaX = touchEndX.current - touchStartX.current;
-    // Kartları deltaX'e göre hafifçe hareket ettir
   };
 
   const handleMouseUp = (e) => {
@@ -175,6 +184,7 @@ const NFTPrivilegeCards = () => {
       document.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
+
   const containerHeight = expandedCard !== null ? "h-[650px]" : "h-[250px]";
 
   return (
@@ -219,11 +229,12 @@ const NFTPrivilegeCards = () => {
         ))}
       </div>
       <div className="text-center mt-2 flex justify-center">
-        <a  style={{
-                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
-                }}
+        <a
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
           href="https://getgems.io/collection/EQB1v1TKh_7y1hSgbQhD4K5vUg0gu76o4E6d9WD3148YndjK"
-          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
+          className="w-auto flex text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
         >
           {t("NFTCollection.BUYNFT")}
           <CircleArrowRight />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { useTranslation } from "react-i18next";
 import dedust from "../assets/dedust.png";
 import ston from "../assets/ston.png";
 import likelove from "../assets/likelove.png";
@@ -19,27 +19,27 @@ import binance from "../assets/binance.png";
 import { CircleArrowRight } from "lucide-react";
 const ExchangeInterface = () => {
   const [exchangeType, setExchangeType] = useState("DEX");
-
+  const { t, i18n } = useTranslation();
   const exchanges = {
     CEX: [
       {
         id: 1,
-        name: "Возможности Like & Love",
+        name: t("ExchangeInterface.card9"),
         logo: logo,
         date: "23.01.2025",
         active: true,
-        link: "https://t.me/Like_Project_Bot"
+        link: "https://t.me/Like_Project_Bot",
       },
       {
         id: 2,
-        name: "Выход на биржу Upbitt",
+        name: t("ExchangeInterface.card10"),
         logo: upbit,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 3,
-        name: "Выход на биржу Bidget",
+        name: t("ExchangeInterface.card11"),
         logo: bidget,
         date: "Coming soon...",
         active: false,
@@ -47,14 +47,14 @@ const ExchangeInterface = () => {
 
       {
         id: 4,
-        name: "Выход на биржу Coinbase",
+        name: t("ExchangeInterface.card12"),
         logo: c,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 5,
-        name: "Выход на биржу Bybit",
+        name: t("ExchangeInterface.card13"),
         logo: bybit,
         date: "Coming soon...",
         active: false,
@@ -62,21 +62,21 @@ const ExchangeInterface = () => {
 
       {
         id: 6,
-        name: "Выход на биржу Curve Finance",
+        name: t("ExchangeInterface.card14"),
         logo: curve,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 7,
-        name: "Выход на биржу BINANCE",
+        name: t("ExchangeInterface.card15"),
         logo: binance,
         date: "23.01.2025",
         active: false,
       },
       {
         id: 8,
-        name: "Выход на биржу Kraken",
+        name: t("ExchangeInterface.card16"),
         logo: kraken,
         date: "23.01.2025",
         active: false,
@@ -85,23 +85,23 @@ const ExchangeInterface = () => {
     DEX: [
       {
         id: 1,
-        name: "Возможности Like & Love",
+        name: t("ExchangeInterface.card1"),
         logo: logo,
         date: "23.01.2025",
         active: true,
-        link: "https://t.me/Like_Project_Bot"
+        link: "https://t.me/Like_Project_Bot",
       },
       {
         id: 2,
-        name: "Выход на биржу STON.fi ",
+        name: t("ExchangeInterface.card2"),
         logo: ston,
         date: "23.01.2025",
         active: true,
-        link: "https://ston.fi/"
+        link: "https://ston.fi/",
       },
       {
         id: 3,
-        name: "Выход на биржу DeDust",
+        name: t("ExchangeInterface.card3"),
         logo: dedust,
         date: "23.01.2025",
         active: false,
@@ -109,35 +109,35 @@ const ExchangeInterface = () => {
 
       {
         id: 4,
-        name: "Выход на биржу Storm Trade",
+        name: t("ExchangeInterface.card4"),
         logo: strom,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 5,
-        name: "Выход на биржу Tradoor",
+        name: t("ExchangeInterface.card5"),
         logo: bull,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 6,
-        name: "Выход на биржу Uniswap ",
+        name: t("ExchangeInterface.card6"),
         logo: unicorn,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 7,
-        name: "Выход на биржу Tonstakers",
+        name: t("ExchangeInterface.card7"),
         logo: tons,
         date: "Coming soon...",
         active: false,
       },
       {
         id: 8,
-        name: "Выход на биржу Curve Finance",
+        name: t("ExchangeInterface.card8"),
         logo: curve,
         date: "Coming soon...",
         active: false,
@@ -146,17 +146,17 @@ const ExchangeInterface = () => {
   };
 
   return (
-    <div className="min-h-screen max-w-6xl m-auto mt-20 p-4">
+    <div className=" max-w-6xl m-auto mt-20 p-4">
       <div className=" mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
-          <span className="text-white">Партнерские</span>{" "}
-          <span className="text-[#007AFF]">Крипто-Биржи</span>
+          <span className="text-white">{t("ExchangeInterface.Partner")}</span>{" "}
+          <span className="text-[#007AFF]">
+            {t("ExchangeInterface.CryptoExchanges")}
+          </span>
         </h1>
 
         <p className="text-white text-l md:text-xl text-center mb-8">
-          Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод
-          ваших активов, а также создают комфортные условия для вашего легкого и
-          безопасного погружения в мир криптовалют.
+          {t("ExchangeInterface.Toparticipateinminingandassetue")}
         </p>
 
         <div className="flex justify-center gap-4 mb-8">
@@ -200,16 +200,19 @@ const ExchangeInterface = () => {
                     : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative flex flex-col gap-2.5 bg-[#161C31] p-6  h-full rounded-xl">
-                <div className="text-sm text-center text-white mb-2">
-                  {exchange.date}
+              <div className="relative flex flex-col justify-between bg-[#161C31] p-4  h-full rounded-xl">
+                <div>
+                  <div className="text-sm text-center text-white mb-2">
+                    {exchange.date}
+                  </div>
+                  <div className="text-md font-bold text-center text-white mb-4">
+                    {exchange.name}
+                  </div>
+                  <div className="flex justify-center mb-4">
+                    <img src={exchange.logo} alt={exchange.name} />
+                  </div>
                 </div>
-                <div className="text-md font-bold text-center text-white mb-4">
-                  Выход на биржу {exchange.name}
-                </div>
-                <div className="flex justify-center mb-4">
-                  <img src={exchange.logo} alt={exchange.name} />
-                </div>
+
                 <button
                   className={`w-full py-2 px-4 rounded-lg flex justify-center ${
                     exchange.active
@@ -218,9 +221,13 @@ const ExchangeInterface = () => {
                   }`}
                   disabled={!exchange.active}
                 >
-                  <a className="flex gap-2" href={exchange.link} target="_blank" rel="noreferrer">
-
-                  ПЕРЕЙТИ   <CircleArrowRight />
+                  <a
+                    className="flex gap-2"
+                    href={exchange.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {t("ExchangeInterface.goto")} <CircleArrowRight />
                   </a>
                 </button>
               </div>
@@ -250,25 +257,36 @@ const ExchangeInterface = () => {
                         : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                     }}
                   />
-                  <div className="relative flex flex-col gap-2.5 bg-[#161C31] items-center p-2 md:p-6 rounded-xl">
+                  <div className="relative flex flex-col justify-between bg-[#161C31] items-center p-2 md:p-6 rounded-xl">
+                    <div className="flex flex-col items-center">
+
                     <div className="text-sm text-center text-white mb-2">
                       {exchange.date}
                     </div>
                     <div className="text-sm md:text-md font-bold text-center text-white mb-4">
-                      Выход на биржу {exchange.name}
+                      {exchange.name}
                     </div>
                     <div className="flex justify-center mb-4 w-[60px] md:w-auto">
                       <img src={exchange.logo} alt={exchange.name} />
                     </div>
+                    </div>
+
                     <button
-                      className={`w-full py-2 px-4 rounded-lg ${
+                      className={`w-full py-2 px-4 rounded-lg flex justify-center ${
                         exchange.active
                           ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
-                          : "bg-gray-700 text-gray-400 cursor-not-allowed"
+                          : "bg-[#5b6069] text-[#8c9097] cursor-not-allowed"
                       }`}
                       disabled={!exchange.active}
                     >
-                      ПЕРЕЙТИ
+                      <a
+                        className="flex gap-2"
+                        href={exchange.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {t("ExchangeInterface.goto")} <CircleArrowRight />
+                      </a>
                     </button>
                   </div>
                 </div>

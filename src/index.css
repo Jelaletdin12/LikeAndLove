@@ -97,15 +97,15 @@ body {
   display: flex !important;
   justify-content: center !important;
   padding-top: 30px !important;
-
 }
 @media screen and (max-width: 768px) {
-  .roadMap{
+  .roadMap {
     margin-left: 16px !important;
-  margin-right: 16px !important;
+    margin-right: 16px !important;
+    height: 250px !important;
   }
-  .nftCollection{
-    height: 250px !important; 
+  .nftCollection {
+    height: 250px !important;
     padding-top: 50px !important;
   }
 }
@@ -135,6 +135,3 @@ body {
     padding-top: 50px !important;
   }
 }
-
-
-

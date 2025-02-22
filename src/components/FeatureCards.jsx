@@ -10,6 +10,7 @@ import phone8 from "../assets/phone8.gif";
 import phone9 from "../assets/phone9.gif";
 import FeatureModal from "./FeatureCardModal";
 import { useTranslation } from "react-i18next";
+import { CircleArrowRight } from "lucide-react";
 const FeatureCards = () => {
   const { t, i18n } = useTranslation();
   const [selectedFeatureId, setSelectedFeatureId] = useState(null);
@@ -111,7 +112,9 @@ const FeatureCards = () => {
   ];
 
   const handleContinue = () => {
-    const currentIndex = features.findIndex(f => f.title.id === selectedFeatureId);
+    const currentIndex = features.findIndex(
+      (f) => f.title.id === selectedFeatureId
+    );
     if (currentIndex < features.length - 1) {
       setSelectedFeatureId(features[currentIndex + 1].title.id);
     } else {
@@ -119,7 +122,9 @@ const FeatureCards = () => {
     }
   };
 
-  const selectedFeature = features.find(f => f.title.id === selectedFeatureId);
+  const selectedFeature = features.find(
+    (f) => f.title.id === selectedFeatureId
+  );
 
   return (
     <div className="min-h-screen max-w-6xl m-auto mb-10 pt-28 p-4">
@@ -136,7 +141,7 @@ const FeatureCards = () => {
               className="absolute inset-0  rounded-[8px] pointer-events-none"
               style={{ background: "linear-gradient(45deg, #007AFF, #F30EFF)" }}
             />
-            <div className="relative bg-[#161c31] p-6 rounded-[8px] h-full flex flex-col items-center">
+            <div className="relative bg-[#161c31] p-6 rounded-[8px] h-full flex flex-col justify-between items-center">
               {/* Phone Image */}
               <div className="mb-6">
                 <img
@@ -145,48 +150,39 @@ const FeatureCards = () => {
                   className="w-full h-auto"
                 />
               </div>
-
-              {/* Title */}
-              <div className="text-center mb-4">
-                <p className="text-white">
-                  {feature.title.regular}{" "}
-                  <span className="text-[#007AFF] font-bold">
-                    {feature.title.highlight}
-                  </span>
-                  {feature.title.hasQuestionMark ? "?" : ""}
-                </p>
-                {feature.title.secondLine && (
+              <div className="flex flex-col items-center ">
+                {/* Title */}
+                <div className="text-center mb-4 w-full">
                   <p className="text-white">
-                    {feature.title.secondLine.regular}{" "}
-                    {feature.title.secondLine.highlight && (
-                      <span className="text-[#007AFF] font-bold">
-                        {feature.title.secondLine.highlight}
-                      </span>
-                    )}{" "}
-                    {feature.title.secondLine.end || ""}
-                    {feature.title.secondLine.hasQuestionMark ? "?" : ""}
+                    {feature.title.regular}{" "}
+                    <span className="text-white font-bold">
+                      {feature.title.highlight}
+                    </span>
+                    {feature.title.hasQuestionMark }
                   </p>
-                )}
-              </div>
+                  {feature.title.secondLine && (
+                    <p className="text-white">
+                      {feature.title.secondLine.regular}{" "}
+                      {feature.title.secondLine.highlight && (
+                        <span className="text-white font-bold">
+                          {feature.title.secondLine.highlight}
+                        </span>
+                      )}{" "}
+                      {feature.title.secondLine.end || ""}
+                      {feature.title.secondLine.hasQuestionMark}
+                    </p>
+                  )}
+                </div>
 
-              {/* Button */}
-              <button
-                className="bg-white text-black font-semibold py-3 px-6 rounded-full flex items-center gap-2"
-                onClick={() => setSelectedFeatureId(feature.title.id)}
-              >
-                {t("FeatureCards.MOREDETAILED")}
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                {/* Button */}
+                <button
+                  className="bg-white text-black font-bold py-3 px-6 rounded-[8px]  flex items-center gap-2 cursor-pointer"
+                  onClick={() => setSelectedFeatureId(feature.title.id)}
                 >
-                  <path d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
+                  {t("FeatureCards.MOREDETAILED")}
+                  <CircleArrowRight />
+                </button>
+              </div>
             </div>
           </div>
         ))}

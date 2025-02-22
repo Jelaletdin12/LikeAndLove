@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Header from "./components/Header";
 import MiningVisualization from "./components/MiningVisualization.jsx";
 import NFTMinerApp from "./components/NFTMinerApp.jsx";
@@ -14,16 +14,39 @@ import StatisticsDashboard from "./components/StatisticsDashboard.jsx";
 import ContactForm from "./components/ContactForm.jsx";
 import "./App.css";
 
+
+
 function App() {
+  const [drawerVisible, setDrawerVisible] = useState(false);
+  const featureCardsRef = useRef(null);
+
+  const scrollToFeatureCards = () => {
+    if (drawerVisible) {
+      setDrawerVisible(false);
+      setTimeout(() => {
+        if (featureCardsRef.current) {
+          featureCardsRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300); // Adjust the timeout duration as needed
+    } else {
+      if (featureCardsRef.current) {
+        featureCardsRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
   return (
     <>
-      <Header />
+      <Header  scrollToFeatureCards={scrollToFeatureCards}
+        drawerVisible={drawerVisible}
+        setDrawerVisible={setDrawerVisible} />
       <MiningVisualization />
       <NFTMinerApp />
       <NFTCollection />
       <NFTPrivilegeCards />
       <MiningUpgrades />
-      <FeatureCards />
+      <div ref={featureCardsRef}>
+        <FeatureCards />
+      </div>
       <RoadmapCarousel />
       <BurningLike />
       <ExchangeInterface />

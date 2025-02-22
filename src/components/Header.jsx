@@ -3,9 +3,9 @@ import Logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { Menu, X } from "lucide-react";
 
-const Header = () => {
+const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
   const { t, i18n } = useTranslation();
-  const [drawerVisible, setDrawerVisible] = useState(false);
+  // const [drawerVisible, setDrawerVisible] = useState(false);
   const headerRef = useRef(null);
   const [headerHeight, setHeaderHeight] = useState(0);
 
@@ -68,7 +68,10 @@ const Header = () => {
 
           {/* Navigation Items */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="bg-white text-black px-4 py-2 rounded-[8px] text-sm font-bold transition-colors uppercase">
+            <button
+              onClick={scrollToFeatureCards}
+              className="bg-white cursor-pointer text-black px-4 py-2 rounded-[8px] text-sm font-bold transition-colors uppercase"
+            >
               {t("header.howItWorks")}
             </button>
 
@@ -140,7 +143,10 @@ const Header = () => {
           style={{ top: `${headerHeight + window.scrollY}px` }}
         >
           <div className="flex flex-col items-center gap-4 p-4 min-h-screen pt-15">
-            <button className="text-left text-white  rounded-[8px] text-xl font-bold transition-colors w-full uppercase">
+            <button
+              onClick={scrollToFeatureCards}
+              className="text-left text-white  rounded-[8px] text-xl font-bold transition-colors w-full uppercase"
+            >
               {t("header.howItWorks")}
             </button>
             <div className="h-0.5 w-full bg-[#99a1af]"></div>

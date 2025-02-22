@@ -38,9 +38,7 @@ const ContactForm = () => {
         }
       );
 
-     
       setResponseMessage("Message sent successfully!");
-    
     } catch (error) {
       setResponseMessage("Failed to send message.");
       console.error("Error:", error);
@@ -59,13 +57,29 @@ const ContactForm = () => {
 
   const socialLinks = [
     { name: "X (Twitter)", icon: twitter, link: "#" },
-    { name: "YouTube", icon: youtube, link: "#" },
-    { name: "TikTok", icon: tiktok, link: "#" },
-    { name: "Telegram", icon: telegram, link: "#" },
-    { name: "Telegram Bot", icon: telegramBot, link: "#" },
+    {
+      name: "YouTube",
+      icon: youtube,
+      link: "https://www.youtube.com/@likemining",
+    },
+    {
+      name: "TikTok",
+      icon: tiktok,
+      link: "https://www.tiktok.com/@likeminingjetton?_t=8omRImXjmAz&_r=1",
+    },
+    { name: "Telegram", icon: telegram, link: "https://t.me/like_mining" },
+    {
+      name: "Telegram Bot",
+      icon: telegramBot,
+      link: "https://t.me/Like_Project_Bot",
+    },
     { name: "Instagram", icon: instagram, link: "#" },
-    { name: "E-mail", icon: email, link: "#" },
-    { name: "GetGames", icon: getgames, link: "#" },
+    { name: "E-mail", icon: email, link: "likeminingjetton66@gmail.com" },
+    {
+      name: "GetGames",
+      icon: getgames,
+      link: "https://getgems.io/collection/EQDMvchkiDT6H2ufjqCecyLb6-S9YYE1-JzSC7D-AbJfee2g",
+    },
     { name: "Discord", icon: discord, link: "#" },
   ];
 
@@ -83,21 +97,24 @@ const ContactForm = () => {
       </div>
 
       <p className="text-center text-white mb-8">
-      {t("ContactForm.Wearealwaysopentonewpartnerships")} 
+        {t("ContactForm.Wearealwaysopentonewpartnerships")}
       </p>
 
       {/* Contact Form */}
       <div className="relative rounded-xl overflow-hidden mb-16 p-[3px]">
-        <div style={{
-        background: "linear-gradient(to right, #007AFF, #F30EFF)",
-      }} className="absolute inset-0 rounded-xl bg-gradient-to-r  opacity-50" />
+        <div
+          style={{
+            background: "linear-gradient(to right, #007AFF, #F30EFF)",
+          }}
+          className="absolute inset-0 rounded-xl bg-gradient-to-r  opacity-50"
+        />
 
         <div className="relative bg-[#161C31] rounded-xl p-8">
           <h2 className="text-2xl text-[#007AFF] text-center mb-4">
-          {t("ContactForm.CONTACTUS")} 
+            {t("ContactForm.CONTACTUS")}
           </h2>
           <p className="text-center text-white mb-8">
-          {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")} 
+            {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")}
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6 ">
@@ -133,7 +150,7 @@ const ContactForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className=" w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
+                className=" cursor-pointer w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
                 disabled={loading}
                 style={{
                   background: "linear-gradient(to right, #007AFF, #F30EFF)",
@@ -152,13 +169,18 @@ const ContactForm = () => {
 
       {/* Social Networks */}
       <div className="text-center w-full mb-4">
-        <h2 className="text-2xl font-bold text-white mb-8">   {t("ContactForm.SOCIALNETWORK")} </h2>
+        <h2 className="text-2xl font-bold text-white mb-8">
+          {" "}
+          {t("ContactForm.SOCIALNETWORK")}{" "}
+        </h2>
         <div className="grid grid-cols-2 md:flex md:justify-evenly">
           {socialLinks.map((social, index) => (
             <div
-            className={`flex flex-col items-center gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:border-[2px] hover:border-[solid] hover:border-[#007AFF] hover:p-2 rounded-lg p-2 transition-all duration-300 ${
-              index === socialLinks.length - 1 ? "col-span-2 mx-auto md:col-span-0 md:m-0" : ""
-            }`}
+              className={`flex flex-col items-center gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:border-[2px] hover:border-[solid] hover:border-[#007AFF] hover:p-2 rounded-lg p-2 transition-all duration-300 ${
+                index === socialLinks.length - 1
+                  ? "col-span-2 mx-auto md:col-span-0 md:m-0"
+                  : ""
+              }`}
               key={index}
               title={social.name}
             >
