@@ -26,7 +26,7 @@ const BurningLikeCarousel = () => {
 
   return (
     <>
-      <div className="max-w-6xl m-auto mt-20 p-4">
+      <div className="max-w-6xl m-auto mt-10 p-4">
         <h2 className="text-3xl md:text-6xl text-center text-[#007BFF] font-black">
           {t("BurningLike.BurningtheLiKE")}{" "}
           <span className="text-white"> {t("BurningLike.token")}</span>

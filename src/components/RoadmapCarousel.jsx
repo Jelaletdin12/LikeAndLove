@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Mousewheel } from "swiper/modules";
 import "swiper/css";
@@ -13,7 +14,6 @@ import road4 from "../assets/road4.png";
 import road5 from "../assets/road5.png";
 import road6 from "../assets/road6.png";
 import road7 from "../assets/road7.png";
-import { useState } from "react";
 
 const RoadmapCarousel = () => {
   const { t, i18n } = useTranslation();
@@ -98,21 +98,24 @@ const RoadmapCarousel = () => {
         {roadmapData.map((item, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`relative p-[3px] rounded-xl ${
+              className={`relative p-[3px] rounded-xl overflow-hidden ${
                 isCardActive(index)
-                  ? "shadow-[0_0px_25px_rgba(0,122,255,1)]"
-                  : "contrast-50"
+                  ? " shadow-[0_0px_25px_rgba(0,122,255,1)]"
+                  : " "
               }`}
+              style={{
+                filter: !isCardActive(index) ? "contrast(50%) brightness(70%)" : "none",
+              }}
             >
               <div
-                className="absolute inset-0 rounded-xl pointer-events-none"
+                className="absolute inset-0 rounded-xl pointer-events-none "
                 style={{
                   background: isCardActive(index)
                     ? "linear-gradient(45deg, #007AFF, #F30EFF)"
-                    : "linear-gradient(to right, rgb(107 114 128), rgb(75 85 99))",
+                    : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative justify-between w-full p-2 md:p-4 rounded-xl shadow-lg bg-[#161C31] text-white flex flex-col gap-6 md:h-[250px] min-h-[156px] items-center">
+              <div className="relative justify-between w-full p-2 md:p-6  rounded-xl  bg-[#161C31] text-white flex flex-col gap-6 md:h-[250px] min-h-[156px] items-center">
                 <div className="flex flex-col items-center">
                   <p className="text-sm text-center font-semibold">
                     {item.date}
@@ -121,7 +124,11 @@ const RoadmapCarousel = () => {
                     {item.title}
                   </h3>
                 </div>
-                <img src={item.icon} className="w-12 h-12 md:w-24 md:h-24" alt={item.title} />
+                <img
+                  src={item.icon}
+                  className="w-12 h-12 md:w-24 md:h-24 "
+                  alt={item.title}
+                />
               </div>
             </div>
           </SwiperSlide>

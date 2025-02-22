@@ -176,7 +176,7 @@ const FeatureCards = () => {
 
                 {/* Button */}
                 <button
-                  className="bg-white text-black font-bold py-3 px-6 rounded-[8px]  flex items-center gap-2 cursor-pointer"
+                  className="bg-white text-black font-bold py-2 md:py-3 px-6 rounded-[8px]  flex items-center gap-2 cursor-pointer"
                   onClick={() => setSelectedFeatureId(feature.title.id)}
                 >
                   {t("FeatureCards.MOREDETAILED")}
