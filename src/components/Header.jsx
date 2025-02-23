@@ -139,7 +139,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
       {/* Mobile Drawer - Using div with conditional rendering instead of antd Drawer */}
       {drawerVisible && (
         <div
-          className="md:hidden bg-[#161C31] absolute w-full z-10 border-t shadow-lg"
+          className="md:hidden bg-[#161C31] absolute w-full z-100 border-t shadow-lg"
           style={{ top: `${headerHeight + window.scrollY}px` }}
         >
           <div className="flex flex-col items-center gap-4 p-4 min-h-screen pt-15">

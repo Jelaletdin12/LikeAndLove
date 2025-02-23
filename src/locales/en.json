@@ -3,6 +3,7 @@
     "howItWorks": "HOW DOES IT WORK?",
     "support": "SUPPORT",
     "goToApp": "GO TO THE APP"
+   
   },
   "MiningVisualization": {
     "Social_Media_Network": "Social Media Network",
@@ -36,14 +37,19 @@
   "silverCard": {
     "Advantages": "Card advantages",
     "fee": "Conversion fee",
+    "amount": "of the amount",
     "USDT": "The commission for sending USDT",
-    "Amount": "0.025 USDT regardless of the amount",
+    "Amount": "regardless of the amount",
     "TON": "The commission for sending a TON",
-    "tonAmount": "0,0048 TON regardless of the amount",
+    "tonAmount": "regardless of the amount",
     "Like": "Commission for sending Like",
-    "likeAmount": "20 Like regardless of the amount",
+    "likeAmount": "regardless of the amount",
     "love": "Commission for sending Love",
-    "loveAmount": "2 % regardless of the amount"
+    "loveAmount": "regardless of the amount"
+  },
+  "platinumCard":{
+    "SpecialprivilegesinTelegram": "Special privileges in Telegram",
+    "NocommissionforLove": "No commission for Like!"
   },
   "MiningUpgrades": {
     "Fan": "Fan",
@@ -154,7 +160,7 @@
     "CONTACTUS": "CONTACT US",
     "Wearealwaysintouchandopentonewsuggestions": "We are always in touch and open to new suggestions!",
     "SEND": "SEND",
-    "SENDING": "SENDING",
+    "SENDING": "SENDING...",
     "SOCIALNETWORK": "SOCIAL NETWORK"
   },
   "Modal1": {
@@ -168,7 +174,9 @@
     "participateDeFi": "Participate in Decentralized Profitable Finance (DeFi): Earn income from your assets.",
     "manageAssets": "Manage your assets with complete freedom and security: Control your funds without intermediaries.",
     "speedAndConvenience": "The speed and convenience of the application: All operations are performed instantly, without delay.",
-    "fullFledgedUser": "You have become a full-fledged user of our platform and can start using all these features today."
+    "fullFledgedUser": "You have become a full-fledged user of our platform and can start using all these features today.",
+    "Continue" : "Continue"
+
   },
   "Modal2": {
     "wheelOfFortune": "Prizes from the WHEEL OF FORTUNE?",

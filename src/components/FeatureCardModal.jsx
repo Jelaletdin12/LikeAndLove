@@ -24,7 +24,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal1.firstStep")}
                 </h2>
@@ -60,9 +60,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className=" uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -70,7 +70,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal2.wheelOfFortune")}
                 </h2>
@@ -98,9 +98,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className=" uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -108,7 +108,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal3.internalTransfers")}
                 </h2>
@@ -147,9 +147,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -157,7 +157,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal4.tokenConversion")}
                 </h2>
@@ -193,9 +193,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -203,7 +203,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal5.fastDepositWithdrawal")}
                 </h2>
@@ -248,9 +248,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -258,7 +258,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal6.dailyTasks")}
                 </h2>
@@ -297,9 +297,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -307,7 +307,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal7.dailyRewards")}
                 </h2>
@@ -355,9 +355,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -365,7 +365,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal8.nftMining")}
                 </h2>
@@ -413,9 +413,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );
@@ -423,7 +423,7 @@ const FeatureModal = ({
         return (
           <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto text-white">
+              <div className="h-[250px] overflow-y-auto md:h-auto text-white custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal9.stakingMechanics")}
                 </h2>
@@ -458,9 +458,9 @@ const FeatureModal = ({
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className=" text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
+              className="uppercase text-white px-6 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity cursor-pointer"
             >
-              Continue
+              {t("Modal1.Continue")}
             </button>
           </div>
         );

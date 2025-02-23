@@ -1,94 +1,102 @@
 import React from "react";
 import tick from "../assets/tick.svg";
-
+import { useTranslation } from "react-i18next";
 const NFTCardDetails = ({ type }) => {
+    const { t, i18n } = useTranslation();
   const details = {
     silver: (
       <div className="mt-4 space-y-2 p-2.5">
         <div className="flex flex-col gap-4">
+          <h3 className="text-white font-bold"> {t("silverCard.Advantages")}</h3>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за конвертацию
+              {t("silverCard.fee")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0.5 %
+                  1 %
                 </span>
-                <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
+                <span className="text-[#A2ACB0] text-[12px]"> {t("silverCard.amount")}</span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку USDT
+                 {t("silverCard.USDT")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0.00999 USDT
+                  0.025 USDT
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку TON
+              {t("silverCard.TON")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0,0019 TON
+                  0,0048 TON
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.tonAmount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Like
+              {t("silverCard.Like")}
               </span>
               <div className="flex">
+                <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
+                20 Like 
+                </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                 {t("silverCard.loveAmount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Love
+              {t("silverCard.love")}
               </span>
               <div className="flex">
+                <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
+                2 %
+                </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                {t("silverCard.loveAmount")}
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
               <img src={tick} alt="" />
             </div>
@@ -97,96 +105,103 @@ const NFTCardDetails = ({ type }) => {
                 Особые привелегии в Telegram
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     ),
     gold: (
       <div className="mt-4 space-y-2 p-2.5">
         <div className="flex flex-col gap-4">
+        <h3 className="text-white font-bold"> {t("silverCard.Advantages")}</h3>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за конвертацию hh
+              {t("silverCard.fee")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0.5 %
+                  0.75 %
                 </span>
-                <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
+                <span className="text-[#A2ACB0] text-[12px]"> {t("silverCard.amount")}</span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку USDT
+              {t("silverCard.USDT")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0.00999 USDT
+                0,011299 USDT
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку TON
+              {t("silverCard.TON")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
-                  0,0019 TON
+                0,0022 TON
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Like
+              {t("silverCard.Like")}
               </span>
               <div className="flex">
+                <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
+                10 Like
+                </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Love
+              {t("silverCard.love")}
               </span>
               <div className="flex">
+                <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
+                  1%
+                </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
               <img src={tick} alt="" />
             </div>
@@ -195,102 +210,103 @@ const NFTCardDetails = ({ type }) => {
                 Особые привелегии в Telegram
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     ),
     platinum: (
       <div className="mt-4 space-y-2 p-2.5">
         <div className="flex flex-col gap-4">
+        <h3 className="text-white font-bold"> {t("silverCard.Advantages")}</h3>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за конвертацию
+              {t("silverCard.fee")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
                   0.5 %
                 </span>
-                <span className="text-[#A2ACB0] text-[12px]">от суммы</span>
+                <span className="text-[#A2ACB0] text-[12px]"> {t("silverCard.amount")}</span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку USDT
+              {t("silverCard.USDT")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
                   0.00999 USDT
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку TON
+              {t("silverCard.TON")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px] font-bold mr-1">
                   0,0019 TON
                 </span>
                 <span className="text-[#A2ACB0] text-[12px]">
-                  независимо от суммы
+                {t("silverCard.Amount")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Like
+              {t("silverCard.Like")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                {t("platinumCard.NocommissionforLove")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Комиссия за отправку Love
+              {t("silverCard.love")}
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px]">
-                  Нет комиссии за Like !
+                {t("platinumCard.NocommissionforLove")}
                 </span>
               </div>
             </div>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center">
+            <div className="bg-[#34C759] rounded-full w-[28px] h-[28px] flex justify-center items-center mr-2">
               <img src={tick} alt="" />
             </div>
             <div>
               <span className="text-[14px] font-[600] text-white">
-                Особые привелегии в Telegram
+              {t("platinumCard.SpecialprivilegesinTelegram")}
               </span>
             </div>
           </div>

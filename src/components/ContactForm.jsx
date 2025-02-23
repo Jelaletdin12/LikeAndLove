@@ -150,13 +150,13 @@ const ContactForm = () => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className=" cursor-pointer w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
+                className="uppercase cursor-pointer w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
                 disabled={loading}
                 style={{
                   background: "linear-gradient(to right, #007AFF, #F30EFF)",
                 }}
               >
-                {loading ? "Sending..." : "SEND"}
+              {loading ? t("ContactForm.SENDING") : t("ContactForm.SEND")}
                 <CircleArrowRight />
               </button>
             </div>
@@ -169,7 +169,7 @@ const ContactForm = () => {
 
       {/* Social Networks */}
       <div className="text-center w-full mb-4">
-        <h2 className="text-2xl font-bold text-white mb-8">
+        <h2 className="text-2xl font-bold text-white mb-8 uppercase">
           {" "}
           {t("ContactForm.SOCIALNETWORK")}{" "}
         </h2>
