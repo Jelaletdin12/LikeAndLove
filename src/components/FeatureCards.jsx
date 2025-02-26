@@ -12,7 +12,7 @@ import FeatureModal from "./FeatureCardModal";
 import { useTranslation } from "react-i18next";
 import { CircleArrowRight } from "lucide-react";
 const FeatureCards = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [selectedFeatureId, setSelectedFeatureId] = useState(null);
   const features = [
     {
@@ -118,7 +118,7 @@ const FeatureCards = () => {
     if (currentIndex < features.length - 1) {
       setSelectedFeatureId(features[currentIndex + 1].title.id);
     } else {
-      setSelectedFeatureId(null); // Close modal if we're at the last feature
+      setSelectedFeatureId(null);
     }
   };
 
@@ -138,10 +138,10 @@ const FeatureCards = () => {
             className="relative p-[3px] rounded-3xl shadow-[0_0px_20px_rgba(0,122,255,1)]"
           >
             <div
-              className="absolute inset-0  rounded-[8px] pointer-events-none"
+              className="absolute inset-0  rounded-[15px] pointer-events-none"
               style={{ background: "linear-gradient(45deg, #007AFF, #F30EFF)" }}
             />
-            <div className="relative bg-[#161c31] p-6 rounded-[8px] h-full flex flex-col justify-between items-center">
+            <div className="relative bg-[#161c31] p-6 rounded-[15px] h-full flex flex-col justify-between items-center">
               {/* Phone Image */}
               <div className="mb-6">
                 <img
@@ -158,7 +158,7 @@ const FeatureCards = () => {
                     <span className="text-white font-bold">
                       {feature.title.highlight}
                     </span>
-                    {feature.title.hasQuestionMark }
+                    {feature.title.hasQuestionMark}
                   </p>
                   {feature.title.secondLine && (
                     <p className="text-white">
@@ -176,7 +176,7 @@ const FeatureCards = () => {
 
                 {/* Button */}
                 <button
-                  className="bg-white text-black font-bold py-2 md:py-3 px-6 rounded-[8px]  flex items-center gap-2 cursor-pointer"
+                  className="bg-white  text-black font-bold py-2 md:py-3 px-6 rounded-[8px]  flex items-center gap-2 cursor-pointer"
                   onClick={() => setSelectedFeatureId(feature.title.id)}
                 >
                   {t("FeatureCards.MOREDETAILED")}

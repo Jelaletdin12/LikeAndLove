@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Phone from "../assets/phone.png";
 import ph from "../assets/ph.png";
-import fc from "../assets/fc.png";
+import fc from "../assets/fuck.png";
 const MiningGuide = () => {
   const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
@@ -49,12 +49,13 @@ const MiningGuide = () => {
             ref={cardRef}
             className={`
               absolute 
-              top-[30%] 
-              left-[28%] 
+              top-[28%] 
+              left-[24%] 
               md:top-[160px] 
-              md:left-[150px] 
+              md:left-[135px] 
               transition-all 
               duration-700 
+             
               ${
                 isVisible
                   ? "opacity-100 scale-110 translate-y-0"
@@ -62,15 +63,24 @@ const MiningGuide = () => {
               }
             `}
             style={{
-              transform: isVisible ? "translateZ(40px)" : "translateZ(0)",
+              transform: isVisible ? "translateZ(70px)" : "translateZ(0)",
               perspective: "1000px",
               transformStyle: "preserve-3d",
-              boxShadow: isVisible ? "0 0 20px rgba(0, 157, 255, 0.5)" : "none",
-              width: "30%",
+              // boxShadow: isVisible ? "0 0 20px rgba(0, 122, 255, 1)" : "none",
+              width: "21%",
               maxWidth: "150px",
             }}
           >
-            <img src={fc} alt="" className="w-20 h-30  md:w-30 md:h-48" />
+            <img
+              src={fc}
+              alt=""
+              style={{
+                filter: isVisible
+                  ? "drop-shadow(0 0 4px rgba(0, 170, 255, 0.9)) drop-shadow(0 0 10px rgba(0, 150, 255, 0.9)) drop-shadow(0 0 20px rgba(0, 120, 255, 0.8)) drop-shadow(0 0 30px rgba(0, 100, 255, 0.5))"
+                  : "none",
+              }}
+              className="w-30 h-33  md:w-40 md:h-50"
+            />
           </div>
         </div>
       </div>

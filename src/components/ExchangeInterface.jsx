@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
 import dedust from "../assets/dedust.png";
 import ston from "../assets/ston.png";
-import likelove from "../assets/likelove.png";
 import bidget from "../assets/arrow.png";
 import kraken from "../assets/m.png";
 import upbit from "../assets/up.png";
@@ -26,7 +25,7 @@ const ExchangeInterface = () => {
         id: 1,
         name: t("ExchangeInterface.card9"),
         logo: logo,
-        date: "23.01.2025",
+        date: "01.04.2025",
         active: true,
         link: "https://t.me/Like_Project_Bot",
       },
@@ -87,7 +86,7 @@ const ExchangeInterface = () => {
         id: 1,
         name: t("ExchangeInterface.card1"),
         logo: logo,
-        date: "23.01.2025",
+        date: "01.04.2025",
         active: true,
         link: "https://t.me/Like_Project_Bot",
       },
@@ -95,7 +94,7 @@ const ExchangeInterface = () => {
         id: 2,
         name: t("ExchangeInterface.card2"),
         logo: ston,
-        date: "23.01.2025",
+        date: "01.04.2025",
         active: true,
         link: "https://ston.fi/",
       },
@@ -200,36 +199,35 @@ const ExchangeInterface = () => {
                     : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative flex flex-col justify-between bg-[#161C31] p-4  h-full rounded-xl">
-                <div>
+              <div className="relative flex flex-col justify-between bg-[#161C31] p-4  h-[330px] rounded-xl">
+                <div className="flex flex-col h-full">
                   <div className="text-sm text-center text-white mb-2">
                     {exchange.date}
                   </div>
-                  <div className="text-md font-bold text-center text-white mb-4">
+                  <div className="text-md font-bold text-center   text-white mb-auto pb-1.5">
                     {exchange.name}
                   </div>
-                  <div className="flex justify-center mb-4">
+                  <div className="flex justify-center mb-6">
                     <img src={exchange.logo} alt={exchange.name} />
                   </div>
-                </div>
-
-                <button
-                  className={`w-full py-2 px-4 rounded-lg flex justify-center ${
-                    exchange.active
-                      ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
-                      : "bg-[#5b6069] text-[#8c9097] cursor-not-allowed"
-                  }`}
-                  disabled={!exchange.active}
-                >
-                  <a
-                    className="flex gap-2"
-                    href={exchange.link}
-                    target="_blank"
-                    rel="noreferrer"
+                  <button
+                    className={`w-full py-2 px-4 rounded-lg flex justify-center ${
+                      exchange.active
+                        ? "bg-white text-[#151D31] font-bold hover:bg-gray-100"
+                        : "bg-[#5b6069] text-[#8c9097] cursor-not-allowed"
+                    }`}
+                    disabled={!exchange.active}
                   >
-                    {t("ExchangeInterface.goto")} <CircleArrowRight />
-                  </a>
-                </button>
+                    <a
+                      className="flex gap-2"
+                      href={exchange.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {t("ExchangeInterface.goto")} <CircleArrowRight />
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           ))}
@@ -259,16 +257,15 @@ const ExchangeInterface = () => {
                   />
                   <div className="relative flex flex-col justify-between bg-[#161C31] items-center p-2 md:p-6 rounded-xl">
                     <div className="flex flex-col items-center">
-
-                    <div className="text-sm text-center text-white mb-2">
-                      {exchange.date}
-                    </div>
-                    <div className="text-sm md:text-md font-bold text-center text-white mb-4">
-                      {exchange.name}
-                    </div>
-                    <div className="flex justify-center mb-4 w-[60px] md:w-auto">
-                      <img src={exchange.logo} alt={exchange.name} />
-                    </div>
+                      <div className="text-sm text-center text-white mb-2">
+                        {exchange.date}
+                      </div>
+                      <div className="text-sm md:text-md font-bold text-center text-white mb-4">
+                        {exchange.name}
+                      </div>
+                      <div className="flex justify-center mb-4 w-[60px] md:w-auto">
+                        <img src={exchange.logo} alt={exchange.name} />
+                      </div>
                     </div>
 
                     <button

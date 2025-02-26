@@ -74,26 +74,32 @@ body {
 .ant-modal {
   top: 30px !important;
 }
+.ant-modal-body{
+  height: 620px !important;
+}
+@media screen and (max-width: 768px) {
+  .ant-modal-body{
+    height: auto !important;
+  }
+  .ant-modal {
+    top: 10px !important;
+  }
+}
 .ant-modal-content {
   background: linear-gradient(20deg, #007aff, #f30eff) !important;
   padding: 3px !important;
   box-shadow: 0 0px 25px rgba(0, 122, 255, 1) !important;
+  min-height: 620px !important;
 }
 
 .ant-modal-close-x {
   color: #fff !important;
 }
 
-/* Add this to your CSS file */
-/* @media (max-width: 520px) {
-  .swiper {
-    height: 270px !important;
-  }
-} */
 .roadMap {
   margin-left: 100px !important;
   height: 350px !important;
-  padding-left: 25px !important;
+  padding-left: 15px !important;
   display: flex !important;
   justify-content: center !important;
   padding-top: 30px !important;
@@ -142,11 +148,34 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #007AFF;
+  background-color: #007aff;
   border-radius: 8px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
+}
+
+.border-container {
+  height: 50px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to right,
+    #007aff 0%,
+    #007aff 25%,
+    transparent 50%,
+    #007aff 75%,
+    #007aff 100%
+  );
+  padding: 2px; /* Border genişliği */
+}
+
+.content {
+  background: #161c31;
+  border-radius: 6px; /* Dış border-radius'tan biraz daha küçük */
+  height: 100%; /* İçeriğin, dış div'i doldurmasını sağlar */
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }

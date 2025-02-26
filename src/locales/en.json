@@ -2,15 +2,15 @@
   "header": {
     "howItWorks": "HOW DOES IT WORK?",
     "support": "SUPPORT",
-    "goToApp": "GO TO THE APP"
-   
+    "goToApp": "GO TO THE APP",
+    "view": "view"
   },
   "MiningVisualization": {
     "Social_Media_Network": "Social Media Network",
     "#like_mining": "#like_mining",
     "YOUR": "Your",
     "MINIG": "MINING",
-    "on_the_phone": "on the phone"
+    "on_the_phone": "on the phone!"
   },
   "NFTMinerApp": {
     "How_it_works_Mining": "How it works Mining?",
@@ -115,13 +115,13 @@
   "BurningLike": {
     "BurningtheLiKE": "Burning the LiKE",
     "token": "token",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Every week, from 06:00 to 08:00 GMT, we carry out halving, burning 125,000,000 LIKE tokens out of a total volume of 80 billion. The burning mechanism: the key to increasing the value of LIKE tokens. Regular token burning is at the core of our economic model. This process not only reduces the total supply of tokens, but also creates a shortage, which inevitably leads to higher prices. The rarer the token becomes, the higher its value on the market."
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "The burning mechanism: the key to increasing the value of LIKE tokens. Every Monday from 06:00 to 08:00 GMT, we burn 125,000,000 LIKE tokens out of a total of 80 billion. This process plays a central role in our economic model, as it reduces the total supply of tokens and creates a shortage. Over time, as the number of available tokens decreases, their value on the market inevitably increases."
   },
   "ExchangeInterface": {
     "Partner": "Partner",
     "CryptoExchanges": "Crypto Exchanges",
     "Toparticipateinminingandassetue": "To participate in mining and mine LIKE and LOVE tokens, you need to own at least one NFT from our collection on getgames.io . These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value. You can sell your NFTs on the open market, profiting from their growth. Start building your collection today and discover new financial opportunities!",
-    "card1": "Opportunities Like & Love",
+    "card1": "Opportunities with multi DeFi Like",
     "card2": "Entering the stock exchange STONFI",
     "card3": "Entering the stock exchange DeDust",
     "card4": "Entering the stock exchange Storm Trade",
@@ -129,7 +129,7 @@
     "card6": "Entering the stock exchange Uniswap",
     "card7": "Entering the stock exchange Tonstakers",
     "card8": "Entering the stock exchange Finance",
-    "card9": "Opportunities Like & Love",
+    "card9": "Opportunities with multi DeFi Like",
     "card10": "Entering the stock exchange Upbit",
     "card11": "Entering the stock exchange Bidget",
     "card12": "Entering the stock exchange Coinbase",

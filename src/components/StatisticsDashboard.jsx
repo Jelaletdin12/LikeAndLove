@@ -30,7 +30,9 @@ const StatisticsCard = ({ title, value, image, contrast, noShadow }) => {
         }}
       >
         {image && <img className="mb-3" src={image} alt="" />}
-        <h3 className="text-white text-center mb-3 text-l md:text-xl">{title}</h3>
+        <h3 className="text-white text-center mb-3 text-l md:text-xl">
+          {title}
+        </h3>
         {value !== undefined && (
           <p className="text-[#007AFF] text-l lg:text-2xl font-bold text-center">
             {formatNumber(value)}

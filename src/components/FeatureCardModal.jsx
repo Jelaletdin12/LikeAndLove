@@ -22,7 +22,7 @@ const FeatureModal = ({
     switch (feature.title.id) {
       case 1:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -68,7 +68,7 @@ const FeatureModal = ({
         );
       case 2:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -106,7 +106,7 @@ const FeatureModal = ({
         );
       case 3:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -155,7 +155,7 @@ const FeatureModal = ({
         );
       case 4:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -201,7 +201,7 @@ const FeatureModal = ({
         );
       case 5:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -256,7 +256,7 @@ const FeatureModal = ({
         );
       case 6:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -305,7 +305,7 @@ const FeatureModal = ({
         );
       case 7:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -363,7 +363,7 @@ const FeatureModal = ({
         );
       case 8:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -421,7 +421,7 @@ const FeatureModal = ({
         );
       case 9:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px]">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto text-white custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">

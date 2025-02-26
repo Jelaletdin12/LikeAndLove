@@ -8,15 +8,15 @@ import { CircleArrowRight } from "lucide-react";
 const BurningLikeCarousel = () => {
   // Track active slides for styling
   const [activeIndex, setActiveIndex] = useState(0);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const items = [
-    { id: 1, value: "-125 000 000" },
-    { id: 2, value: "-125 000 000" },
-    { id: 3, value: "-125 000 000" },
-    { id: 4, value: "-125 000 000" },
-    { id: 5, value: "-125 000 000" },
-    { id: 6, value: "-125 000 000" },
-    { id: 7, value: "-125 000 000" },
+    { id: 1, value: "-125 000 000", date: "07.04.2025" },
+    { id: 2, value: "-125 000 000", date: "14.04.2025" },
+    { id: 3, value: "-125 000 000", date: "21.04.2025" },
+    { id: 4, value: "-125 000 000", date: "28.04.2025" },
+    { id: 5, value: "-125 000 000", date: "05.05.2025" },
+    { id: 6, value: "-125 000 000", date: "07.04.2025" },
+    { id: 7, value: "-125 000 000", date: "14.04.2025" }
   ];
 
   // Helper function to check if slide is active (current or next)
@@ -49,13 +49,12 @@ const BurningLikeCarousel = () => {
           }}
           loop={true}
           grabCursor={true}
-          style={{ height: "100px", paddingTop: "25px", paddingLeft: "20px" }}
+          style={{ height: "120px", paddingTop: "25px", paddingLeft: "20px" }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
             320: {
               slidesPerView: 2,
               spaceBetween: 5,
-              
             },
             768: {
               slidesPerView: 4,
@@ -64,7 +63,6 @@ const BurningLikeCarousel = () => {
               slidesPerView: 5,
             },
           }}
-          
         >
           {items.map((item, index) => (
             <SwiperSlide key={item.id}>
@@ -81,8 +79,14 @@ const BurningLikeCarousel = () => {
                         background: "linear-gradient(10deg, #007AFF, #F30EFF)",
                       }}
                     />
-                    <div className="bg-[#161C31] text-[#007AFF] text-[12px] px-6 py-3 rounded-[8px] md:text-xl relative whitespace-nowrap">
-                      {item.value}
+
+                    <div className="bg-[#161C31]  px-6 py-2 rounded-[8px] flex flex-col justify-center items-center md:text-xl relative whitespace-nowrap">
+                      <span className="text-[12px] text-white mb-1.5">
+                        {item.date}
+                      </span>
+                      <span className="text-[#007AFF] text-[16px]  ">
+                        {item.value}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -99,17 +103,18 @@ const BurningLikeCarousel = () => {
         </Swiper>
       </div>
       <div className="max-w-6xl mx-auto mt-12 flex justify-center">
-      <div className="text-center mt-8 flex justify-center">
-        <a  style={{
-                  background: "linear-gradient(to right, #007AFF, #F30EFF)",
-                }}
-          href="https://t.me/Like_Project_Bot"
-          className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
-        >
-          {t("NFTCollection.BUYNFT")}
-          <CircleArrowRight />
-        </a>
-      </div>
+        <div className="text-center mt-8 flex justify-center">
+          <a
+            style={{
+              background: "linear-gradient(to right, #007AFF, #F30EFF)",
+            }}
+            href="https://t.me/Like_Project_Bot"
+            className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
+          >
+            {t("header.view")}
+            <CircleArrowRight />
+          </a>
+        </div>
       </div>
     </>
   );

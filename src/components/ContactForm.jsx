@@ -156,7 +156,7 @@ const ContactForm = () => {
                   background: "linear-gradient(to right, #007AFF, #F30EFF)",
                 }}
               >
-              {loading ? t("ContactForm.SENDING") : t("ContactForm.SEND")}
+                {loading ? t("ContactForm.SENDING") : t("ContactForm.SEND")}
                 <CircleArrowRight />
               </button>
             </div>
@@ -176,7 +176,7 @@ const ContactForm = () => {
         <div className="grid grid-cols-2 md:flex md:justify-evenly">
           {socialLinks.map((social, index) => (
             <div
-              className={`flex flex-col items-center gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:border-[2px] hover:border-[solid] hover:border-[#007AFF] hover:p-2 rounded-lg p-2 transition-all duration-300 ${
+              className={`flex flex-col items-center gap-1 hover:shadow-[0_0px_35px_rgba(0,122,255,1)] hover:outline-[2px] hover:outline-[solid] hover:outline-[#007AFF] hover:p-2 rounded-lg p-2 transition-all duration-300 ${
                 index === socialLinks.length - 1
                   ? "col-span-2 mx-auto md:col-span-0 md:m-0"
                   : ""

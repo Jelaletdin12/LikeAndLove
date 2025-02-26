@@ -16,11 +16,14 @@ const NFTCard = ({
   position,
 }) => {
   const getTransformStyle = () => {
+    const screenWidth = window.innerWidth;
+    const offsetPercentage = screenWidth < 768 ? 140 : 180;
+
     switch (position) {
       case "prev":
-        return "translate(-135%, -50%) scale(0.8)";
+        return `translate(-${offsetPercentage}%, -50%) scale(0.8)`;
       case "next":
-        return "translate(35%, -50%) scale(0.8)";
+        return `translate(${offsetPercentage - 100}%, -50%) scale(0.8)`;
       case "current":
         return "translate(-50%, -50%) scale(1)";
       default:
@@ -44,16 +47,17 @@ const NFTCard = ({
       }}
     >
       <div
-        className={`rounded-lg relative cursor-pointer`}
+        className={`rounded-3xl relative cursor-pointer`}
         style={{
           background:
             (isExpanded || isHovered) && position === "current"
               ? `linear-gradient(#171D31, #171D31) padding-box, 
                  linear-gradient(30deg, #007AFF, #F30EFF) border-box`
               : "#171D31",
-          border: (isHovered || isExpanded) && position === "current" 
-            ? "4px solid transparent" 
-            : "none",
+          border:
+            (isHovered || isExpanded) && position === "current"
+              ? "4px solid transparent"
+              : "none",
         }}
         onMouseEnter={() => position === "current" && onMouseEnter()}
         onMouseLeave={onMouseLeave}
@@ -64,7 +68,7 @@ const NFTCard = ({
             {type.charAt(0).toUpperCase() + type.slice(1)} Card
           </div>
         )}
-        <div className="flex justify-center m-2">
+        <div className="flex justify-center m-3 ">
           <img src={image} alt={type} className="w-[300px] max-w-[304px]" />
         </div>
         {isExpanded && position === "current" && <NFTCardDetails type={type} />}
@@ -109,16 +113,14 @@ const NFTPrivilegeCards = () => {
   const handleCardClick = (index) => {
     const position = getCardPosition(index);
     if (position === "current") {
-      // Eğer kart zaten merkezde ise, sadece açılıp kapanma işlemi yap
       setExpandedCard(expandedCard === index ? null : index);
     } else {
-      // Eğer kart merkezde değilse, önce merkeze getir
       setExpandedCard(null);
       setCurrentIndex(index);
-      // Kısa bir süre sonra kartı aç
+
       setTimeout(() => {
         setExpandedCard(index);
-      }, 700); // transition süresi kadar bekle
+      }, 700);
     }
   };
 

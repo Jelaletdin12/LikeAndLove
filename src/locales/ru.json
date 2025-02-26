@@ -2,7 +2,8 @@
   "header": {
     "howItWorks": "как это работает?",
     "support": "Поддержка",
-    "goToApp": "приложение"
+    "goToApp": "приложение",
+    "view": "Просмотреть"
   },
   "MiningVisualization": {
     "Social_Media_Network": "Social Media Network",
@@ -86,7 +87,7 @@
     "arethereformakingmoney": "для заработка?",
     "Howdoes": "Как работает",
     "Mining": "Майнинг?",
-    "work": "work",
+    "work": "",
     "sending": "отправка?",
     "MOREDETAILED": "ПОДРОБНЕЕ"
   },
@@ -113,21 +114,21 @@
   "BurningLike": {
     "BurningtheLiKE": "Сжигание LIKE",
     "token": "токена",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Каждую неделю, с 06:00 до 08:00 утра по Гринвичу, мы проводим халвинг, сжигая 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Механизм сжигания: ключ к росту стоимости токенов LIKE. Регулярное сжигание токенов – это сердцевина нашей экономической модели. Этот процесс не только сокращает общее предложение токенов, но и создает дефицит, который неизбежно ведет к росту цен. Чем реже становится токен, тем выше его стоимость на рынке."
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Механизм сжигания: ключ к росту стоимости токенов LIKE. Каждый понедельник с 06:00 до 08:00 по Гринвичу мы проводим сжигание 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Этот процесс играет центральную роль в нашей экономической модели, так как сокращает общее предложение токенов и создает дефицит. Со временем, по мере уменьшения количества доступных токенов, их ценность на рынке неизбежно возрастает."
   },
   "ExchangeInterface": {
     "Partner": "Партнерcкие",
     "CryptoExchanges": "Крипто-Биржи",
     "Toparticipateinminingandassetue": "Наши надежные партнеры обеспечивают беспрепятственный ввод и вывод ваших активов, а также создают комфортные условия для вашего легкого и безопасного погружения в мир криптовалют.",
-    "card1": "Возможности Like & Love",
-    "card2": "Выход на биржу STON.fi",
+    "card1": "Возможности c multi DeFI Like",
+    "card2": "Выход на биржу STON.fi ",
     "card3": "Выход на биржу DeDust",
     "card4": "Выход на биржу Storm Trade",
     "card5": "Выход на биржу Tradoor",
     "card6": "Выход на биржу Uniswap",
     "card7": "Выход на биржу Tonstakers",
     "card8": "Выход на биржу Curve Finance",
-    "card9": "Возможности Like & Love",
+    "card9": "Возможности c multi DeFI Like",
     "card10": "Выход на биржу Upbit",
     "card11": "Выход на биржу Bidget",
     "card12": "Выход на биржу Coinbase",

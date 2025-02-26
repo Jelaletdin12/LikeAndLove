@@ -8,7 +8,7 @@ import { useState } from "react";
 import { CircleArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 export default function NFTCollection() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const nftItems = [
     { title: "Like #113", icon: fan },
     { title: "Like #1040", icon: fan },
@@ -66,20 +66,19 @@ export default function NFTCollection() {
             1024: {
               slidesPerView: 6,
             },
-            
           }}
         >
           {nftItems.map((item, index) => {
-            // Ortadaki kart
+            // center card
             let scaleClass =
               "scale-100 md:scale-110 shadow-[0_0px_25px_rgba(0,122,255,1)]";
 
-            // Sağ ve solundaki kartlar (biraz küçük olacak)
+            // Right and left cards (smaller)
             if (index === activeIndex - 1 || index === activeIndex + 1) {
               scaleClass = "scale-75 md:scale-85 opacity-90";
             }
 
-            // Diğer tüm kartlar (en küçük olacak)
+            // Other cards (smallest cards)
             if (
               index !== activeIndex &&
               index !== activeIndex - 1 &&
@@ -105,7 +104,7 @@ export default function NFTCollection() {
                     </h3>
                     <img
                       src={item.icon}
-                       className="w-4/5 h-4/5 object-contain"
+                      className="w-4/5 h-4/5 object-contain"
                       alt="NFT"
                     />
                   </div>
@@ -116,7 +115,6 @@ export default function NFTCollection() {
         </Swiper>
       </div>
 
-      {/* Buy NFT Button */}
       <div className="text-center mt-8 flex justify-center">
         <a
           style={{

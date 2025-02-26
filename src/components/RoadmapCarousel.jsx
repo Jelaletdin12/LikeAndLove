@@ -104,7 +104,9 @@ const RoadmapCarousel = () => {
                   : " "
               }`}
               style={{
-                filter: !isCardActive(index) ? "contrast(50%) brightness(70%)" : "none",
+                filter: !isCardActive(index)
+                  ? "contrast(50%) brightness(70%)"
+                  : "none",
               }}
             >
               <div
