@@ -109,7 +109,7 @@ const StatisticsDashboard = () => {
         <h1 className="text-white text-5xl md:text-6xl font-bold mb-6">
           {t("StatisticsDashboard.Team")}
         </h1>
-        <p className="text-center text-l md:text-xl text-white">
+        <p className="text-center text-lg md:text-xl text-white">
           {t("StatisticsDashboard.Webelieveinthe")}
         </p>
       </div>

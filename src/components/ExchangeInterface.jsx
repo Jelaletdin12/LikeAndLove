@@ -154,7 +154,7 @@ const ExchangeInterface = () => {
           </span>
         </h1>
 
-        <p className="text-white text-l md:text-xl text-center mb-8">
+        <p className="text-white text-lg md:text-xl text-center mb-8">
           {t("ExchangeInterface.Toparticipateinminingandassetue")}
         </p>
 

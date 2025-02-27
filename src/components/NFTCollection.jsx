@@ -31,7 +31,7 @@ export default function NFTCollection() {
             <span className="text-[#007BFF] mx-2">NFT</span>{" "}
             {t("NFTCollection.Collection")}
           </h2>
-          <p className="text-white text-l mb-8 max-w-2xl text-l md:text-xl">
+          <p className="text-white text-l mb-8 max-w-2xl text-lg md:text-xl">
             {t(
               "NFTCollection.ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue"
             )}

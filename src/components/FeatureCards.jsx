@@ -27,12 +27,16 @@ const FeatureCards = () => {
     {
       title: {
         id: 2,
-        regular: t("FeatureCards.Prizesfrom"),
-        highlight: t("FeatureCards.WHEELOFFORTUNE"),
-        hasQuestionMark: true,
+        regular: t("FeatureCards.Howdoes"),
+        highlight: t("FeatureCards.Mining"),
+        secondLine: {
+          regular: t("FeatureCards.work"),
+          hasQuestionMark: true,
+        },
       },
-      image: phone2,
+      image: phone9,
     },
+    
     {
       title: {
         id: 3,
@@ -88,14 +92,11 @@ const FeatureCards = () => {
     {
       title: {
         id: 8,
-        regular: t("FeatureCards.Howdoes"),
-        highlight: t("FeatureCards.Mining"),
-        secondLine: {
-          regular: t("FeatureCards.work"),
-          hasQuestionMark: true,
-        },
+        regular: t("FeatureCards.Prizesfrom"),
+        highlight: t("FeatureCards.WHEELOFFORTUNE"),
+        hasQuestionMark: true,
       },
-      image: phone9,
+      image: phone2,
     },
     {
       title: {

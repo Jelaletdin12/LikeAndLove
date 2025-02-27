@@ -88,26 +88,26 @@ const MiningGuide = () => {
         <h2 className="text-5xl text-white font-black mb-4 leading-none hidden md:flex md:text-6xl">
           {t("NFTMinerApp.How_it_works_Mining")}
         </h2>
-        <p className="text-l text-white mb-8 md:text-xl">
+        <p className="text-lg text-white mb-8 md:text-xl">
           {t("NFTMinerApp.ItsassimpleasthatStartearningLIKETokenswithourNFTs")}
         </p>
         <ul className="mb-8 list-decimal list-inside">
-          <li className="text-l md:text-xl text-white">
+          <li className="text-lg md:text-xl text-white">
             {t("NFTMinerApp.GettheNFT")}
           </li>
-          <li className="text-l md:text-xl text-white">
+          <li className="text-lg md:text-xl text-white">
             {t("NFTMinerApp.Starttheminingprocess")}
           </li>
-          <li className="text-l md:text-xl text-white">
+          <li className="text-lg md:text-xl text-white">
             {t("NFTMinerApp.Collectyourtokens")}
           </li>
         </ul>
-        <p className="text-l md:text-xl text-white mb-8">
+        <p className="text-lg md:text-xl text-white mb-8">
           {t(
             "NFTMinerApp.YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit"
           )}
         </p>
-        <p className="text-l md:text-xl text-white">
+        <p className="text-lg md:text-xl text-white">
           {t(
             "NFTMinerApp.ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet"
           )}

@@ -65,7 +65,7 @@ const RoadmapCarousel = () => {
             {t("RoadmapCarousel.oftheProject")}
           </span>
         </h2>
-        <p className="text-center text-l md:text-xl text-white mt-2">
+        <p className="text-center text-lg md:text-xl text-white mt-2">
           {t(
             "RoadmapCarousel.OurprojectroadmapclearlyreflectsstrategicdevelopmentplansincludingkeymilestonesandgoalsWestriveforfulltransparencybyprovidinguserswithaccesstoinformationaboutupcomingstepsandinitiatives"
           )}

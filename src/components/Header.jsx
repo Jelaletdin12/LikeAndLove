@@ -53,16 +53,17 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
         <div className="max-w-6xl flex items-center justify-between mx-auto p-2">
           {/* Logo and Brand */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+            <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
               <span>
                 <img src={Logo} alt="Logo" />
               </span>
             </div>
-            <div className="text-l font-bold">
-              <span className="text-[#007BFF] text-[30px]">LiKE</span>
+            <div className=" font-bold">
+              <span className="text-[#007BFF] text-2xl">LiKE</span>
               <span className="text-white">&</span>
-              <span className="text-[#007BFF] text-[30px]">LOVE</span>
-              <span className="text-white text-[18px] ml-2">PROJECT</span>
+              <span className="text-[#007BFF] text-2xl">LOVE</span>
+              <span className="hidden md:inline text-white text-md ml-2">PROJECT</span>
+
             </div>
           </div>
 
@@ -73,7 +74,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-2 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase border-[#007BFF] border-solid border-2"
+              className="text-white px-2 py-1 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase border-[#007BFF] border-solid border-2"
             >
               {t("header.howItWorks")}
             </button>
@@ -82,7 +83,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-2 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
+              className="text-white px-2 py-1 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
             >
               <a
                 className=""
@@ -96,17 +97,17 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-2 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
+              className="text-white px-2 py-1 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
             >
               <a href="https://t.me/Likeminingsupport">{t("header.support")}</a>
             </button>
 
             {/* Language Selector */}
-            <div className="bg-[#007BFF] font-bold flex items-center space-x-2 rounded-[8px]">
+            <div className="bg-[#007BFF] font-bold flex items-center space-x-1 rounded-[8px]">
               <button
-                className={`px-2 border-box m-1 rounded-[8px] text-sm font-large ${
+                className={`px-1 border-box m-1 rounded-[6px] text-sm font-large ${
                   i18n.language === "en"
-                    ? "bg-white text-[#000] p-1"
+                    ? "bg-white text-[#000] "
                     : "text-white"
                 }`}
                 onClick={() => changeLanguage("en")}
@@ -114,9 +115,9 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
                 EN
               </button>
               <button
-                className={`px-2 border-box m-1 rounded-[8px] text-sm font-large ${
+                className={`px-1 border-box m-1 rounded-[6px] text-sm font-large ${
                   i18n.language === "ru"
-                    ? "bg-white text-[#000] p-1"
+                    ? "bg-white text-[#000] "
                     : "text-white"
                 }`}
                 onClick={() => changeLanguage("ru")}
@@ -130,7 +131,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white px-3 py-2 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
+              className="text-white px-2 py-1 rounded-[8px] text-sm font-medium hover:opacity-90 transition-opacity uppercase  border-[#007BFF] border-solid border-2"
             >
               <a href="https://t.me/Like_Project_Bot">{t("header.goToApp")}</a>
             </button>
@@ -158,13 +159,13 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
           <div className="flex flex-col items-center gap-4 p-4 min-h-screen pt-8 ">
             <button
               onClick={scrollToFeatureCards}
-              className="text-left text-white  rounded-[8px] text-xl font-bold transition-colors w-full uppercase border-container"
+              className="text-left text-[#A9A9A9]  rounded-[8px] text-xl font-bold transition-colors w-full uppercase border-container"
             >
               <div className="content w-full flex justify-between">
                 {t("header.howItWorks")} <CircleArrowRight />
               </div>
             </button>
-            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2 uppercase border-container">
+            <button className="!text-[#A9A9A9]  transition-colors font-bold text-xl text-left w-full py-2 uppercase border-container">
               <div className="content">
                 <a
                   className="w-full flex justify-between"
@@ -175,7 +176,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               </div>
             </button>
 
-            <button className="!text-white transition-colors font-bold text-xl text-left w-full py-2 uppercase border-container">
+            <button className="!text-[#A9A9A9]  transition-colors font-bold text-xl text-left w-full py-2 uppercase border-container">
               <div className="content">
                 <a
                   className="w-full flex justify-between"
@@ -189,12 +190,12 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
             {/* Language Selector */}
             <div className="border-container w-full">
               <div className="content flex justify-between">
-                <div className="text-white text-xl font-bold uppercase">
+                <div className="text-[#A9A9A9]  text-xl font-bold uppercase">
                   Language
                 </div>
                 <div className="  font-bold flex items-center space-x-2 rounded-[8px] self-center">
                   <button
-                    className={`px-2 border-box m-1 rounded-[8px] text-l font-large w-[50%]  ${
+                    className={`px-2 border-box m-1 rounded-[8px] text-lg font-large w-[50%]  ${
                       i18n.language === "en"
                         ? "bg-white text-[#000] p-1"
                         : "text-white"
@@ -204,7 +205,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
                     EN
                   </button>
                   <button
-                    className={`px-2 border-box m-1 rounded-[8px] text-l font-large w-[50%] ${
+                    className={`px-2 border-box m-1 rounded-[8px] text-lg font-large w-[50%] ${
                       i18n.language === "ru"
                         ? "bg-white text-[#000] p-1"
                         : "text-white"
@@ -222,7 +223,7 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
               style={{
                 background: "linear-gradient(to right, #007AFF, #F30EFF)",
               }}
-              className="text-white h-[52px] px-6 py-2 rounded-[8px] text-l font-medium hover:opacity-90 transition-opacity w-full uppercase border-[#007BFF] border-solid border-2 "
+              className="text-white h-[52px] px-6 py-2 rounded-[8px] text-xl font-medium hover:opacity-90 transition-opacity w-full uppercase border-[#007BFF] border-solid border-2 "
             >
               <a href="https://t.me/Like_Project_Bot">{t("header.goToApp")}</a>
             </button>

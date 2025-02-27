@@ -31,7 +31,7 @@ const BurningLikeCarousel = () => {
           {t("BurningLike.BurningtheLiKE")}{" "}
           <span className="text-white"> {t("BurningLike.token")}</span>
         </h2>
-        <p className="text-center text-l md:text-xl text-white mt-2 mb-5">
+        <p className="text-center text-lg md:text-xl text-white mt-2 mb-5">
           {t(
             "BurningLike.Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket"
           )}
@@ -53,7 +53,7 @@ const BurningLikeCarousel = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           breakpoints={{
             320: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
               spaceBetween: 5,
             },
             768: {
@@ -66,7 +66,7 @@ const BurningLikeCarousel = () => {
         >
           {items.map((item, index) => (
             <SwiperSlide key={item.id}>
-              <div className="flex items-center gap-2 md:justify-around ">
+              <div className="flex items-center gap-2 justify-around ">
                 {/* Added conditional styling based on active state */}
                 <div
                   className={`relative rounded-[8px] transition-all duration-300 shadow-[0_0px_15px_rgba(0,122,255,1)] 
@@ -80,11 +80,11 @@ const BurningLikeCarousel = () => {
                       }}
                     />
 
-                    <div className="bg-[#161C31]  px-6 py-2 rounded-[8px] flex flex-col justify-center items-center md:text-xl relative whitespace-nowrap">
-                      <span className="text-[12px] text-white mb-1.5">
+                    <div className="bg-[#161C31] px-2 md:px-6 py-1 md:py-2 rounded-[8px]  flex flex-col justify-center items-center md:text-xl relative whitespace-nowrap">
+                      <span className="text-[12px] text-white m-0 md:mb-1.5">
                         {item.date}
                       </span>
-                      <span className="text-[#007AFF] text-[16px]  ">
+                      <span className="text-[#007AFF] text-sm md:text-[16px]  ">
                         {item.value}
                       </span>
                     </div>
@@ -94,7 +94,7 @@ const BurningLikeCarousel = () => {
                 {/* Connector line with conditional styling */}
 
                 <div
-                  className={`h-1.5 w-14 bg-[#007AFF] rounded-4xl
+                  className={`h-1 w-8 md:h-1.5 md:w-14 bg-[#007AFF] rounded-4xl
                       ${!isActive(index) ? "grayscale opacity-50" : ""}`}
                 />
               </div>

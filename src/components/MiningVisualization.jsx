@@ -38,7 +38,7 @@ const MiningDevice = () => {
               className="absolute top-[170px] left-[-50px] w-[70px] h-auto md:w-[110px] md:left-[-110px] md:top-[200px]"
             />
           </div>
-          <p className="bg-white  text-sm md:text-l rounded-full p-1 pr-4 pl-4 w-max">
+          <p className="bg-white  text-sm md:text-lg rounded-full p-1 pr-4 pl-4 w-max">
             #Multi_app
           </p>
         </div>
@@ -72,7 +72,7 @@ const MiningDevice = () => {
           />
         </div>
 
-        <p className="text-white text-l mt-[50px] ">#Telegram_mini_app</p>
+        <p className="text-white text-lg mt-[50px] ">#Telegram_mini_app</p>
       </div>
 
       {/* Mining device */}

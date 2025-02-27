@@ -53,7 +53,7 @@ const MiningUpgrades = () => {
             <h1 className="text-[#007BFF] "> {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
 
-          <p className="text-white text-l md:text-xl mb-8 max-w-2xl mx-auto ">
+          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto ">
             {t(
               "MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions"
             )}
@@ -116,7 +116,7 @@ const MiningUpgrades = () => {
             href="https://t.me/Like_Project_Bot"
             className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
           >
-            {t("NFTCollection.BUYNFT")}
+            {t("MiningUpgrades.WATCH")}
             <CircleArrowRight />
           </a>
         </div>

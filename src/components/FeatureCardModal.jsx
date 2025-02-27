@@ -22,9 +22,9 @@ const FeatureModal = ({
     switch (feature.title.id) {
       case 1:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar ">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal1.firstStep")}
                 </h2>
@@ -66,11 +66,11 @@ const FeatureModal = ({
             </button>
           </div>
         );
-      case 2:
+      case 8:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
-              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
+              <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar flex flex-col md:justify-center">
                 <h2 className="text-xl font-bold mb-4 text-white">
                   {t("Modal2.wheelOfFortune")}
                 </h2>
@@ -104,9 +104,9 @@ const FeatureModal = ({
             </button>
           </div>
         );
-      case 3:
+      case 9:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -155,7 +155,7 @@ const FeatureModal = ({
         );
       case 4:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -201,7 +201,7 @@ const FeatureModal = ({
         );
       case 5:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -256,7 +256,7 @@ const FeatureModal = ({
         );
       case 6:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -305,7 +305,7 @@ const FeatureModal = ({
         );
       case 7:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -361,9 +361,9 @@ const FeatureModal = ({
             </button>
           </div>
         );
-      case 8:
+      case 2:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between ">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">
@@ -419,9 +419,9 @@ const FeatureModal = ({
             </button>
           </div>
         );
-      case 9:
+      case 3:
         return (
-          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-center">
+          <div className="items-center flex flex-col p-6 bg-[#161C31] rounded-[8px] h-full justify-between">
             <div className="flex flex-col-reverse md:flex-row mb-6">
               <div className="h-[250px] overflow-y-auto md:h-auto text-white custom-scrollbar">
                 <h2 className="text-xl font-bold mb-4 text-white">

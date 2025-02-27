@@ -238,7 +238,7 @@ const NFTPrivilegeCards = () => {
           href="https://getgems.io/collection/EQB1v1TKh_7y1hSgbQhD4K5vUg0gu76o4E6d9WD3148YndjK"
           className="w-auto flex text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
         >
-          {t("NFTCollection.BUYNFT")}
+          {t("NFTPrivilegeCards.buyaPlatinumcard")}
           <CircleArrowRight />
         </a>
       </div>
