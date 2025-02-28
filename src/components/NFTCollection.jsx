@@ -26,9 +26,9 @@ export default function NFTCollection() {
     <div className="mx-auto mt-15">
       <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center mx-auto p-4">
         <div>
-          <h2 className=" text-4xl flex text-white font-black mb-4 md:text-6xl justify-center md:justify-items-start">
+          <h2 className=" text-4xl flex text-white font-black mb-4 md:text-6xl justify-center md:justify-start">
             {t("NFTCollection.The")}{" "}
-            <span className="text-[#007BFF] mx-2">NFT</span>{" "}
+            <span className="text-[#007BFF] mr-2">NFT</span>{" "}
             {t("NFTCollection.Collection")}
           </h2>
           <p className="text-white mb-8 max-w-2xl text-lg md:text-xl text-center md:text-left">

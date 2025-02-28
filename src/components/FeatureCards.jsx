@@ -34,7 +34,7 @@ const FeatureCards = () => {
           hasQuestionMark: true,
         },
       },
-      image: phone9,
+      image: phone5,
     },
 
     {
@@ -108,7 +108,7 @@ const FeatureCards = () => {
           hasQuestionMark: true,
         },
       },
-      image: phone8,
+      image: phone5,
     },
   ];
 

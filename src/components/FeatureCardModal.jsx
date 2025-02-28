@@ -105,7 +105,7 @@ const FeatureModal = ({
               </div>
               <p className="text-white pt-2">{t("Modal2.spinAndEnjoy")}</p>
             </ContentContainer>
-            <ImageContainer src={phone3} />
+            <ImageContainer src={phone2} />
           </ModalWrapper>
         );
       case 9:
@@ -140,7 +140,7 @@ const FeatureModal = ({
               </div>
               <p className="text-white pt-2.5">{t("Modal3.noCommission")}</p>
             </ContentContainer>
-            <ImageContainer src={phone3} />
+            <ImageContainer src={phone5} />
           </ModalWrapper>
         );
       case 4:
@@ -282,7 +282,7 @@ const FeatureModal = ({
                 <p>{t("Modal7.futurePlans")}</p>
               </div>
             </ContentContainer>
-            <ImageContainer src={phone4} />
+            <ImageContainer src={phone7} />
           </ModalWrapper>
         );
       case 2:
@@ -325,7 +325,7 @@ const FeatureModal = ({
                 </ul>
               </div>
             </ContentContainer>
-            <ImageContainer src={phone4} />
+            <ImageContainer src={phone5} />
           </ModalWrapper>
         );
       case 3:
@@ -355,7 +355,7 @@ const FeatureModal = ({
                 </ul>
               </div>
             </ContentContainer>
-            <ImageContainer src={phone4} />
+            <ImageContainer src={phone3} />
           </ModalWrapper>
         );
       default:
