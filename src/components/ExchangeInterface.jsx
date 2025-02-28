@@ -234,11 +234,11 @@ const ExchangeInterface = () => {
         </div>
 
         <div className="md:hidden">
-          <Swiper spaceBetween={16} slidesPerView={2}>
+          <Swiper spaceBetween={10} slidesPerView={2} className="h-full">
             {exchanges[exchangeType].map((exchange) => (
-              <SwiperSlide key={exchange.id}>
+              <SwiperSlide key={exchange.id} className="h-auto">
                 <div
-                  className={`relative p-[3px] rounded-xl overflow-hidden ${
+                  className={`relative p-[3px] rounded-xl overflow-hidden h-full ${
                     exchange.active
                       ? "bg-navy-800 shadow-[0_0px_15px_rgba(0,122,255,1)]"
                       : ""
@@ -255,16 +255,21 @@ const ExchangeInterface = () => {
                         : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                     }}
                   />
-                  <div className="relative flex flex-col justify-between bg-[#161C31] items-center p-2 md:p-6 rounded-xl">
-                    <div className="flex flex-col items-center">
-                      <div className="text-sm text-center text-white mb-2">
+                  <div className="relative flex flex-col justify-between bg-[#161C31] items-center p-2 md:p-6 rounded-xl h-full">
+                    <div className="flex flex-col items-center w-full">
+                      <div className="text-sm text-center text-white mb-2 h-[20px] w-full">
                         {exchange.date}
                       </div>
-                      <div className="text-sm md:text-md font-bold text-center text-white mb-4">
+                      <div className="text-sm md:text-md font-bold text-center text-white mb-4 h-[40px] flex items-center justify-center w-full">
                         {exchange.name}
                       </div>
-                      <div className="flex justify-center mb-4 w-[60px] md:w-auto">
-                        <img src={exchange.logo} alt={exchange.name} />
+
+                      <div className="flex justify-center mb-4 w-[60px] h-[60px] md:w-[60px] md:h-[60px]">
+                        <img
+                          src={exchange.logo}
+                          alt={exchange.name}
+                          className="object-contain max-w-full max-h-full"
+                        />
                       </div>
                     </div>
 
@@ -277,12 +282,15 @@ const ExchangeInterface = () => {
                       disabled={!exchange.active}
                     >
                       <a
-                        className="flex gap-2"
+                        className="flex gap-2 items-center justify-center"
                         href={exchange.link}
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {t("ExchangeInterface.goto")} <CircleArrowRight />
+                        <span className="whitespace-nowrap">
+                          {t("ExchangeInterface.goto")}
+                        </span>{" "}
+                        <CircleArrowRight />
                       </a>
                     </button>
                   </div>

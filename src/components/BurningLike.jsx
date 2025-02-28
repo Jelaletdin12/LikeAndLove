@@ -80,11 +80,11 @@ const BurningLikeCarousel = () => {
                       }}
                     />
 
-                    <div className="bg-[#161C31] px-2 md:px-6 py-1 md:py-2 rounded-[8px]  flex flex-col justify-center items-center md:text-xl relative whitespace-nowrap">
-                      <span className="text-[12px] text-white m-0 md:mb-1.5">
+                    <div className="bg-[#161C31] px-2 md:px-6 py-1 md:py-2 rounded-[8px]  flex flex-col justify-center items-center md:text-2xl relative whitespace-nowrap">
+                      <span className="text-sm md:text-lg text-white m-0 md:mb-1.5">
                         {item.date}
                       </span>
-                      <span className="text-[#007AFF] text-sm md:text-[16px]  ">
+                      <span className="text-[#007AFF] text-sm md:text-lg  ">
                         {item.value}
                       </span>
                     </div>
@@ -111,7 +111,7 @@ const BurningLikeCarousel = () => {
             href="https://t.me/Like_Project_Bot"
             className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
           >
-            {t("header.view")}
+          {t("BurningLike.btn")}
             <CircleArrowRight />
           </a>
         </div>

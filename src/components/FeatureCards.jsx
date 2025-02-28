@@ -36,7 +36,7 @@ const FeatureCards = () => {
       },
       image: phone9,
     },
-    
+
     {
       title: {
         id: 3,

@@ -201,7 +201,7 @@ const NFTPrivilegeCards = () => {
       onMouseLeave={handleMouseUp}
       style={{ userSelect: "none" }}
     >
-      <h1 className="text-4xl font-bold text-[#007BFF] mt-12 mb-12">
+      <h1 className="text-4xl font-bold text-[#007BFF] mt-12 mb-12 text-center ">
         <span className="text-white">
           {" "}
           {t("NFTPrivilegeCards.Acollectionof")}

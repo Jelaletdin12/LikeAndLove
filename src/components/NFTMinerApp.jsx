@@ -33,7 +33,7 @@ const MiningGuide = () => {
 
   return (
     <div ref={sectionRef} className="max-w-6xl m-auto bg-[#161C31] p-4 md:flex">
-      <h2 className="text-5xl text-white font-black mb-4 leading-none flex md:hidden md:text-6xl">
+      <h2 className="text-5xl text-white font-black mb-4 text-center leading-none flex md:hidden md:text-6xl">
         {t("NFTMinerApp.How_it_works_Mining")}
       </h2>
       <div className="w-full md:w-1/2 relative">
@@ -88,7 +88,7 @@ const MiningGuide = () => {
         <h2 className="text-5xl text-white font-black mb-4 leading-none hidden md:flex md:text-6xl">
           {t("NFTMinerApp.How_it_works_Mining")}
         </h2>
-        <p className="text-lg text-white mb-8 md:text-xl">
+        <p className="text-lg text-white mb-8 md:text-xl text-center md:text-left">
           {t("NFTMinerApp.ItsassimpleasthatStartearningLIKETokenswithourNFTs")}
         </p>
         <ul className="mb-8 list-decimal list-inside">
@@ -102,12 +102,12 @@ const MiningGuide = () => {
             {t("NFTMinerApp.Collectyourtokens")}
           </li>
         </ul>
-        <p className="text-lg md:text-xl text-white mb-8">
+        <p className="text-lg md:text-xl text-white mb-8 text-center md:text-left">
           {t(
             "NFTMinerApp.YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit"
           )}
         </p>
-        <p className="text-lg md:text-xl text-white">
+        <p className="text-lg md:text-xl text-white text-center md:text-left">
           {t(
             "NFTMinerApp.ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet"
           )}

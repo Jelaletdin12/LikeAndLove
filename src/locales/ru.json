@@ -104,7 +104,7 @@
     "card1": "Разработка приложения",
     "card2": "Запуск Telegram MiniApp",
     "card3": "Выход на биржу STON.fi ",
-    "card4": "Листинг токена LiKE",
+    "card4": "Листинг Like на других биржах",
     "card5": "Партнерство с другими проектами",
     "card6": "Дополнения функций",
     "card7": "Глобализация проекта",
@@ -114,7 +114,9 @@
   "BurningLike": {
     "BurningtheLiKE": "Сжигание LIKE",
     "token": "токена",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Механизм сжигания: ключ к росту стоимости токенов LIKE. Каждый понедельник с 06:00 до 08:00 по Гринвичу мы проводим сжигание 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Этот процесс играет центральную роль в нашей экономической модели, так как сокращает общее предложение токенов и создает дефицит. Со временем, по мере уменьшения количества доступных токенов, их ценность на рынке неизбежно возрастает."
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Механизм сжигания: ключ к росту стоимости токенов LIKE. Каждый понедельник с 06:00 до 08:00 по Гринвичу мы проводим сжигание 125 000 000 токенов LIKE из общего объема в 80 миллиардов. Этот процесс играет центральную роль в нашей экономической модели, так как сокращает общее предложение токенов и создает дефицит. Со временем, по мере уменьшения количества доступных токенов, их ценность на рынке неизбежно возрастает.",
+    "btn": "блокчейн-обозреватель "
+    
   },
   "ExchangeInterface": {
     "Partner": "Партнерcкие",
@@ -144,9 +146,9 @@
   },
   "StatisticsDashboard": {
     "Activeusers": "Активных пользователей",
-    "Transactionsperday": "Транзакций в день",
-    "SentbyLOVE": "Отправленных LOVE",
-    "Invitedriends": "Приглашенных друзей",
+    "Totalturnover": "Общий оборот токенов в TON",
+    "ActiveNFT": "Число работающих NFT-майнеров",
+    "TotalStaking": "Совокупный объём стейкинга в TON",
     "ComingSoon": "Coming Soon",
     "Application": "Приложения",
     "statistics": "Статистика",
@@ -213,7 +215,7 @@
     "tryNow": "Попробуйте обмен токенов прямо сейчас и получите максимальную выгоду!"
   },
   "Modal5": {
-    "fastDepositWithdrawal": "Быстрый ВНЕСЕНИЕ и ВЫВОД средств?",
+    "fastDepositWithdrawal": "Быстрый ВВОД и ВЫВОД средств?",
     "withdrawalIntro": "Вы можете вывести токены USDT, TON, Like и Love с вашего внутреннего баланса на внешний кошелек. Для этого:",
     "withdrawStep1": "Перейдите в раздел \"Вывод\".",
     "withdrawStep2": "Выберите токен, который хотите вывести (Like, Love, USDT, TON).",
@@ -284,5 +286,23 @@
     "futurePlans": "Планируется добавление поддержки других токенов.",
     "important": "Важно:",
     "yieldCalculation": "Доходность рассчитывается автоматически с учетом системы сложных процентов. Это означает, что чем больше объем стейкинга, тем выше сумма начислений."
+  },
+  "Validation": {
+    "nameRequired": "Имя обязательно для заполнения",
+    "nameMinLength": "Имя должно содержать не менее 2 символов",
+    "nameMaxLength": "Имя должно содержать менее 50 символов",
+    "nameInvalid": "Имя может содержать только буквы, пробелы и знаки пунктуации",
+    
+    "emailRequired": "Email обязателен для заполнения",
+    "emailInvalid": "Пожалуйста, введите корректный email адрес",
+    
+    "messageRequired": "Сообщение обязательно для заполнения",
+    "messageMinLength": "Сообщение должно содержать не менее 10 символов",
+    "messageMaxLength": "Сообщение не должно превышать 1000 символов",
+    
+    "pleaseFixErrors": "Пожалуйста, исправьте ошибки перед отправкой",
+    "tooManyRequests": "Слишком много запросов. Пожалуйста, попробуйте позже.",
+    "Name": "Имя:",
+    "Message": "Собщение"
   }
 }

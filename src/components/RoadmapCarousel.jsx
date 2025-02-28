@@ -31,13 +31,13 @@ const RoadmapCarousel = () => {
       icon: set,
     },
     {
-      date: "01.03.2025",
+      date: "Q1 2025",
       title: t("RoadmapCarousel.EnteringthestockexchangeSTONfi"),
       icon: road1,
     },
     {
-      date: "25.02.2025",
-      title: t("RoadmapCarousel.ListingoftheLiKEtoken"),
+      date: "Q2 2025",
+      title: t("RoadmapCarousel.card4"),
       icon: road2,
     },
     {
@@ -48,7 +48,7 @@ const RoadmapCarousel = () => {
     { date: "Q4 2025", title: t("RoadmapCarousel.card6"), icon: road4 },
     { date: "Q4 2025", title: t("RoadmapCarousel.card7"), icon: road5 },
     { date: "Q1 2026", title: t("RoadmapCarousel.card8"), icon: road6 },
-    { date: "19.01.2026", title: t("RoadmapCarousel.card9"), icon: road7 },
+    { date: "07.04.2026", title: t("RoadmapCarousel.card9"), icon: road7 },
   ];
 
   const isCardActive = (index) => {
@@ -117,7 +117,7 @@ const RoadmapCarousel = () => {
                     : "linear-gradient(45deg, #4B5563, #9CA3AF)",
                 }}
               />
-              <div className="relative justify-between w-full p-2 md:p-6  rounded-xl  bg-[#161C31] text-white flex flex-col gap-6 md:h-[250px] min-h-[156px] items-center">
+              <div className="relative justify-between w-full p-2 md:p-6  rounded-xl  bg-[#161C31] text-white flex flex-col gap-1 md:gap-6 md:h-[250px] min-h-[180px] items-center">
                 <div className="flex flex-col items-center">
                   <p className="text-sm text-center font-semibold">
                     {item.date}
@@ -128,7 +128,7 @@ const RoadmapCarousel = () => {
                 </div>
                 <img
                   src={item.icon}
-                  className="w-12 h-12 md:w-24 md:h-24 "
+                  className="w-15 h-15 md:w-24 md:h-24 mb-2 "
                   alt={item.title}
                 />
               </div>

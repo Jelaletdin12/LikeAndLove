@@ -53,7 +53,7 @@ const MiningUpgrades = () => {
             <h1 className="text-[#007BFF] "> {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
 
-          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto ">
+          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto text-center md:text-left ">
             {t(
               "MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions"
             )}

@@ -75,12 +75,12 @@ body {
   top: 30px !important;
 }
 .ant-modal-body{
-  height: 620px !important;
+  /* height: 620px !important; */
 }
 @media screen and (max-width: 768px) {
-  .ant-modal-body{
+  /* .ant-modal-body{
     height: auto !important;
-  }
+  } */
   .ant-modal {
     top: 10px !important;
   }
@@ -89,7 +89,7 @@ body {
   background: linear-gradient(20deg, #007aff, #f30eff) !important;
   padding: 3px !important;
   box-shadow: 0 0px 25px rgba(0, 122, 255, 1) !important;
-  min-height: 620px !important;
+  /* min-height: 620px !important; */
 }
 
 .ant-modal-close-x {

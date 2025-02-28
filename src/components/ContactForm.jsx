@@ -11,6 +11,7 @@ import email from "../assets/email.png";
 import getgames from "../assets/getgames.png";
 import discord from "../assets/discord.png";
 import { useTranslation } from "react-i18next";
+
 const ContactForm = () => {
   const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
@@ -19,39 +20,167 @@ const ContactForm = () => {
     message: "",
   });
 
+  // Add validation state
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [loading, setLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
+  const [responseType, setResponseType] = useState(""); // success or error
+
+  // Validation functions
+  const validateName = (name) => {
+    if (!name.trim()) return t("Validation.nameRequired");
+    if (name.trim().length < 2) return t("Validation.nameMinLength");
+    if (name.trim().length > 50) return t("Validation.nameMaxLength");
+    if (!/^[a-zA-Z\s'-]+$/.test(name)) return t("Validation.nameInvalid");
+    return "";
+  };
+
+  const validateEmail = (email) => {
+    if (!email.trim()) return t("Validation.emailRequired");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      return t("Validation.emailInvalid");
+    return "";
+  };
+
+  const validateMessage = (message) => {
+    if (!message.trim()) return t("Validation.messageRequired");
+    if (message.trim().length < 10) return t("Validation.messageMinLength");
+    if (message.trim().length > 1000) return t("Validation.messageMaxLength");
+    return "";
+  };
+
+  // Validate all fields
+  const validateForm = () => {
+    const nameError = validateName(formData.name);
+    const emailError = validateEmail(formData.email);
+    const messageError = validateMessage(formData.message);
+
+    setErrors({
+      name: nameError,
+      email: emailError,
+      message: messageError,
+    });
+
+    return !nameError && !emailError && !messageError;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate form before submission
+    if (!validateForm()) {
+      setResponseMessage(t("Validation.pleaseFixErrors"));
+      setResponseType("error");
+      return;
+    }
+
     setLoading(true);
     setResponseMessage("");
+    setResponseType("");
 
     try {
+      // Add rate limiting check (hypothetical implementation)
+      const hasRecentSubmission = checkRecentSubmission();
+      if (hasRecentSubmission) {
+        setResponseMessage(t("Validation.tooManyRequests"));
+        setResponseType("error");
+        return;
+      }
+
+      // Sanitize input before sending
+      const sanitizedData = {
+        name: sanitizeInput(formData.name),
+        email: sanitizeInput(formData.email),
+        message: sanitizeInput(formData.message),
+      };
+
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbx_al4dZ96CwaJVyAZjVEkQQSGl0pmhRd3tezPiTjKh3tv73W4brv190SCQz7HMx_sU/exec",
         {
           method: "POST",
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(sanitizedData),
         }
       );
 
-      setResponseMessage("Message sent successfully!");
+      // Store submission timestamp
+      storeSubmissionTimestamp();
+
+      setResponseMessage(t("ContactForm.messageSentSuccessfully"));
+      setResponseType("success");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setResponseMessage("Failed to send message.");
+      setResponseMessage(t("ContactForm.failedToSendMessage"));
+      setResponseType("error");
       console.error("Error:", error);
     } finally {
       setLoading(false);
-      setFormData({ name: "", email: "", message: "" });
     }
   };
 
+  // Simulated function to check for recent submissions (anti-spam)
+  const checkRecentSubmission = () => {
+    const lastSubmission = localStorage.getItem("lastFormSubmission");
+    if (!lastSubmission) return false;
+
+    const timeDiff = Date.now() - parseInt(lastSubmission);
+    // Limit to one submission per minute (60000ms)
+    return timeDiff < 60000;
+  };
+
+  // Store submission timestamp
+  const storeSubmissionTimestamp = () => {
+    localStorage.setItem("lastFormSubmission", Date.now().toString());
+  };
+
+  // Sanitize input
+  const sanitizeInput = (input) => {
+    // Basic sanitization to prevent XSS
+    return input
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  };
+
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
+    });
+
+    // Real-time validation
+    let validationError = "";
+    if (name === "name") validationError = validateName(value);
+    if (name === "email") validationError = validateEmail(value);
+    if (name === "message") validationError = validateMessage(value);
+
+    setErrors({
+      ...errors,
+      [name]: validationError,
+    });
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+
+    // Validate on blur
+    let validationError = "";
+    if (name === "name") validationError = validateName(value);
+    if (name === "email") validationError = validateEmail(value);
+    if (name === "message") validationError = validateMessage(value);
+
+    setErrors({
+      ...errors,
+      [name]: validationError,
     });
   };
 
@@ -106,7 +235,7 @@ const ContactForm = () => {
           style={{
             background: "linear-gradient(to right, #007AFF, #F30EFF)",
           }}
-          className="absolute inset-0 rounded-xl bg-gradient-to-r  opacity-50"
+          className="absolute inset-0 rounded-xl bg-gradient-to-r opacity-50"
         />
 
         <div className="relative bg-[#161C31] rounded-xl p-8">
@@ -117,40 +246,83 @@ const ContactForm = () => {
             {t("ContactForm.Wearealwaysintouchandopentonewsuggestions")}
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6 ">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-5">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name:"
-                className="bg-[#1d293d] rounded-lg p-3 text-white w-full"
-                onChange={handleChange}
-                value={formData.name}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail:"
-                className="bg-[#1d293d] rounded-lg p-3 text-white w-full"
-                onChange={handleChange}
-                value={formData.email}
-                required
-              />
+              <div className="flex flex-col">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder={(t("Validation.Name"))}
+                  className={`bg-[#1d293d] rounded-lg p-3 text-white w-full ${
+                    errors.name ? "border border-red-500" : ""
+                  }`}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={formData.name}
+                  required
+                  maxLength={50}
+                  aria-invalid={errors.name ? "true" : "false"}
+                  aria-describedby="name-error"
+                />
+                {errors.name && (
+                  <p id="name-error" className="text-red-500 text-sm mt-1">
+                    {errors.name}
+                  </p>
+                )}
+              </div>
+              <div className="flex flex-col">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail:"
+                  className={`bg-[#1d293d] rounded-lg p-3 text-white w-full ${
+                    errors.email ? "border border-red-500" : ""
+                  }`}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={formData.email}
+                  required
+                  aria-invalid={errors.email ? "true" : "false"}
+                  aria-describedby="email-error"
+                />
+                {errors.email && (
+                  <p id="email-error" className="text-red-500 text-sm mt-1">
+                    {errors.email}
+                  </p>
+                )}
+              </div>
             </div>
-            <textarea
-              name="message"
-              placeholder="Messages"
-              rows={4}
-              className="bg-[#1d293d] rounded-lg p-3 text-white w-full mb-4"
-              onChange={handleChange}
-              value={formData.message}
-              required
-            />
+            <div className="flex flex-col">
+              <textarea
+                name="message"
+                placeholder={(t("Validation.Message"))}
+                rows={4}
+                className={`bg-[#1d293d] rounded-lg p-3 text-white w-full ${
+                  errors.message ? "border border-red-500" : ""
+                }`}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formData.message}
+                required
+                maxLength={1000}
+                aria-invalid={errors.message ? "true" : "false"}
+                aria-describedby="message-error"
+              />
+              {errors.message && (
+                <p id="message-error" className="text-red-500 text-sm mt-1">
+                  {errors.message}
+                </p>
+              )}
+              <div className="text-xs text-gray-400 text-right mt-1">
+                {formData.message.length}/1000
+              </div>
+            </div>
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase cursor-pointer w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4"
+                className={`uppercase cursor-pointer w-full md:w-max justify-center text-white px-8 py-2 rounded-[8px] hover:opacity-90 transition-opacity flex items-center gap-4 ${
+                  loading ? "opacity-70 cursor-not-allowed" : ""
+                }`}
                 disabled={loading}
                 style={{
                   background: "linear-gradient(to right, #007AFF, #F30EFF)",
@@ -161,7 +333,13 @@ const ContactForm = () => {
               </button>
             </div>
             {responseMessage && (
-              <p className="text-center text-white mt-4">{responseMessage}</p>
+              <p
+                className={`text-center ${
+                  responseType === "error" ? "text-red-500" : "text-green-400"
+                } mt-4`}
+              >
+                {responseMessage}
+              </p>
             )}
           </form>
         </div>

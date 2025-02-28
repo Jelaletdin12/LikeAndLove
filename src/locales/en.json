@@ -104,7 +104,7 @@
     "card1": "Application Development",
     "card2": "Telegram MiniApp Launch",
     "card3": "Entering the stock exchange STON.fi",
-    "card4": "Listing of the LiKE token",
+    "card4": "Listing Like on other exchanges",
     "card5": "Partnership with other projects",
     "card6": "Function additions",
     "card7": "Project globalization",
@@ -115,7 +115,8 @@
   "BurningLike": {
     "BurningtheLiKE": "Burning the LiKE",
     "token": "token",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "The burning mechanism: the key to increasing the value of LIKE tokens. Every Monday from 06:00 to 08:00 GMT, we burn 125,000,000 LIKE tokens out of a total of 80 billion. This process plays a central role in our economic model, as it reduces the total supply of tokens and creates a shortage. Over time, as the number of available tokens decreases, their value on the market inevitably increases."
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "The burning mechanism: the key to increasing the value of LIKE tokens. Every Monday from 06:00 to 08:00 GMT, we burn 125,000,000 LIKE tokens out of a total of 80 billion. This process plays a central role in our economic model, as it reduces the total supply of tokens and creates a shortage. Over time, as the number of available tokens decreases, their value on the market inevitably increases.",
+    "btn": "blockchain explorer"
   },
   "ExchangeInterface": {
     "Partner": "Partner",
@@ -145,9 +146,9 @@
   },
   "StatisticsDashboard": {
     "Activeusers": "Active users",
-    "Transactionsperday": "Transactions per day",
-    "SentbyLOVE": "Sent by LOVE",
-    "Invitedriends": "Invited friends",
+    "Totalturnover": "Total token turnover in TON",
+    "ActiveNFT": "Number of working NFT miners",
+    "TotalStaking": "The total amount of stacking in TON",
     "ComingSoon": "Coming Soon",
     "Application": "Application",
     "statistics": "statistics",
@@ -286,5 +287,25 @@
     "futurePlans": "There are plans to add support for other tokens.",
     "important": "Important:",
     "yieldCalculation": "The yield is calculated automatically, taking into account the compound interest system. This means that the larger the volume of staking, the higher the amount of accruals."
+  },
+  "Validation": {
+    "nameRequired": "Name is required",
+    "nameMinLength": "Name must be at least 2 characters",
+    "nameMaxLength": "Name must be less than 50 characters",
+    "nameInvalid": "Name can only contain letters, spaces, and punctuation",
+    
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters",
+    "messageMaxLength": "Message cannot exceed 1000 characters",
+    
+    "pleaseFixErrors": "Please fix the errors before submitting",
+    "tooManyRequests": "Too many requests. Please try again later.",
+    "Name": "Name:",
+   
+    "Message": "Message"
+    
   }
 }
