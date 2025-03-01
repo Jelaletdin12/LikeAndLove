@@ -208,7 +208,7 @@ const NFTPrivilegeCards = () => {
         </span>{" "}
         {t("NFTPrivilegeCards.NFTprivilegecards")}
       </h1>
-      <p className="text-white text-center max-w-2xl">
+      <p className="text-white text-lg  text-center md:text-xl max-w-2xl">
         {t(
           "NFTPrivilegeCards.TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders"
         )}

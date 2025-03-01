@@ -7,6 +7,8 @@ import phone4 from "../assets/phone4.gif";
 import phone5 from "../assets/phone5.gif";
 import phone6 from "../assets/phone6.gif";
 import phone7 from "../assets/phone7.gif";
+import phone8 from "../assets/phone8.gif";
+import phone9 from "../assets/phone9.gif";
 import { useTranslation } from "react-i18next";
 // Modal Content Component
 const FeatureModal = ({
@@ -140,7 +142,7 @@ const FeatureModal = ({
               </div>
               <p className="text-white pt-2.5">{t("Modal3.noCommission")}</p>
             </ContentContainer>
-            <ImageContainer src={phone5} />
+            <ImageContainer src={phone8} />
           </ModalWrapper>
         );
       case 4:
@@ -325,7 +327,7 @@ const FeatureModal = ({
                 </ul>
               </div>
             </ContentContainer>
-            <ImageContainer src={phone5} />
+            <ImageContainer src={phone9} />
           </ModalWrapper>
         );
       case 3:

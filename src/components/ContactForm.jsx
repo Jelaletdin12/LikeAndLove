@@ -36,7 +36,7 @@ const ContactForm = () => {
     if (!name.trim()) return t("Validation.nameRequired");
     if (name.trim().length < 2) return t("Validation.nameMinLength");
     if (name.trim().length > 50) return t("Validation.nameMaxLength");
-    if (!/^[a-zA-Z\s'-]+$/.test(name)) return t("Validation.nameInvalid");
+    if (!/^[\p{L}\s'-]+$/u.test(name)) return t("Validation.nameInvalid");
     return "";
   };
 
@@ -252,7 +252,7 @@ const ContactForm = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder={(t("Validation.Name"))}
+                  placeholder={t("Validation.Name")}
                   className={`bg-[#1d293d] rounded-lg p-3 text-white w-full ${
                     errors.name ? "border border-red-500" : ""
                   }`}
@@ -295,7 +295,7 @@ const ContactForm = () => {
             <div className="flex flex-col">
               <textarea
                 name="message"
-                placeholder={(t("Validation.Message"))}
+                placeholder={t("Validation.Message")}
                 rows={4}
                 className={`bg-[#1d293d] rounded-lg p-3 text-white w-full ${
                   errors.message ? "border border-red-500" : ""

@@ -31,10 +31,8 @@ export default function NFTCollection() {
             <span className="text-[#007BFF] mr-2">NFT</span>{" "}
             {t("NFTCollection.Collection")}
           </h2>
-          <p className="text-white mb-8 max-w-2xl text-lg md:text-xl text-center md:text-left">
-            {t(
-              "NFTCollection.ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue"
-            )}
+          <p className="text-white mb-8 max-w-2xl text-lg md:text-xl text-center md:text-left"
+           dangerouslySetInnerHTML={{ __html: t('NFTCollection.mining_info') }}>
           </p>
         </div>
         <div className="hidden md:flex flex-col items-center">

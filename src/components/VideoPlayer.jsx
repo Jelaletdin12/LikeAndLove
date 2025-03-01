@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Play, Pause } from "lucide-react";
 import { useTranslation } from "react-i18next";
+
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
 
   return (
-    <div className=" max-w-6xl mx-auto p-4">
+    <div className="max-w-6xl mx-auto p-4">
       {/* Header */}
       <h1 className="text-4xl text-white font-bold text-center mb-8 md:text-6xl">
         {t("VideoPlayer.News")}
@@ -21,7 +22,7 @@ const VideoPlayer = () => {
       <div className="relative aspect-video rounded-[8px] overflow-hidden p-[3px]">
         {/* Video player border gradient */}
         <div
-          className="absolute inset-0  rounded-2xl"
+          className="absolute inset-0 rounded-2xl"
           style={{
             background: "linear-gradient(to right, #007AFF, #F30EFF)",
           }}
@@ -45,12 +46,14 @@ const VideoPlayer = () => {
           </div>
 
           {/* Actual video element - uncomment and use when implementing */}
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://www.youtube.com/@likemining"
-            playsInline
-            controls={true}
-          />
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/xT6oMvczghc"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="YouTube Video"
+          ></iframe>
         </div>
       </div>
       <p className="text-white text-xl text-center mb-6 mt-6">

@@ -34,7 +34,7 @@ const FeatureCards = () => {
           hasQuestionMark: true,
         },
       },
-      image: phone5,
+      image: phone9,
     },
 
     {
@@ -108,7 +108,7 @@ const FeatureCards = () => {
           hasQuestionMark: true,
         },
       },
-      image: phone5,
+      image: phone8,
     },
   ];
 
@@ -128,7 +128,7 @@ const FeatureCards = () => {
   );
 
   return (
-    <div className="min-h-screen max-w-6xl m-auto mb-10 pt-28 p-4">
+    <div className=" max-w-6xl m-auto mb-10 pt-28 p-4">
       <h1 className="text-6xl font-bold text-white text-center flex justify-center mb-10">
         FAQ
       </h1>

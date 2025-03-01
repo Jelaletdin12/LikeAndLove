@@ -25,7 +25,7 @@
     "The": "The",
     "NFT": "NFT",
     "Collection": "Collection",
-    "ToparticipateinminingandmineLIKIandLOVEtokensyouneedtoacquireatleastoneNFTfromourcollectiononpetgamesioThesedigitalassetsnotonlyprovideaccesstominingandincreasedincomebutarealsovaluableinvestmentsthatcangrowinvalue": " To participate in mining and mine LIKI and LOVE tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
+    "mining_info": " To participate in mining and mine <span style=\"color:#007BFF;\">LIKE</span> and <span style=\"color:#007BFF;\">LOVE</span> tokens, you need to acquire at least one NFT from our collection on petgames.io. These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value.",
     "BUYNFT": "BUY NFT"
   },
   "NFTPrivilegeCards": {
@@ -47,7 +47,7 @@
     "love": "Commission for sending Love",
     "loveAmount": "regardless of the amount"
   },
-  "platinumCard":{
+  "platinumCard": {
     "SpecialprivilegesinTelegram": "Special privileges in Telegram",
     "NocommissionforLove": "No commission for Like!"
   },
@@ -110,7 +110,6 @@
     "card7": "Project globalization",
     "card8": "Ecosystem expansion",
     "card9": "Halving LiKE"
-    
   },
   "BurningLike": {
     "BurningtheLiKE": "Burning the LiKE",
@@ -176,8 +175,7 @@
     "manageAssets": "Manage your assets with complete freedom and security: Control your funds without intermediaries.",
     "speedAndConvenience": "The speed and convenience of the application: All operations are performed instantly, without delay.",
     "fullFledgedUser": "You have become a full-fledged user of our platform and can start using all these features today.",
-    "Continue" : "Continue"
-
+    "Continue": "Continue"
   },
   "Modal2": {
     "wheelOfFortune": "Prizes from the WHEEL OF FORTUNE?",
@@ -258,7 +256,7 @@
     "bonusCollection": "Collect bonuses, enjoy the game and win!",
     "plans": "In the plans:",
     "futurePlans": "New games and activities that will make the process even more interesting. Stay tuned!"
- },
+  },
   "Modal8": {
     "nftMining": "NFT mining",
     "acquisition": "Acquisition:",
@@ -293,19 +291,18 @@
     "nameMinLength": "Name must be at least 2 characters",
     "nameMaxLength": "Name must be less than 50 characters",
     "nameInvalid": "Name can only contain letters, spaces, and punctuation",
-    
+
     "emailRequired": "Email is required",
     "emailInvalid": "Please enter a valid email address",
-    
+
     "messageRequired": "Message is required",
     "messageMinLength": "Message must be at least 10 characters",
     "messageMaxLength": "Message cannot exceed 1000 characters",
-    
+
     "pleaseFixErrors": "Please fix the errors before submitting",
     "tooManyRequests": "Too many requests. Please try again later.",
     "Name": "Name:",
-   
+
     "Message": "Message"
-    
   }
 }
