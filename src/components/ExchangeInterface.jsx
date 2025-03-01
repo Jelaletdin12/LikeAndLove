@@ -145,7 +145,7 @@ const ExchangeInterface = () => {
   };
 
   return (
-    <div className=" max-w-6xl m-auto mt-20 p-4">
+    <div className=" max-w-6xl m-auto mt-20 p-4 mb-20">
       <div className=" mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-center">
           <span className="text-white">{t("ExchangeInterface.Partner")}</span>{" "}
