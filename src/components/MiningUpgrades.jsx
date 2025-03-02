@@ -53,11 +53,14 @@ const MiningUpgrades = () => {
             <h1 className="text-[#007BFF] "> {t("MiningUpgrades.EarnMore")}</h1>
           </h1>
 
-          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto text-center md:text-left ">
-            {t(
-              "MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions"
-            )}
-          </p>
+          <p
+            className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto text-center md:text-left  "
+            dangerouslySetInnerHTML={{
+              __html: t(
+                "MiningUpgrades.InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions"
+              ),
+            }}
+          ></p>
         </div>
         <div className="flex justify-between items-center flex-col">
           <h1 className=" text-4xl text-center md:text-6xl md:hidden flex-col text-[white] font-black mb-4">

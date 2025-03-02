@@ -31,7 +31,7 @@ const FeatureCards = () => {
         highlight: t("FeatureCards.Mining"),
         secondLine: {
           regular: t("FeatureCards.work"),
-          hasQuestionMark: true,
+          hasQuestionMark: false,
         },
       },
       image: phone9,
@@ -51,7 +51,11 @@ const FeatureCards = () => {
         id: 4,
         regular: t("FeatureCards.Howitworks"),
         highlight: t("FeatureCards.CONVERSION"),
-        hasQuestionMark: true,
+
+        secondLine: {
+          regular: t("FeatureCards.work"),
+        },
+        hasQuestionMark: false,
       },
       image: phone4,
     },
@@ -73,7 +77,7 @@ const FeatureCards = () => {
         id: 6,
         regular: t("FeatureCards.Daily"),
         highlight: t("FeatureCards.TASKS"),
-        hasQuestionMark: true,
+        hasQuestionMark: false,
       },
       image: phone6,
     },
@@ -84,7 +88,7 @@ const FeatureCards = () => {
         highlight: t("FeatureCards.GAMES"),
         secondLine: {
           regular: t("FeatureCards.arethereformakingmoney"),
-          hasQuestionMark: true,
+          hasQuestionMark: false,
         },
       },
       image: phone7,
@@ -94,7 +98,7 @@ const FeatureCards = () => {
         id: 8,
         regular: t("FeatureCards.Prizesfrom"),
         highlight: t("FeatureCards.WHEELOFFORTUNE"),
-        hasQuestionMark: true,
+        hasQuestionMark: false,
       },
       image: phone2,
     },
@@ -105,7 +109,7 @@ const FeatureCards = () => {
         highlight: t("FeatureCards.sending"),
         secondLine: {
           regular: t("FeatureCards.work"),
-          hasQuestionMark: true,
+          hasQuestionMark: false,
         },
       },
       image: phone8,
@@ -151,22 +155,33 @@ const FeatureCards = () => {
                   className="w-full h-auto"
                 />
               </div>
-              <div className="flex flex-col items-center ">
+              <div className="flex flex-col items-center font-bold ">
                 {/* Title */}
                 <div className="text-center mb-4 w-full">
                   <p className="text-white">
                     {feature.title.regular}{" "}
-                    <span className="text-white font-bold">
-                      {feature.title.highlight}
+                    <span
+                      className="text-[#007BFF] font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: feature.title.highlight,
+                      }}
+                    >
+                      {/* {feature.title.highlight} */}
                     </span>
+                    {/* {feature.title.hasQuestionMark ? "?" : ""} */}
                     {feature.title.hasQuestionMark}
                   </p>
                   {feature.title.secondLine && (
-                    <p className="text-white">
+                    <p className="text-white inline">
                       {feature.title.secondLine.regular}{" "}
                       {feature.title.secondLine.highlight && (
-                        <span className="text-white font-bold">
-                          {feature.title.secondLine.highlight}
+                        <span
+                          className="text-[#007BFF] font-bold"
+                          dangerouslySetInnerHTML={{
+                            __html: feature.title.secondLine.highlight,
+                          }}
+                        >
+                          {/* {feature.title.secondLine.highlight} */}
                         </span>
                       )}{" "}
                       {feature.title.secondLine.end || ""}

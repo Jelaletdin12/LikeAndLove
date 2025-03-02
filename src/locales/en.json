@@ -2,7 +2,7 @@
   "header": {
     "howItWorks": "HOW DOES IT WORK?",
     "support": "SUPPORT",
-    "goToApp": "GO TO THE APP",
+    "goToApp": "GO TO APP",
     "view": "view"
   },
   "MiningVisualization": {
@@ -14,24 +14,24 @@
   },
   "NFTMinerApp": {
     "How_it_works_Mining": "How it works Mining?",
-    "ItsassimpleasthatStartearningLIKETokenswithourNFTs": "It's as simple as that! Start earning LIKE Tokens with our NFTs:",
+    "ItsassimpleasthatStartearningLIKETokenswithourNFTs": "Start earning LIKE Tokens with our NFTs:",
     "GettheNFT": "Get the NFT",
     "Starttheminingprocess": "Start the mining process",
     "Collectyourtokens": "Collect your tokens!",
-    "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit": "Your NFTS will automatically mine valuable tokens, turning them into a source of income. Additional mechanics will speed up this process and increase your profit!",
+    "YourNFTSwillautomaticallyminevaluabletokensturningthemintoasourceofincomeAdditionalmechanicswillspeedupthisprocessandincreaseyourprofit": "It's as simple as that!  Your NFT will automatically mine valuable tokens, turning them into a source of income. Additional mechanisms will speed up this process and increase your profit!",
     "ImportantyourphoneanditspowerarenotusedinminingeverythinghappensremotelyviatheInternet": "Important: your phone and its power are not used in mining — everything happens remotely via the Internet."
   },
   "NFTCollection": {
     "The": "The",
     "NFT": "NFT",
     "Collection": "Collection",
-    "mining_info": "To participate in mining and mine LIKE and LOVE tokens, you need to own at least one NFT from our collection on getgames.io . These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value. You can sell your NFTs on the open market, profiting from their growth. Start building your collection today and discover new financial opportunities!",
+    "mining_info": "To participate in mining and mine <span style=\"color:#007BFF;\">LIKE</span> and <span style=\"color:#007BFF;\">LOVE</span> tokens, you need to own at least one NFT from our collection on getgames.io . These digital assets not only provide access to mining and increased income, but are also valuable investments that can grow in value. You can sell your NFTs on the open market, profiting from their growth. Start building your collection today and discover new financial opportunities!",
     "BUYNFT": "BUY NFT"
   },
   "NFTPrivilegeCards": {
     "Acollectionof": "A collection of",
     "NFTprivilegecards": "NFT privilege cards",
-    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders": "The unique privileges of the cards provide advantages such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.",
+    "TheuniqueprivilegesofthecardsprovideadvantagessuchasreducedfeesforsendingandconvertingtokenswithinourplatformaswellasexclusiveprivilegesforPlatinumCardholders": "Unique privileges of the cards provide advantages, such as reduced fees for sending and converting tokens within our platform, as well as exclusive privileges for Platinum Card holders.",
     "buyaPlatinumcard": "Buy a Platinum card"
   },
   "silverCard": {
@@ -62,33 +62,33 @@
     "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Boost your mining setup with the Engineer, optimizing performance and maximizing profits",
     "Buyupgradesand": "Buy upgrades and",
     "EarnMore": "Earn More!",
-    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": " In addition to the main LIKE mining, our platform offers you the opportunity to diversify your income by mining the LOVE subtoken. This token plays an important role in our ecosystem and will receive a separate listing in the future, which will ensure its high liquidity and demand. Upgrading your mining equipment will allow you to increase the hashrate and increase the efficiency of mining both tokens, as well as open access to additional platform functions.",
+    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": "In addition to mining the main <span style=\"font-weight:bold;\">LIKE</span> token, our platform offers you an additional source of income — mining the <span style=\"font-weight:bold;\">LOVE</span> subtoken. In the future, it will open up new earning prospects and expand opportunities in the ecosystem. Upgrading equipment will increase your hashrate, improve mining efficiency, and provide access to exclusive platform features.",
     "Profitpersecond": "Profit per second",
     "WATCH": "WATCH"
   },
   "FeatureCards": {
     "Thefirststep": "The first step",
-    "INTHEAPP": "IN THE APP!",
+    "INTHEAPP": "IN THE APP <span style=\"color: white;\">!</span>",
     "Prizesfrom": "Prizes from",
-    "WHEELOFFORTUNE": "WHEEL OF FORTUNE?",
+    "WHEELOFFORTUNE": "WHEEL OF FORTUNE",
     "Passiveincomeon": "Passive income on",
-    "STACKING": "STACKING?",
-    "Howitworks": "How it works",
-    "CONVERSION": "CONVERSION?",
+    "STACKING": "STACKING<span style=\"color: white;\">?</span>",
+    "Howitworks": "How does",
+    "CONVERSION": "CONVERSION",
     "Fast": "Fast",
-    "DEPOSIT": "DEPOSIT and",
-    "and": "",
+    "DEPOSIT": "DEPOSIT",
+    "and": "and",
     "WITHDRAWAL": "WITHDRAWAL",
-    "offunds": "of funds?",
+    "offunds": "of funds",
     "Daily": "Daily",
-    "TASKS": "TASKS?",
+    "TASKS": "TASKS",
     "Whatkindof": "What kind of",
     "GAMES": "GAMES",
     "arethereformakingmoney": "are there for making money?",
     "Howdoes": "How does",
-    "Mining": "Mining",
+    "Mining": "Mining ",
     "work": "work?",
-    "sending": "sending",
+    "sending": "Sending",
     "MOREDETAILED": "MORE DETAILED"
   },
 
@@ -114,7 +114,7 @@
   "BurningLike": {
     "BurningtheLiKE": "Burning the LiKE",
     "token": "token",
-    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "The burning mechanism: the key to increasing the value of LIKE tokens. Every Monday from 06:00 to 08:00 GMT, we burn 125,000,000 LIKE tokens out of a total of 80 billion. This process plays a central role in our economic model, as it reduces the total supply of tokens and creates a shortage. Over time, as the number of available tokens decreases, their value on the market inevitably increases.",
+    "Everyweekfrom0600to0800GMTwecarryouthalvingburning125000000LIKEtokensoutofatotalvolumeof80billionTheburningmechanismthekeytoincreasingthevalueofLIKEtokensRegulartokenburningisatthecoreofoureconomicmodelThisprocessnotonlyreducesthetotalsupplyoftokensbutalsocreatesashortagewhichinevitablyleadstohigherpricesTherarerthetokenbecomesthehigheitsvalueonthemarket": "Burning mechanism is the key to increasing the value of LIKE tokens. Every Monday from 06:00 to 08:00 GMT, we burn 125,000,000 LIKE tokens out of a total of 80 billion. This process plays a central role in our economic model, as it reduces the total supply of tokens and creates a shortage. Over time, as the number of available tokens decreases, their value on the market inevitably increases.",
     "btn": "blockchain explorer"
   },
   "ExchangeInterface": {
