@@ -49,7 +49,8 @@
   },
   "platinumCard": {
     "SpecialprivilegesinTelegram": "Особые привелегии в Telegram",
-    "NocommissionforLove": "Нет комиссии за Like !"
+    "NocommissionforLove": "Нет комиссии за Like!",
+    "NocommissionforLike": "Нет комиссии за Love!"
   },
   "MiningUpgrades": {
     "Fan": "Вентилятор",
@@ -62,7 +63,7 @@
     "BoostyourminingsetupwiththeEngineeroptimizingperformanceandmaximizingprofits": "Улучшите свой майнер с помощью искусственного интеллекта, оптимизируя производительность и максимизируя прибыль LOVE.",
     "Buyupgradesand": "Покупайте улучшения и ",
     "EarnMore": "зарабатывайте Больше!",
-    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": "Помимо основного майнинга LIKE, наша платформа предлагает вам возможность диверсифицировать свой доход за счет майнинга субтокена LOVE. Данный токен играет важную роль в нашей экосистеме и в будущем получит отдельный листинг, что обеспечит ему высокую ликвидность и востребованность. Модернизация вашего майнингового оборудования позволит увеличить хешрейт и повысить эффективность добычи обоих токенов, а также открыть доступ к дополнительным функциям платформы",
+    "InadditiontothemainLIKEminingourplatformoffersyoutheopportunitytodiversifyyourincomebyminingtheLOVEsubtokenThistokenplaysanimportantroleinourecosystemandwillreceiveaseparatelistinginthefuturewhichwillensureitshighliquidityanddemandUpgradingyourminingequipmentwillallowyoutoincreasethehashrateandincreasetheefficiencyofminingbothtokensaswellasopenaccesstoadditionalplatformfunctions": "Помимо добычи основного токена <span style=\"font-weight: bold;\">LIKE</span>, наша платформа предлагает вам дополнительный источник дохода — майнинг субтокена <span style=\"font-weight: bold;\">LOVE</span>. В будущем он откроет новые перспективы для заработка и расширит возможности в экосистеме. А модернизация оборудования увеличит ваш хешрейт, повысит эффективность добычи и предоставит доступ к эксклюзивным функциям платформы.",
     "Profitpersecond": "Прибыль в час",
     "WATCH": "Посмотреть"
   },

@@ -313,7 +313,7 @@ const NFTCardDetails = ({ type }) => {
               </span>
               <div className="flex">
                 <span className="text-[#A2ACB0] text-[12px]">
-                  {t("platinumCard.NocommissionforLove")}
+                  {t("platinumCard.NocommissionforLike")}
                 </span>
               </div>
             </div>

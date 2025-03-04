@@ -38,7 +38,7 @@ export default function NFTCollection() {
         <div className="hidden md:flex flex-col items-center">
           <a
             className="flex flex-col justify-center items-center"
-            href="https://getgems.io/"
+            href="https://getgems.io/collection/EQDMvchkiDT6H2ufjqCecyLb6-S9YYE1-JzSC7D-AbJfee2g"
           >
             <img className="w-[200px] h-[200px]" src={vectorbig} alt="NFT" />
             <h3 className="text-white text-[24px] font-bold mt-2">
