@@ -125,7 +125,7 @@ const StatisticsDashboard = () => {
             {t("StatisticsDashboard.statistics")}
           </span>
         </h1>
-        <p className="text-white mb-6 text-xl md:text-2xl">
+        <p className="text-white mb-6 text-xl md:text-2xl text-center">
           {t("StatisticsDashboard.Visualstatisticsofourplatform")}
         </p>
       </div>

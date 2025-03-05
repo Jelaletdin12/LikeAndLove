@@ -31,7 +31,7 @@ export default function NFTCollection() {
             <span className="text-[#007BFF] mr-2">NFT</span>{" "}
             {t("NFTCollection.Collection")}
           </h2>
-          <p className="text-white mb-8 max-w-2xl text-lg md:text-xl text-center md:text-left"
+          <p className="text-white  max-w-2xl text-lg md:text-xl text-center md:text-left"
            dangerouslySetInnerHTML={{ __html: t('NFTCollection.mining_info') }}>
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function NFTCollection() {
       </div>
 
       {/* Carousel */}
-      <div className="relative py-4">
+      <div className="relative ">
         <Swiper
           spaceBetween={10}
           slidesPerView={1}

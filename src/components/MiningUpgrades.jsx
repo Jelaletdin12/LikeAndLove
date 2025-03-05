@@ -72,7 +72,7 @@ const MiningUpgrades = () => {
       </div>
 
       {/* Upgrades Grid */}
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-2 md:p-0">
         {upgrades.map((upgrade, index) => (
           <div
             key={index}
@@ -81,17 +81,17 @@ const MiningUpgrades = () => {
               background: "linear-gradient(45deg, #007AFF, #F30EFF)",
             }}
           >
-            <div className="relative rounded-[8px] bg-[#161C31] text-center p-4 h-full flex gap-2 flex-row md:flex-col items-center justify-center ">
+            <div className="relative rounded-[8px] bg-[#171D32] text-center p-4 h-full flex  flex-row md:flex-col items-center  ">
               <img
                 src={upgrade.image}
                 alt={upgrade.title}
-                className="w-[100px]"
+                className="w-[50%] md:w-[180px]"
               />
               <div className="flex flex-col">
-                <h3 className="text-white text-xl text-left md:text-center font-semibold mb-2">
+                <h3 className="text-white text-sm md:text-lg text-left md:text-center font-semibold mb-2">
                   {upgrade.title}
                 </h3>
-                <p className="text-white text-sm mb-4 text-left md:text-center">
+                <p className="text-[#A2ACB0] text-[12px] mb-4 text-left md:text-center" style={{ whiteSpace: "pre-line" }}>
                   {upgrade.description}
                 </p>
                 <div className="mt-auto">

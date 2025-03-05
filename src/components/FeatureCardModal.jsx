@@ -67,7 +67,7 @@ const FeatureModal = ({
                 {t("Modal1.firstStep")}
               </h2>
               <p className="text-white">{t("Modal1.intro")}</p>
-              <ul className=" pl-6 mt-2 text-white">
+              <ul className=" pl-3 mt-2 text-white">
                 <li> {t("Modal1.step1")}</li>
                 <li> {t("Modal1.step2")}</li>
                 <li>{t("Modal1.step3")}</li>
@@ -96,7 +96,7 @@ const FeatureModal = ({
                 {t("Modal2.wheelOfFortune")}
               </h2>
               <p className="text-white">{t("Modal2.intro")}</p>
-              <ul className="list-none pl-6 mt-2 text-white">
+              <ul className="list-none  mt-2 text-white">
                 <li>- {t("Modal2.spinEvery6Hours")}</li>
                 <li>- {t("Modal2.nftMiners")}</li>
                 <li>- {t("Modal2.multipleNFTs")}</li>
@@ -123,7 +123,7 @@ const FeatureModal = ({
               <p className="text-white mb-0 mt-6 font-bold">
                 {t("Modal3.sendTokens")}
               </p>
-              <ul className=" pl-6  text-white">
+              <ul className=" pl-2.5  text-white">
                 <li> {t("Modal3.step1")}</li>
                 <li>{t("Modal3.step2")}</li>
                 <li>{t("Modal3.step3")}</li>
@@ -136,7 +136,7 @@ const FeatureModal = ({
                 <p className="text-white mb-[-15px] mt-2.5">
                   {t("Modal3.commissionOptions")}
                 </p>
-                <ul className="list-disc list-inside pl-6 mt-4 text-white">
+                <ul className="list-disc list-inside pl-2.5 mt-4 text-white">
                   <li>{t("Modal3.payWithTokens")}</li>
                   <li>{t("Modal3.completeTask")}</li>
                 </ul>
@@ -158,7 +158,7 @@ const FeatureModal = ({
                 {" "}
                 {t("Modal4.howItWorks")}
               </p>
-              <ul className="list-none pl-4 mb-2 text-white">
+              <ul className="list-none pl-3 mb-2 text-white">
                 <li>{t("Modal4.step1")}</li>
                 <li>{t("Modal4.step2")}</li>
                 <li>{t("Modal4.step3")}</li>
@@ -196,7 +196,7 @@ const FeatureModal = ({
                   <li> {t("Modal5.withdrawStep4")}</li>
                 </li>
               </ul>
-              <p className="text-white font-bold mb-2 mt-4">
+              <p className="text-white font-bold mb-1 mt-1">
                 {" "}
                 {t("Modal5.depositIntro")}
               </p>
@@ -348,7 +348,7 @@ const FeatureModal = ({
               </div>
               <div className="text-white mt-2">
                 <p className="font-black">{t("Modal8.whyProfitable")}</p>
-                <ul className="text-white list-disc list-inside">
+                <ul className="text-white list-disc list-inside pl-2.5">
                   <li>{t("Modal8.passiveIncome")}</li>
                   <li>{t("Modal8.simplicity")}</li>
                   <li>{t("Modal8.earlyStart")}</li>
@@ -369,7 +369,7 @@ const FeatureModal = ({
               <p className="text-white">{t("Modal9.intro")}</p>
               <div>
                 <p className="text-white mt-2"> {t("Modal9.howItWorks")}</p>
-                <ul className="list-disc list-inside text-white mt-2">
+                <ul className="list-disc list-inside text-white mt-2 pl-2.5">
                   <li>{t("Modal9.step1")}</li>
                   <li> {t("Modal9.step2")}</li>
                   <li> {t("Modal9.step3")}.</li>
@@ -380,7 +380,7 @@ const FeatureModal = ({
               </div>
               <div className="mt-2 text-white">
                 <p className="font-bold"> {t("Modal9.important")}</p>
-                <ul className="list-disc list-inside text-white">
+                <ul className="list-disc list-inside text-white pl-2.5">
                   <li>{t("Modal9.yieldCalculation")} </li>
                 </ul>
               </div>
