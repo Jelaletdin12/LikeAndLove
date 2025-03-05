@@ -35,7 +35,8 @@ const StatisticsCard = ({ title, value, image, contrast, noShadow, valueType }) 
         }}
       >
         {image && <img className="mb-3" src={image} alt="" />}
-        <h3 className="text-white text-center mb-3 text-l md:text-xl">
+        <h3 className="text-white text-center mb-3 text-l md:text-xl"  style={{ whiteSpace: "pre-line" }}>
+          
           {title}
         </h3>
         {value !== undefined && (

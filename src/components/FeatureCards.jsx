@@ -161,7 +161,7 @@ const FeatureCards = () => {
                   <p className="text-white">
                     {feature.title.regular}{" "}
                     <span
-                      className="text-[#007BFF] font-bold"
+                      className="text-[#007BFF] font-bold uppercase"
                       dangerouslySetInnerHTML={{
                         __html: feature.title.highlight,
                       }}
@@ -176,7 +176,7 @@ const FeatureCards = () => {
                       {feature.title.secondLine.regular}{" "}
                       {feature.title.secondLine.highlight && (
                         <span
-                          className="text-[#007BFF] font-bold"
+                          className="text-[#007BFF] font-bold uppercase"
                           dangerouslySetInnerHTML={{
                             __html: feature.title.secondLine.highlight,
                           }}

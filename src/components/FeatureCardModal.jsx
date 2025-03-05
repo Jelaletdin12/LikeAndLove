@@ -10,6 +10,7 @@ import phone7 from "../assets/phone7.gif";
 import phone8 from "../assets/phone8.gif";
 import phone9 from "../assets/phone9.gif";
 import { useTranslation } from "react-i18next";
+import DOMPurify from "dompurify";
 // Modal Content Component
 const FeatureModal = ({
   feature,
@@ -135,7 +136,7 @@ const FeatureModal = ({
                 <p className="text-white mb-[-15px] mt-2.5">
                   {t("Modal3.commissionOptions")}
                 </p>
-                <ul className="list-none pl-6 mt-4 text-white">
+                <ul className="list-disc list-inside pl-6 mt-4 text-white">
                   <li>{t("Modal3.payWithTokens")}</li>
                   <li>{t("Modal3.completeTask")}</li>
                 </ul>
@@ -153,11 +154,11 @@ const FeatureModal = ({
                 {t("Modal4.tokenConversion")}
               </h2>
               <p className="text-white">{t("Modal4.intro")}</p>
-              <p className="text-white mt-10 font-bold ">
+              <p className="text-white mt-4 font-bold ">
                 {" "}
                 {t("Modal4.howItWorks")}
               </p>
-              <ul className="list-none pl-6  text-white">
+              <ul className="list-none pl-4 mb-2 text-white">
                 <li>{t("Modal4.step1")}</li>
                 <li>{t("Modal4.step2")}</li>
                 <li>{t("Modal4.step3")}</li>
@@ -183,31 +184,34 @@ const FeatureModal = ({
               <h2 className="text-xl font-bold mb-2 text-white">
                 {t("Modal5.fastDepositWithdrawal")}
               </h2>
+              <p className="text-white font-bold mb-2 mt-2">
+                {t("Modal5.intro")}
+              </p>
               <p className="text-white">{t("Modal5.withdrawalIntro")}</p>
               <ul className="list-decimal pl-6 mt-2 text-white">
                 <li>
                   {t("Modal5.withdrawStep1")}
-                  <li>{t("Modal5.withdrawStep2")}</li>
+                  <li >{t("Modal5.withdrawStep2")}</li>
                   <li> {t("Modal5.withdrawStep3")}</li>
                   <li> {t("Modal5.withdrawStep4")}</li>
                 </li>
               </ul>
-              <p className="text-white font-bold mb-2">
+              <p className="text-white font-bold mb-2 mt-4">
                 {" "}
                 {t("Modal5.depositIntro")}
               </p>
               <div>
                 <p className="text-white mb-2">{t("Modal5.depositStep1")}</p>
                 <ul className="text-white">
-                  <li>1. {t("Modal5.depositStep2")}</li>
-                  <li>2. {t("Modal5.depositStep3")}</li>
-                  <li>3. {t("Modal5.depositStep4")}</li>
+                  <li className="ml-3">1. {t("Modal5.depositStep2")}</li>
+                  <li className="ml-3">2. {t("Modal5.depositStep3")}</li>
+                  <li className="ml-3">3. {t("Modal5.depositStep4")}</li>
                 </ul>
               </div>
               <p className="text-white font-bold "> {t("Modal5.important")}</p>
-              <ul className="text-white list-disc">
-                <li>{t("Modal5.replenishmentRatio")}</li>
-                <li>{t("Modal5.trc20Support")}</li>
+              <ul className="text-white list-disc list-inside">
+                <li className="ml-3">{t("Modal5.replenishmentRatio")}</li>
+                <li className="ml-3">{t("Modal5.trc20Support")}</li>
               </ul>
             </ContentContainer>
             <ImageContainer src={phone5} />
@@ -227,20 +231,20 @@ const FeatureModal = ({
                   {" "}
                   {t("Modal6.howItWorks")}
                 </p>
-                <ul className="text-white">
-                  <li>{t("Modal6.step1")}</li>
-                  <li>{t("Modal6.step2")}</li>
-                  <li>{t("Modal6.step3")}</li>
+                <ul className="text-white list-decimal list-inside">
+                  <li className="ml-3">{t("Modal6.step1")}</li>
+                  <li className="ml-3">{t("Modal6.step2")}</li>
+                  <li className="ml-3">{t("Modal6.step3")}</li>
                 </ul>
               </div>
               <p className="text-white pt-1 mt-1 font-bold">
                 {t("Modal6.completeTasks")}
               </p>
               <ul className="text-white">
-                <li>{t("Modal6.task1")}</li>
-                <li>{t("Modal6.task2")}</li>
-                <li>{t("Modal6.task3")}</li>
-                <li>{t("Modal6.task4")}</li>
+                <li className="ml-3">{t("Modal6.task1")}</li>
+                <li className="ml-3">{t("Modal6.task2")}</li>
+                <li className="ml-3">{t("Modal6.task3")}</li>
+                <li className="ml-3">{t("Modal6.task4")}</li>
               </ul>
               <p className="text-white ">{t("Modal6.earnNow")}</p>
             </ContentContainer>
@@ -262,18 +266,23 @@ const FeatureModal = ({
                   {t("Modal7.howItWorks")}
                 </p>
                 <ul className="text-white list-inside list-decimal ">
-                  <li>{t("Modal7.step1")}</li>
-                  <li>{t("Modal7.step2")}</li>
-                  <li>{t("Modal7.step3")}</li>
+                  <li className="ml-3">{t("Modal7.step1")}</li>
+                  <li className="ml-3">{t("Modal7.step2")}</li>
+                  <li className="ml-3">{t("Modal7.step3")}</li>
                 </ul>
               </div>
               <div>
                 <p className="text-white pt-2 mt-2 font-bold">
                   {t("Modal7.missedMailbox")}
                 </p>
-                <p className="text-white">
-                  {t("Modal7.missedMailboxSolution")}
-                </p>
+                <p
+                  className="text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(
+                      t("Modal7.missedMailboxSolution")
+                    ),
+                  }}
+                ></p>
               </div>
               <div className="text-white mt-2">
                 <p className="font-bold"> {t("Modal7.rewardsForEveryone")} </p>
@@ -295,18 +304,33 @@ const FeatureModal = ({
                 {t("Modal8.nftMining")}
               </h2>
 
-              <div>
-                <p className="text-white"> {t("Modal8.acquisition")}</p>
+              <div className="mt-4">
+                <p className="text-white font-bold">
+                  {" "}
+                  {t("Modal8.acquisition")}
+                </p>
                 <ul className="text-white">
-                  <li>{t("Modal8.step1")}</li>
-                  <li>{t("Modal8.step2")}</li>
+                  <li className="ml-2"
+                    dangerouslySetInnerHTML={{
+                      __html: t("Modal8.step1"),
+                    }}
+                  ></li>
+                  <li className="ml-2"
+                    dangerouslySetInnerHTML={{
+                      __html: t("Modal8.step2"),
+                    }}
+                  ></li>
                 </ul>
               </div>
 
               <div className="text-white mt-2">
                 <p className="font-bold">{t("Modal8.whatYouGet")} </p>
                 <ul className="text-white">
-                  <li>{t("Modal8.miningSpeed")} </li>
+                  <li
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(t("Modal8.miningSpeed")),
+                    }}
+                  ></li>
                   <li>{t("Modal8.tokensCredited")}</li>
                 </ul>
               </div>
@@ -314,7 +338,11 @@ const FeatureModal = ({
               <div className="text-white mt-2">
                 <p className="font-bold"> {t("Modal8.features")}</p>
                 <ul>
-                  <li>{t("Modal8.feature1")}</li>
+                  <li
+                    dangerouslySetInnerHTML={{
+                      __html: t("Modal8.feature1"),
+                    }}
+                  ></li>
                   <li>{t("Modal8.feature2")} </li>
                 </ul>
               </div>

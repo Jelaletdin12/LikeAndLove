@@ -15,6 +15,7 @@ import unicorn from "../assets/unicorn.png";
 import tons from "../assets/tons.png";
 import curve from "../assets/curve.png";
 import binance from "../assets/binance.png";
+import kucoin from "../assets/kucoin.png";
 import { CircleArrowRight } from "lucide-react";
 const ExchangeInterface = () => {
   const [exchangeType, setExchangeType] = useState("DEX");
@@ -54,7 +55,7 @@ const ExchangeInterface = () => {
       {
         id: 5,
         name: t("ExchangeInterface.card13"),
-        logo: bybit,
+        logo: kucoin,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
@@ -62,7 +63,7 @@ const ExchangeInterface = () => {
       {
         id: 6,
         name: t("ExchangeInterface.card14"),
-        logo: curve,
+        logo: bybit,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
