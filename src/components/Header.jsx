@@ -33,6 +33,8 @@ const Header = ({ scrollToFeatureCards, drawerVisible, setDrawerVisible }) => {
   }, [drawerVisible]);
 
   const changeLanguage = (lng) => {
+   
+    localStorage.setItem("preferredLanguage", lng);
     i18n.changeLanguage(lng);
   };
 

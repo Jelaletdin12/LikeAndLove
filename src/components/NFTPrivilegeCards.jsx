@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import silver from "../assets/silver.gif";
-import gold from "../assets/gold.gif";
-import platinum from "../assets/platinum.gif";
+import silver from "../assets/silver.webp";
+import gold from "../assets/gold.webp";
+import platinum from "../assets/platinum.webp";
 import NFTCardDetails from "./NFTPrivilegeCardsDetail";
 import { useTranslation } from "react-i18next";
 import { CircleArrowRight } from "lucide-react";
