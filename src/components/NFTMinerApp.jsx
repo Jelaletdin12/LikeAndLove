@@ -32,7 +32,7 @@ const MiningGuide = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="max-w-6xl m-auto bg-[#161C31] p-4 md:flex">
+    <div ref={sectionRef} className="max-w-6xl md:mt-12 m-auto bg-[#161C31] p-4 md:flex">
       <h2 className="text-5xl text-white font-black mb-4 text-center leading-none flex md:hidden md:text-6xl">
         {t("NFTMinerApp.How_it_works_Mining")}
       </h2>
