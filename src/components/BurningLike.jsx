@@ -108,7 +108,7 @@ const BurningLikeCarousel = () => {
             style={{
               background: "linear-gradient(to right, #007AFF, #F30EFF)",
             }}
-            href="https://t.me/Like_Project_Bot"
+            href="https://tonviewer.com/EQCtYVr3K8WIhuuDzYUlGBJBYlPtq9EaXcdXbe0nGfV0ImAM"
             className=" w-auto  flex  text-white font-bold py-3 px-8 rounded-[8px] gap-4 items-center hover:opacity-80 uppercase"
           >
           {t("BurningLike.btn")}

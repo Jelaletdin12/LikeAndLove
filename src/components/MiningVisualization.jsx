@@ -25,7 +25,7 @@ const MiningDevice = () => {
             <img
               src={tri}
               alt=""
-              className="absolute top-[0px] right-[-8px] w-[70px] h-auto md:w-[110px] md:right-[50px]"
+              className="absolute top-[0px] right-[-20px] w-[70px] h-auto md:w-[110px] md:right-[50px]"
             />
             <img
               src={love}
@@ -42,8 +42,8 @@ const MiningDevice = () => {
             #Multi_app
           </p>
         </div>
-        <div className="relative pt-[50px]">
-          <div className="flex ">
+        <div className="relative pt-[50px] text-center md:text-left">
+          <div className="flex justify-center md:justify-start ">
             <h1 className="text-white text-4xl font-black tracking-wider md:text-6xl">
               {t("MiningVisualization.YOUR")}
             </h1>
@@ -63,7 +63,7 @@ const MiningDevice = () => {
           <img
             src={like}
             alt=""
-            className="absolute  w-[70px] h-auto  top-[80%] right-[-8%] translate-y-[50%] md:w-[110px] md:right-[100px] md:top-[120px]  "
+            className="absolute  w-[70px] h-auto  top-[88%] right-[-8%] translate-y-[50%] md:w-[110px] md:right-[100px] md:top-[120px]  "
           />
           <img
             src={love2}
