@@ -203,7 +203,11 @@ const ContactForm = () => {
       link: "https://t.me/Like_Project_Bot",
     },
     { name: "Instagram", icon: instagram, link: "#" },
-    { name: "E-mail", icon: email, link: "likeminingjetton66@gmail.com" },
+    {
+      name: "E-mail",
+      icon: email,
+      link: "mailto:likeminingjetton66@gmail.com",
+    },
     {
       name: "GetGames",
       icon: getgames,
@@ -362,7 +366,7 @@ const ContactForm = () => {
               key={index}
               title={social.name}
             >
-              <a href={social.link} target="_blank" rel="noopener noreferrer">
+              <a href={social.link} rel="noopener noreferrer">
                 <img src={social.icon} alt={social.name} />
               </a>
               <div>
