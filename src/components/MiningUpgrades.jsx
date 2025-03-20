@@ -1,9 +1,9 @@
 import React from "react";
-import Stabilizator from "../assets/stabilizator.webp";
-import brain from "../assets/brain.webp";
-import fancard from "../assets/fancard.webp";
-import water from "../assets/water.webp";
-import ton from "../assets/ton.webp";
+import Stabilizator from "../assets/stabilizator.gif";
+import brain from "../assets/brain.gif";
+import fancard from "../assets/fancard.gif";
+import water from "../assets/water.gif";
+import ton from "../assets/ton.gif";
 import { CircleArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 const MiningUpgrades = () => {

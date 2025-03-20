@@ -1,5 +1,5 @@
 import vectorbig from "../assets/vectorbig.png";
-import fan from "../assets/fan.webp";
+import fan from "../assets/fan.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

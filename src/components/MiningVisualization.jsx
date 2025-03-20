@@ -1,4 +1,4 @@
-import fan from "../assets/fan.webp";
+import fan from "../assets/fan.gif";
 import vector from "../assets/vector.png";
 import love from "../assets/love.png";
 import love2 from "../assets/love2.png";

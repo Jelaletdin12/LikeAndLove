@@ -16,6 +16,7 @@ import tons from "../assets/tons.png";
 import curve from "../assets/curve.png";
 import binance from "../assets/binance.png";
 import kucoin from "../assets/kucoin.png";
+import dyor from "../assets/dyor.png";
 import { CircleArrowRight } from "lucide-react";
 const ExchangeInterface = () => {
   const [exchangeType, setExchangeType] = useState("DEX");
@@ -32,10 +33,11 @@ const ExchangeInterface = () => {
       },
       {
         id: 2,
-        name: t("ExchangeInterface.card10"),
-        logo: upbit,
-        date: t("StatisticsDashboard.ComingSoon2"),
-        active: false,
+        name: t("ExchangeInterface.card8"),
+        logo: dyor,
+        date: "01.04.2025",
+        active: true,
+        link: "https://dyor.io/ru/dapps/web3-general/like-and-love",
       },
       {
         id: 3,
@@ -93,52 +95,54 @@ const ExchangeInterface = () => {
       },
       {
         id: 2,
+        name: t("ExchangeInterface.card8"),
+        logo: dyor,
+        date: "01.04.2025",
+        active: true,
+        link: "https://dyor.io/ru/dapps/web3-general/like-and-love",
+      },
+      {
+        id: 3,
         name: t("ExchangeInterface.card2"),
         logo: ston,
         date: "01.04.2025",
         active: true,
-        link: "https://ston.fi/",
+        link: "https://app.ston.fi/pools/EQCjJEIuQHNeNyWCKquVMVl3NDRAbY35eceXTFtouc4wWuuW",
       },
       {
-        id: 3,
+        id: 4,
         name: t("ExchangeInterface.card3"),
         logo: dedust,
-        date: t("StatisticsDashboard.ComingSoon2"),
-        active: false,
+        date: "01.04.2025",
+        active: true,
+        link: "https://dedust.io/",
       },
 
       {
-        id: 4,
+        id: 5,
         name: t("ExchangeInterface.card4"),
         logo: strom,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
       {
-        id: 5,
+        id: 6,
         name: t("ExchangeInterface.card5"),
         logo: bull,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
       {
-        id: 6,
+        id: 7,
         name: t("ExchangeInterface.card6"),
         logo: unicorn,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
       {
-        id: 7,
+        id: 8,
         name: t("ExchangeInterface.card7"),
         logo: tons,
-        date: t("StatisticsDashboard.ComingSoon2"),
-        active: false,
-      },
-      {
-        id: 8,
-        name: t("ExchangeInterface.card8"),
-        logo: curve,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
