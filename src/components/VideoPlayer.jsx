@@ -48,7 +48,7 @@ const VideoPlayer = () => {
           {/* Actual video element - uncomment and use when implementing */}
           <iframe
             className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/xT6oMvczghc"
+            src="https://www.youtube.com/embed/lKO4K9Syq5o"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
