@@ -33,11 +33,11 @@ const ExchangeInterface = () => {
       },
       {
         id: 2,
-        name: t("ExchangeInterface.card8"),
-        logo: dyor,
-        date: "01.04.2025",
-        active: true,
-        link: "https://dyor.io/ru/dapps/web3-general/like-and-love",
+        name: t("ExchangeInterface.card10"),
+        logo: upbit,
+        date: t("StatisticsDashboard.ComingSoon2"),
+        active: false,
+       
       },
       {
         id: 3,

@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { useTranslation } from "react-i18next";
 import set from "../assets/set.png";
 import tel from "../assets/tel.png";
-import road1 from "../assets/road1.png";
+import road1 from "../assets/road11.png";
 import road2 from "../assets/road2.png";
 import road3 from "../assets/road3.png";
 import road4 from "../assets/road4.png";
@@ -52,7 +52,7 @@ const RoadmapCarousel = () => {
   ];
 
   const isCardActive = (index) => {
-    return index === 0 || index === 1;
+    return index === 0 || index === 1 || index === 2;
   };
 
   return (
