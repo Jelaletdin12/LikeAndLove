@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
 import dedust from "../assets/dedust.png";
 import ston from "../assets/ston.png";
-import bidget from "../assets/arrow.png";
-import kraken from "../assets/m.png";
-import upbit from "../assets/up.png";
+import lbank from "../assets/lbank.png";
 import bybit from "../assets/bybit.png";
-import c from "../assets/c.png";
 import logo from "../assets/like-love.png";
 import strom from "../assets/bird.png";
 import bull from "../assets/bull.png";
 import unicorn from "../assets/unicorn.png";
 import tons from "../assets/tons.png";
 import binance from "../assets/binance.png";
-import kucoin from "../assets/kucoin.png";
 import dyor from "../assets/dyor.png";
 import weex from "../assets/weex.png";
 import gate from "../assets/gate.png";
@@ -24,7 +20,7 @@ import bifinance from "../assets/bifinance.png";
 import { CircleArrowRight } from "lucide-react";
 const ExchangeInterface = () => {
   const [exchangeType, setExchangeType] = useState("DEX");
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const exchanges = {
     CEX: [
       {
@@ -42,20 +38,18 @@ const ExchangeInterface = () => {
         date: "01.04.2025",
         active: true,
         link: "https://www.bifinance.com/trade?symbol=TLIKE/USDT",
-       
       },
       {
         id: 3,
-        name: t("ExchangeInterface.card11"),
-        logo: xt,
+        name: t("ExchangeInterface.card16"),
+        logo: lbank,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
-
       {
         id: 4,
-        name: t("ExchangeInterface.card12"),
-        logo: gate,
+        name: t("ExchangeInterface.card11"),
+        logo: xt,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
@@ -66,12 +60,10 @@ const ExchangeInterface = () => {
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
-
-     
       {
         id: 6,
-        name: t("ExchangeInterface.card15"),
-        logo: binance,
+        name: t("ExchangeInterface.card12"),
+        logo: gate,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
@@ -84,8 +76,8 @@ const ExchangeInterface = () => {
       },
       {
         id: 8,
-        name: t("ExchangeInterface.card16"),
-        logo: kucoin,
+        name: t("ExchangeInterface.card15"),
+        logo: binance,
         date: t("StatisticsDashboard.ComingSoon2"),
         active: false,
       },
