@@ -185,7 +185,7 @@ const ContactForm = () => {
   };
 
   const socialLinks = [
-    { name: "X (Twitter)", icon: twitter, link: "#" },
+    { name: "X (Twitter)", icon: twitter, link: "https://x.com/Likemining66?t=zTFxAGvw0sUJCIJ5EcCOcw&s=09" },
     {
       name: "YouTube",
       icon: youtube,

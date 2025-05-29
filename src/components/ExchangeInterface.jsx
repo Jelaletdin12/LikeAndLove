@@ -35,7 +35,7 @@ const ExchangeInterface = () => {
         id: 2,
         name: t("ExchangeInterface.card10"),
         logo: bifinance,
-        date: "01.04.2025",
+        date: "14.05.2025",
         active: true,
         link: "https://www.bifinance.com/trade?symbol=TLIKE/USDT",
       },
